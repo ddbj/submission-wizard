@@ -1,3 +1,14 @@
+_shared:
+  yes: &yes
+    label:
+      en: Yes
+      ja: はい
+
+  no: &no
+    label:
+      en: No
+      ja: いいえ
+
 q1:
   type: question
 
@@ -24,14 +35,10 @@ q2:
     ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
 
   choices:
-    - label:
-        en: Yes
-        ja: はい
+    - <<: *yes
       next: ega
 
-    - label:
-        en: No
-        ja: いいえ
+    - <<: *no
       next: q3
 
 q3:
@@ -42,14 +49,10 @@ q3:
     ja: そのデータは実験に基づいて作られたものですか？（既存のデータにアノテーションやキュレーションを施したのではなく）
 
   choices:
-    - label:
-        en: Yes
-        ja: はい
+    - <<: *yes
       next: q4
 
-    - label:
-        en: No
-        ja: いいえ
+    - <<: *no
       next: q5
 
 q4:
@@ -78,14 +81,10 @@ q5:
     ja: そのデータは変異に特化したものですか？
 
   choices:
-    - label:
-        en: Yes
-        ja: はい
+    - <<: *yes
       next: q6
 
-    - label:
-        en: No
-        ja: いいえ
+    - <<: *no
       next: ena
 
 q6:
@@ -96,14 +95,10 @@ q6:
     ja: そのデータは構造的な変異のみを含みますか？
 
   choices:
-    - label:
-        en: Yes
-        ja: はい
+    - <<: *yes
       next: dgva
 
-    - label:
-        en: No
-        ja: いいえ
+    - <<: *no
       next: eva
 
 q7:
@@ -114,14 +109,10 @@ q7:
     ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
 
   choices:
-    - label:
-        en: Yes
-        ja: はい
+    - <<: *yes
       next: ega
 
-    - label:
-        en: No
-        ja: いいえ
+    - <<: *no
       next: q8
 
 q8:
