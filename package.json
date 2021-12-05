@@ -7,7 +7,7 @@
     "start": "lit-localize build && web-dev-server",
     "test": "lit-localize build && web-test-runner",
     "test:watch": "npm test -- --watch",
-    "build": "lit-localize build && rollup --config rollup.config.js"
+    "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js"
   },
   "dependencies": {
     "@lit/localize": "^0.11.1",
