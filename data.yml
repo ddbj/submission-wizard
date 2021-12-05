@@ -166,6 +166,14 @@ ega:
     name: European Genome-Phenome Archive
     description: human data that requires controlled access
 
+ena:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/ena/browser/submit
+    name: European Nucleotide Archive
+    description: nucleotide sequence data
+
 eva:
   type: result
 
