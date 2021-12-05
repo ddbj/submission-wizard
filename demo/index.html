@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submission Wizard</title>
+    <script type="module" src="../src/submission-wizard.ts"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-3 mt-5">Submission Wizard</h1>
+
+      <div class="my-3">
+        <div class="form-check">
+          <input id="locale-en" type="radio" checked name="locale" value="en" class="form-check-input">
+          <label for="locale-en" class="form-check-label">English</label>
+        </div>
+
+        <div class="form-check">
+          <input id="locale-ja" type="radio" name="locale" value="ja" class="form-check-input">
+          <label for="locale-ja" class="form-check-label">Japanese</label>
+        </div>
+      </div>
+
+      <div class="p-3 bg-dark">
+        <pre class="m-0 text-white"><code>&lt;script type="module" src="<span id="src"></span>"&gt;&lt;/script&gt;
+
+&lt;submission-wizard locale="<span id="locale">en</span>"&gt;&lt;/submission-wizard&gt;</code></pre>
+      </div>
+
+      <div class="p-3 bg-light">
+        <submission-wizard locale="en"></submission-wizard>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('src').textContent = new URL('./submission-wizard.js', window.location.href);
+
+      const el     = document.querySelector('submission-wizard');
+      const locale = document.getElementById('locale');
+
+      document.querySelectorAll('input[name="locale"]').forEach((radio) => {
+        radio.addEventListener('change', ({target: {value}}) => {
+          el.setAttribute('locale', value);
+          locale.textContent = value;
+        });
+      });
+    </script>
+  </body>
+</html>

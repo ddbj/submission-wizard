@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*.ts"],
+
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "strict": true,
+    "target": "es2021"
+  }
+}

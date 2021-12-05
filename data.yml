@@ -1,0 +1,191 @@
+q1:
+  type: question
+
+  text:
+    en: What type of data do you have?
+    ja: 登録するデータの種別は何ですか？
+
+  choices:
+    - label:
+        en: DNA/RNA sequence
+        ja: DNA/RNA 配列
+      next: q2
+
+    - label:
+        en: Expression data
+        ja: 発現データ
+      next: q7
+
+q2:
+  type: question
+
+  text:
+    en: Are your data from human research subjects and do the data require controlled access?
+    ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
+
+  choices:
+    - label:
+        en: Yes
+        ja: はい
+      next: ega
+
+    - label:
+        en: No
+        ja: いいえ
+      next: q3
+
+q3:
+  type: question
+
+  text:
+    en: Have the data that you will submit been produced experimentally (as opposed to coming through some annotation or curation process on existing data)?
+    ja: そのデータは実験に基づいて作られたものですか？（既存のデータにアノテーションやキュレーションを施したのではなく）
+
+  choices:
+    - label:
+        en: Yes
+        ja: はい
+      next: q4
+
+    - label:
+        en: No
+        ja: いいえ
+      next: q5
+
+q4:
+  type: question
+
+  text:
+    en: To which type of study do your data most closely relate?
+    ja: そのデータに最も関連する調査手法はどれですか？
+
+  choices:
+    - label:
+        en: Analysis of an environmental community (e.g. sea water, human gut)
+        ja: 特定環境の生物集合の解析（例：海水、ヒトの腸）
+      next: metagenomics
+
+    - label:
+        en: Quantitive analysis (e.g. expression study)
+        ja: 定量的な分析（例：発現量の調査）
+      next: array-express
+
+q5:
+  type: question
+
+  text:
+    en: Is your data specifically about variation?
+    ja: そのデータは変異に特化したものですか？
+
+  choices:
+    - label:
+        en: Yes
+        ja: はい
+      next: q6
+
+    - label:
+        en: No
+        ja: いいえ
+      next: ena
+
+q6:
+  type: question
+
+  text:
+    en: Is your data structural variation only?
+    ja: そのデータは構造的な変異のみを含みますか？
+
+  choices:
+    - label:
+        en: Yes
+        ja: はい
+      next: dgva
+
+    - label:
+        en: No
+        ja: いいえ
+      next: eva
+
+q7:
+  type: question
+
+  text:
+    en: Are your data from human research subjects and do the data require controlled access?
+    ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
+
+  choices:
+    - label:
+        en: Yes
+        ja: はい
+      next: ega
+
+    - label:
+        en: No
+        ja: いいえ
+      next: q8
+
+q8:
+  type: question
+
+  text:
+    en: To which type of study do your data most closely relate?
+    ja: そのデータに最も関連する調査手法はどれですか？
+
+  choices:
+    - label:
+        en: Microarray or RNA-seq gene expression
+        ja: マイクロアレイまたは RNA-seq による発現解析
+      next: array-express
+
+    - label:
+        en: Proteomics methods
+        ja: プロテオーム解析
+      next: pride
+
+array-express:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/arrayexpress/submit/overview.html
+    name: Array Express
+    description: functional genomics data
+
+dgva:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/dgva/data-submission
+    name: Database of Genomic Variants archive
+    description: structural genetic variation data
+
+ega:
+  type: result
+
+  repository:
+    url: https://ega-archive.org/submission
+    name: European Genome-Phenome Archive
+    description: human data that requires controlled access
+
+eva:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/submission/#:~:text=European%20Variation%20Archive
+    name: European Variation Archive
+    description: genetic variation data
+
+metagenomics:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/metagenomics/submission
+    name: Metagenomics
+    description: raw sequence data & associated meta-data
+
+pride:
+  type: result
+
+  repository:
+    url: https://www.ebi.ac.uk/pride/markdownpage/submitdatapage
+    name: Proteomics Identifications database
+    description: protein & peptide identification data
