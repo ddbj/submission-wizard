@@ -64,7 +64,7 @@ export class SubmissionWizard extends LitElement {
 
   renderCurrentNode() {
     switch (this.currentNode.type) {
-      case 'question':
+      case 'question': {
         const question = this.currentNode;
 
         return html`
@@ -80,7 +80,8 @@ export class SubmissionWizard extends LitElement {
             })}
           </ul>
         `;
-      case 'result':
+      }
+      case 'result': {
         const {repository} = this.currentNode;
 
         return html`
@@ -89,8 +90,10 @@ export class SubmissionWizard extends LitElement {
           <p>${msg('You can submit your data to the following database:')}</p>
           <a href=${repository.url}>${repository.name}</a> - ${repository.description}
         `;
-      default:
-        const _: never = this.currentNode;
+      }
+      default: {
+        const _: never = this.currentNode; // eslint-disable-line @typescript-eslint/no-unused-vars
+      }
     }
   }
 
@@ -107,7 +110,7 @@ export class SubmissionWizard extends LitElement {
     return (e: Event) => {
       e.preventDefault();
 
-      const i = this.answers.findIndex(([q, _]) => q === question);
+      const i = this.answers.findIndex(([q]) => q === question);
 
       this.answers.splice(i);
       this.currentNode = question;

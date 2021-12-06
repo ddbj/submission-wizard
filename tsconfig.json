@@ -1,7 +1,6 @@
 {
-  "include": ["src/**/*.ts"],
-
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true, // due to @open-wc/testing
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "strict": true,

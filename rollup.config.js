@@ -5,8 +5,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import summary from 'rollup-plugin-summary';
 import yaml from '@rollup/plugin-yaml';
 import { copy } from '@web/rollup-plugin-copy';
+import { defineConfig } from 'rollup';
 
-export default {
+export default defineConfig({
   output: {
     dir: 'dist'
   },
@@ -30,4 +31,4 @@ export default {
 
     summary()
   ]
-};
+});
