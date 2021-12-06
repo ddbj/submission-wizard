@@ -9,25 +9,32 @@ Demo: https://ursm-submission-wizard.pages.dev/
 ## Setup
 
 ```
-$ npm install
+$ npm install --global yarn
+$ yarn install
 ```
 
 ## Starting the development server
 
 ```
-$ npm start
+$ yarn start
 ```
 
 ## Running tests
 
 ```
-$ npm test
-# or
-$ npm run test:watch
+$ yarn test
+or
+$ yarn test:watch
+```
+
+## Linting
+
+```
+$ yarn lint
 ```
 
 ## Building for production
 
 ```
-$ npm run build
+$ yarn build
 ```
