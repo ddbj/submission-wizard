@@ -17,6 +17,8 @@ $ yarn install
 
 ```
 $ yarn start
+or
+$ yarn start --open
 ```
 
 ## Running tests
@@ -24,7 +26,7 @@ $ yarn start
 ```
 $ yarn test
 or
-$ yarn test:watch
+$ yarn test --watch
 ```
 
 ## Linting

@@ -4,10 +4,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "lit-localize build && web-dev-server",
+    "start": "lit-localize build && web-dev-server --watch",
     "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js",
     "test": "lit-localize build && web-test-runner",
-    "test:watch": "npm test -- --watch",
     "lint": "tsc --noEmit && eslint ."
   },
   "dependencies": {

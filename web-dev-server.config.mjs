@@ -6,8 +6,6 @@ const yaml = fromRollup(rollupYaml);
 
 export default {
   appIndex: 'demo/index.html',
-  watch: true,
-  open: true,
 
   plugins: [
     esbuildPlugin({ts: true}),
