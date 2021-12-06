@@ -22,6 +22,7 @@ ignorePatterns:
   - dist/
   - rollup.config.js
   - src/generated/
+  - tailwind.config.js
   - test/__snapshots__/
 
 rules: {}

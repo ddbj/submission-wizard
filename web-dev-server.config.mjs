@@ -1,8 +1,10 @@
+import _postcss from 'rollup-plugin-postcss';
+import _yaml from '@rollup/plugin-yaml';
 import { esbuildPlugin } from '@web/dev-server-esbuild';
 import { fromRollup } from '@web/dev-server-rollup';
-import rollupYaml from '@rollup/plugin-yaml';
 
-const yaml = fromRollup(rollupYaml);
+const postcss = fromRollup(_postcss);
+const yaml    = fromRollup(_yaml);
 
 export default {
   appIndex: 'demo/index.html',
@@ -10,12 +12,20 @@ export default {
   open: true,
 
   plugins: [
-    esbuildPlugin({ts: true}),
+    esbuildPlugin({
+      ts: true
+    }),
+
+    postcss({
+      inject: false
+    }),
+
     yaml()
   ],
 
   mimeTypes: {
-    '**/*.yml': 'js'
+    '**/*.yml': 'js',
+    '**/*.css': 'js'
   },
 
   nodeResolve: {

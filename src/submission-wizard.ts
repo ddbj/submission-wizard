@@ -1,6 +1,7 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { configureLocalization, msg, localized } from '@lit/localize';
+import style from './style.css';
 
 import * as localeJa from './generated/locales/ja';
 import data, { Node, Question, Choice, LocalizedString } from './data';
@@ -25,6 +26,8 @@ type Locale = 'en' | 'ja';
 @localized()
 @customElement('submission-wizard')
 export class SubmissionWizard extends LitElement {
+  static styles = [unsafeCSS(style)];
+
   set locale(newVal: Locale) {
     const oldVal = getLocale();
 
@@ -68,17 +71,17 @@ export class SubmissionWizard extends LitElement {
         const question = this.currentNode;
 
         return html`
-          <p>${this.localize(question.text)}</p>
+          <p class="mb-4">${this.localize(question.text)}</p>
 
-          <ul>
+          <div class="flex space-x-4">
             ${question.choices.map((choice: Choice) => {
               return html`
-                <li>
-                  <a @click=${this.answer(question, choice)} href="#">${this.localize(choice.label)}</a>
-                </li>
+                <a @click=${this.answer(question, choice)} href="#" class="p-3 bg-blue-200 hover:bg-blue-300">
+                  ${this.localize(choice.label)}
+                </a>
               `;
             })}
-          </ul>
+          </div>
         `;
       }
       case 'result': {
