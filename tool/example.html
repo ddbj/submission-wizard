@@ -1,0 +1,589 @@
+<div id="sub-navigation">
+
+  <div id="sub-nav-question">
+
+    <p class="start">Use this data submission wizard to find the right archive for your data in a few simple steps.</p>
+
+    <div id="q1-section" class="q-section start" data-step="1">
+      <div id="q1" class="question">
+        <p>Q1. Are you submitting data from human research subjects and do the data require controlled access?</p>
+        <p class="response" data-show="q1-yes">Your data require controlled access</p>
+        <p class="response" data-show="q1-no">Your data do not require controlled access</p>
+        <ul class="answer">
+          <li id="q1-yes" data-next="g-jga"><a href="#">Yes</a></li>
+          <li id="q1-no" data-next="q2"><a href="#">No</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q2-section" class="q-section" data-step="2">
+      <div id="q2" class="question"><p>Q2. What type of data do you have?</p>
+        <ul class="answer">
+          <li id="q2-genome" data-next="q3-genome,q3-tpa"><a href="#">Whole-genome scale genome sequence TPA</a></li>
+          <li id="q2-metagenome" data-next="q3-metagenome,q3-tpa"><a href="#">Metagenomic sequence TPA</a></li>
+          <li id="q2-transcriptome" data-next="q3-transcriptome,q3-tpa"><a href="#">Transcriptome sequence TPA</a></li>
+          <li id="q2-other" data-next="q3-other,q3-tpa"><a href="#">Other DNA/RNA sequences TPA</a></li>
+          <li id="q2-fgngs" data-next="g-bp-bs-dra-gea"><a href="#">Functional genomics data (gene expression, gene regulation or epigenetics) by NGS</a></li>
+          <li id="q2-fgarray" data-next="g-bp-bs-gea"><a href="#">Functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray</a></li>
+          <li id="q2-metabolomics" data-next="g-mb"><a href="#">Metabolomics data</a></li>
+          <li id="q2-proteomics" data-next="g-jpost"><a href="#">Proteomics data</a></li>
+          <li id="q2-variation" data-next="q3-variation"><a href="#">Genetic variations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-genome-section" class="q-section" data-step="3">
+      <div id="q3-genome" class="question"><p>Q3. Where does the genome sequence come from?</p>
+        <ul class="answer">
+          <li id="q3-genome-eukaryote" data-next="q4-genome-eukaryote"><a href="#">Eukaryote</a></li>
+          <li id="q3-genome-prokaryote" data-next="q4-genome-prokaryote"><a href="#">Prokaryote</a></li>
+          <li id="q3-genome-plasmid" data-next="q4-genome-plasmid"><a href="#">Plasmid only</a></li>
+          <li id="q3-genome-organelle" data-next="q4-genome-organelle"><a href="#">Organelle only</a></li>
+          <li id="q3-genome-virus" data-next="q4-genome-virus"><a href="#">Virus/Phage/Viroid</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-genome-eukaryote-section" class="q-section" data-step="4">
+      <div id="q4-genome-eukaryote" class="question"><p>Q4. What type of genomic sequences do you have (or will you have)?</p>
+        <ul class="answer">
+          <li id="q4-genome-eukaryote-complete" data-next="q5-genome-eukaryote-complete"><a href="#">Complete genomes</a></li>
+          <li id="q4-genome-eukaryote-draft" data-next="q5-genome-eukaryote-draft"><a href="#">Draft genome sequences (contigs)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q5-genome-eukaryote-complete-section" class="q-section" data-step="5">
+      <div id="q5-genome-eukaryote-complete" class="question"><p>Q5. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q5-genome-eukaryote-complete-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q5-genome-eukaryote-complete-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only</a></li>
+          <li id="q5-genome-eukaryote-complete-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q5-genome-eukaryote-draft-section" class="q-section" data-step="5">
+      <div id="q5-genome-eukaryote-draft" class="question"><p>Q5. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q5-genome-eukaryote-draft-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q5-genome-eukaryote-draft-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only</a></li>
+          <li id="q5-genome-eukaryote-draft-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-genome-prokaryote-section" class="q-section" data-step="4">
+      <div id="q4-genome-prokaryote" class="question"><p>Q4. What type of genomic sequences do you have (or will you have)?</p>
+        <ul class="answer">
+          <li id="q4-genome-prokaryote-complete" data-next="q5-genome-prokaryote-complete"><a href="#">Complete genomes</a></li>
+          <li id="q4-genome-prokaryote-draft" data-next="q5-genome-prokaryote-draft"><a href="#">Draft genome sequences (contigs)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q5-genome-prokaryote-complete-section" class="q-section" data-step="5">
+      <div id="q5-genome-prokaryote-complete" class="question"><p>Q5. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q5-genome-prokaryote-complete-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q5-genome-prokaryote-complete-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only</a></li>
+          <li id="q5-genome-prokaryote-complete-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q5-genome-prokaryote-draft-section" class="q-section" data-step="5">
+      <div id="q5-genome-prokaryote-draft" class="question"><p>Q5. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q5-genome-prokaryote-draft-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q5-genome-prokaryote-draft-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only</a></li>
+          <li id="q5-genome-prokaryote-draft-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-genome-plasmid-section" class="q-section" data-step="4">
+      <div id="q4-genome-plasmid" class="question"><p>Q4. How many/large is your sequence submission?</p>
+        <ul class="answer">
+          <li id="q4-genome-plasmid-nsss" data-next="g-nsss"><a href="#">Less than 500 sequences and shorter than 500kb</a></li>
+          <li id="q4-genome-plasmid-mss" data-next="g-mss"><a href="#">More than 500 sequences and/or longer than 500kb</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-genome-organelle-section" class="q-section" data-step="4">
+      <div id="q4-genome-organelle" class="question"><p>Q4. How many/large is your sequence submission?</p>
+        <ul class="answer">
+          <li id="q4-genome-organelle-nsss" data-next="g-nsss"><a href="#">Less than 500 sequences and shorter than 500kb</a></li>
+          <li id="q4-genome-organelle-mss" data-next="g-mss"><a href="#">More than 500 sequences and/or longer than 500kb</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-genome-virus-section" class="q-section" data-step="4">
+      <div id="q4-genome-virus" class="question"><p>Q4. How many/large is your sequence submission?</p>
+        <ul class="answer">
+          <li id="nsss" data-next="g-nsss"><a href="#">Less than 500 sequences and shorter than 500kb</a></li>
+          <li id="mss" data-next="g-mss"><a href="#">More than 500 sequences and/or longer than 500kb</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-metagenome-section" class="q-section" data-step="3">
+      <div id="q3-metagenome" class="question"><p>Q3. What type of metagenomic sequence do you have?</p>
+        <ul class="answer">
+          <li id="q3-metagenome-mag" data-next="q4-metagenome-mag"><a href="#">Highest-quality, representative metagenome-assembled genome (MAG)</a></li>
+          <li id="q3-metagenome-binned" data-next="q4-metagenome-binned"><a href="#">Binned metagenome</a></li>
+          <li id="q3-metagenome-tls" data-next="q4-metagenome-tls"><a href="#">Large-scale targeted sequences for a single gene locus (e.g. rRNA)</a></li>
+          <li id="q3-metagenome-other" data-next="q4-metagenome-other"><a href="#">Other metagenomic sequences</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-metagenome-mag-section" class="q-section" data-step="4">
+      <div id="q4-metagenome-mag" class="question"><p>Q4. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q4-metagenome-mag-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and metagenome-assembled genome (MAG)</a></li>
+          <li id="q4-metagenome-mag-mss" data-next="g-bp-bs-mss"><a href="#">MAG only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-metagenome-binned-section" class="q-section" data-step="4">
+      <div id="q4-metagenome-binned" class="question"><p>Q4. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q4-metagenome-binned-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS and binned metagenome</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-metagenome-tls-section" class="q-section" data-step="4">
+      <div id="q4-metagenome-tls" class="question"><p>Q4. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q4-metagenome-tls-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and targeted sequences</a></li>
+          <li id="q4-metagenome-tls-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-metagenome-other-section" class="q-section" data-step="4">
+      <div id="q4-metagenome-other" class="question"><p>Q4. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q4-metagenome-other-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and metagenomes</a></li>
+          <li id="q4-metagenome-other-mss" data-next="g-bp-bs-mss"><a href="#">Metagenoms only</a></li>
+          <li id="q4-metagenome-other-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-transcriptome-section" class="q-section" data-step="3">
+      <div id="q3-transcriptome" class="question"><p>Q3. What type of transcriptome sequence do you have?</p>
+        <ul class="answer">
+          <li id="q3-transcriptome-tsa" data-next="g-bp-bs-dra-mss"><a href="#">Large-scale transcriptome assemblies</a></li>
+          <li id="q3-transcriptome-expression" data-next="g-bp-bs-dra-gea"><a href="#">Gene expression data (NGS, RNA-seq)</a></li>
+          <li id="q3-transcriptome-est" data-next="g-bp-bs-mss"><a href="#">Single-pass sequence reads from cDNA clones</a></li>
+          <li id="q3-transcriptome-other" data-next="q4-transcriptome-other"><a href="#">Other RNA sequences (e.g. cDNA sequences of genes)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q4-transcriptome-other-section" class="q-section" data-step="4">
+      <div id="q4-transcriptome-other" class="question"><p>Q4. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q4-transcriptome-other-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q4-transcriptome-other-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only (more than 500 sequences and/or longer than 500kb)</a></li>
+          <li id="q4-transcriptome-other-nsss" data-next="g-nsss"><a href="#">Assembled sequences only (less than 500 sequences and/or shorter than 500kb)</a></li>
+          <li id="q4-transcriptome-other-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-other-section" class="q-section" data-step="3">
+      <div id="q3-other" class="question"><p>Q3. What type of data do you submit?</p>
+        <ul class="answer">
+          <li id="q3-other-dra" data-next="g-bp-bs-dra"><a href="#">Raw reads from NGS only</a></li>
+          <li id="q3-other-dramss" data-next="g-bp-bs-dra-mss"><a href="#">Raw reads from NGS and assembled sequences</a></li>
+          <li id="q3-other-mss" data-next="g-bp-bs-mss"><a href="#">Assembled sequences only (more than 500 sequences and/or longer than 500kb)</a></li>
+          <li id="q3-other-nsss" data-next="g-nsss"><a href="#">Assembled/Targeted sequences only (less than 500 sequences and shorter than 500kb)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-variation-section" class="q-section" data-step="3">
+      <div id="q3-variation" class="question"><p>Q3. What type of genetic variation do you have?</p>
+        <ul class="answer">
+          <li id="q3-variation-humsnp" data-next="g-jvarsnp"><a href="#">Human short variations (=&lt;50bp)</a></li>
+          <li id="q3-variation-humsv" data-next="g-jvarsv"><a href="#">Human structural variations (&gt;50bp)</a></li>
+          <li id="q3-variation-nonhumsnp" data-next="g-eva"><a href="#">Non-human short variations</a></li>
+          <li id="q3-variation-nonhumsv" data-next="g-dgva"><a href="#">Non-human structural variations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="q3-tpa-section" class="q-section" data-step="3">
+      <div id="q3-tpa" class="question"><p>Q3. How are the annotation or assembly obtained?</p>
+        <ul class="answer">
+          <li id="q3-tpa-experimental" data-next="g-nsss"><a href="#">Annotation of sequence data is supported by peer-reviewed wet-lab experimental evidence</a></li>
+          <li id="q3-tpa-inferential" data-next="g-nsss"><a href="#">Annotation of sequence data by inference (where the source molecule or its product(s) have not been the subject of direct experimentation)</a></li>
+          <li id="q3-tpa-wgs-assembly" data-next="g-bp-bs-mss"><a href="#">Assembly or reassembly of draft genome sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)</a></li>
+          <li id="q3-tpa-tsa-assembly" data-next="g-bp-bs-mss"><a href="#">Assembly or reassembly of transcriptome assembled sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)</a></li>
+          <li id="q3-tpa-tls-assembly" data-next="g-bp-bs-mss"><a href="#">Assembly or reassembly of targeted sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="sub-nav-goal">
+
+    <div id="g-bp-bs-dra" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dra" class="readme"></div>
+        <div data-from="q4-metagenome-binned-dra" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dra" class="readme"></div>
+        <div data-from="q4-metagenome-other-dra" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dra" class="readme"></div>
+        <div data-from="q3-other-dra" class="readme"></div>
+      </div>
+      <div class="tab">BioProject</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dra" class="readme"></div>
+        <div data-from="q4-metagenome-binned-dra" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dra" class="readme"></div>
+        <div data-from="q4-metagenome-other-dra" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dra" class="readme"></div>
+        <div data-from="q3-other-dra" class="readme"></div>
+      </div>
+      <div class="tab">BioSample</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dra" class="readme"></div>
+        <div data-from="q4-metagenome-binned-dra" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dra" class="readme"></div>
+        <div data-from="q4-metagenome-other-dra" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dra" class="readme"></div>
+        <div data-from="q3-other-dra" class="readme"></div>
+      </div>
+      <div class="tab">DRA</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dra" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dra" class="readme"></div>
+        <div data-from="q4-metagenome-binned-dra" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dra" class="readme"></div>
+        <div data-from="q4-metagenome-other-dra" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dra" class="readme"></div>
+        <div data-from="q3-other-dra" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-bp-bs-dra-gea" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q2-fgngs" class="readme"></div>
+        <div data-from="q3-transcriptome-expression" class="readme"></div>
+      </div>
+      <div class="tab">BioProject</div>
+      <div class="content">
+        <div data-from="q2-fgngs" class="readme"></div>
+        <div data-from="q3-transcriptome-expression" class="readme"></div>
+      </div>
+      <div class="tab">BioSample</div>
+      <div class="content">
+        <div data-from="q2-fgngs" class="readme"></div>
+        <div data-from="q3-transcriptome-expression" class="readme"></div>
+      </div>
+      <div class="tab">DRA</div>
+      <div class="content">
+        <div data-from="q2-fgngs" class="readme"></div>
+        <div data-from="q3-transcriptome-expression" class="readme"></div>
+      </div>
+      <div class="tab">GEA</div>
+      <div class="content">
+        <div data-from="q2-fgngs" class="readme"></div>
+        <div data-from="q3-transcriptome-expression" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-bp-bs-dra-mss" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-other-dramss" class="readme"></div>
+        <div data-from="q3-transcriptome-tsa" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dramss" class="readme"></div>
+        <div data-from="q3-other-dramss" class="readme"></div>
+      </div>
+      <div class="tab">BioProject</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-other-dramss" class="readme"></div>
+        <div data-from="q3-transcriptome-tsa" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dramss" class="readme"></div>
+        <div data-from="q3-other-dramss" class="readme"></div>
+      </div>
+      <div class="tab">BioSample</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-other-dramss" class="readme"></div>
+        <div data-from="q3-transcriptome-tsa" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dramss" class="readme"></div>
+        <div data-from="q3-other-dramss" class="readme"></div>
+      </div>
+      <div class="tab">DRA</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-other-dramss" class="readme"></div>
+        <div data-from="q3-transcriptome-tsa" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dramss" class="readme"></div>
+        <div data-from="q3-other-dramss" class="readme"></div>
+      </div>
+      <div class="tab">MSS</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-dramss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-tls-dramss" class="readme"></div>
+        <div data-from="q4-metagenome-other-dramss" class="readme"></div>
+        <div data-from="q3-transcriptome-tsa" class="readme"></div>
+        <div data-from="q4-transcriptome-other-dramss" class="readme"></div>
+        <div data-from="q3-other-dramss" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-bp-bs-gea" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q2-fgarray" class="readme"></div>
+      </div>
+      <div class="tab">BioProject</div>
+      <div class="content">
+        <div data-from="q2-fgarray" class="readme"></div>
+      </div>
+      <div class="tab">BioSample</div>
+      <div class="content">
+        <div data-from="q2-fgarray" class="readme"></div>
+      </div>
+      <div class="tab">MSS</div>
+      <div class="content">
+        <div data-from="q2-fgarray" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-bp-bs-mss" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-mss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-mss" class="readme"></div>
+        <div data-from="q4-metagenome-other-mss" class="readme"></div>
+        <div data-from="q3-transcriptome-est" class="readme"></div>
+        <div data-from="q4-transcriptome-other-mss" class="readme"></div>
+        <div data-from="q3-other-mss" class="readme"></div>
+        <div data-from="q3-tpa-wgs-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tsa-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tls-assembly" class="readme"></div>
+      </div>
+      <div class="tab">BioProject</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-mss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-mss" class="readme"></div>
+        <div data-from="q4-metagenome-other-mss" class="readme"></div>
+        <div data-from="q3-transcriptome-est" class="readme"></div>
+        <div data-from="q4-transcriptome-other-mss" class="readme"></div>
+        <div data-from="q3-other-mss" class="readme"></div>
+        <div data-from="q3-tpa-wgs-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tsa-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tls-assembly" class="readme"></div>
+      </div>
+      <div class="tab">BioSample</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-mss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-mss" class="readme"></div>
+        <div data-from="q4-metagenome-other-mss" class="readme"></div>
+        <div data-from="q3-transcriptome-est" class="readme"></div>
+        <div data-from="q4-transcriptome-other-mss" class="readme"></div>
+        <div data-from="q3-other-mss" class="readme"></div>
+        <div data-from="q3-tpa-wgs-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tsa-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tls-assembly" class="readme"></div>
+      </div>
+      <div class="tab">MSS</div>
+      <div class="content">
+        <div data-from="q5-genome-eukaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-eukaryote-draft-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-complete-mss" class="readme"></div>
+        <div data-from="q5-genome-prokaryote-draft-mss" class="readme"></div>
+        <div data-from="q4-metagenome-mag-mss" class="readme"></div>
+        <div data-from="q4-metagenome-other-mss" class="readme"></div>
+        <div data-from="q3-transcriptome-est" class="readme"></div>
+        <div data-from="q4-transcriptome-other-mss" class="readme"></div>
+        <div data-from="q3-other-mss" class="readme"></div>
+        <div data-from="q3-tpa-wgs-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tsa-assembly" class="readme"></div>
+        <div data-from="q3-tpa-tls-assembly" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-dgva" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q3-variation-nonhumsv" class="readme"></div>
+      </div>
+      <div class="tab">DGVa</div>
+      <div class="content">
+        <div data-from="q3-variation-nonhumsv" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-eva" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q3-variation-nonhumsnp" class="readme"></div>
+      </div>
+      <div class="tab">EVA</div>
+      <div class="content">
+        <div data-from="q3-variation-nonhumsnp" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-jga" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q1-yes" class="readme"></div>
+      </div>
+      <div class="tab">NBDC</div>
+      <div class="content">
+        <div data-from="q1-yes" class="readme"></div>
+      </div>
+      <div class="tab">JGA</div>
+      <div class="content">
+        <div data-from="q1-yes" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-jpost" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q2-proteomics" class="readme"></div>
+      </div>
+      <div class="tab">jPOST</div>
+      <div class="content">
+        <div data-from="q2-proteomics" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-jvarsnp" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q3-variation-humsnp" class="readme"></div>
+      </div>
+      <div class="tab">JVar-SNP</div>
+      <div class="content">
+        <div data-from="q3-variation-humsnp" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-jvarsv" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q3-variation-humsv" class="readme"></div>
+      </div>
+      <div class="tab">JVar-SV</div>
+      <div class="content">
+        <div data-from="q3-variation-humsv" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-mb" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q2-metabolomics" class="readme"></div>
+      </div>
+      <div class="tab">MetaboBank</div>
+      <div class="content">
+        <div data-from="q2-metabolomics" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-mss" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q4-genome-plasmid-mss" class="readme"></div>
+        <div data-from="q4-genome-organelle-mss" class="readme"></div>
+        <div data-from="mss" class="readme"></div>
+      </div>
+      <div class="tab">MSS</div>
+      <div class="content">
+        <div data-from="q4-genome-plasmid-mss" class="readme"></div>
+        <div data-from="q4-genome-organelle-mss" class="readme"></div>
+        <div data-from="mss" class="readme"></div>
+      </div>
+    </div>
+
+    <div id="g-nsss" class="goal">
+      <div class="tab">Overview</div>
+      <div class="content">
+        <div data-from="q4-genome-plasmid-nsss" class="readme"></div>
+        <div data-from="q4-genome-organelle-nsss" class="readme"></div>
+        <div data-from="nsss" class="readme"></div>
+        <div data-from="q4-transcriptome-other-nsss" class="readme"></div>
+        <div data-from="q3-other-nsss" class="readme"></div>
+        <div data-from="q3-tpa-experimental" class="readme"></div>
+        <div data-from="q3-tpa-inferential" class="readme"></div>
+      </div>
+      <div class="tab">NSSS</div>
+      <div class="content">
+        <div data-from="q4-genome-plasmid-nsss" class="readme"></div>
+        <div data-from="q4-genome-organelle-nsss" class="readme"></div>
+        <div data-from="nsss" class="readme"></div>
+        <div data-from="q4-transcriptome-other-nsss" class="readme"></div>
+        <div data-from="q3-other-nsss" class="readme"></div>
+        <div data-from="q3-tpa-experimental" class="readme"></div>
+        <div data-from="q3-tpa-inferential" class="readme"></div>
+      </div>
+    </div>
+
+  </div> <!-- #sub-nav-goal -->
+
+</div> <!-- #sub-navigation -->

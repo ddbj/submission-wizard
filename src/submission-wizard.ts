@@ -3,7 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { configureLocalization, msg, localized } from '@lit/localize';
 
 import * as localeJa from './generated/locales/ja';
-import { questions, results, Question, Choice, Result, LocalizedString } from './data';
+import { questions, goals, Question, Choice, LocalizedString } from './data';
 import style from './style';
 import { sourceLocale, targetLocales } from './generated/locales';
 
@@ -59,7 +59,7 @@ export class SubmissionWizard extends LitElement {
     return html`
       <div class="stack border">
         ${this.renderSteps()}
-        ${this.renderResult()}
+        ${this.renderGoal()}
       </div>
     `;
   }
@@ -99,17 +99,22 @@ export class SubmissionWizard extends LitElement {
     });
   }
 
-  renderResult() {
+  renderGoal() {
     const next = this.lastStep?.choice?.next;
 
-    if (!next || next.type !== 'result') { return ''; }
+    if (!next || next.type !== 'goal') { return ''; }
 
-    const {repository} = results[next.id];
+    const {destinations} = goals[next.id];
 
     return html`
       <div class="box border-top">
-        <p>✅ ${msg('You can submit your data to the following database:')}</p>
-        <a href=${repository.url}>${repository.name}</a> - ${repository.description}
+        <ul>
+          ${destinations.map(({name}) => {
+            return html`
+              <li>${this.localize(name)}</li>
+            `;
+          })}
+        </ul>
       </div>
     `;
   }
@@ -127,7 +132,7 @@ export class SubmissionWizard extends LitElement {
           this.steps.push({question});
           break;
         }
-        case 'result':
+        case 'goal':
           // do nothing
           break;
         default: {
@@ -153,6 +158,6 @@ export class SubmissionWizard extends LitElement {
   }
 
   localize(source: LocalizedString): string {
-    return source[this.locale];
+    return source[this.locale] || source.en;
   }
 }

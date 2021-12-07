@@ -1,0 +1,499 @@
+---
+q5-genome-eukaryote-complete-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q5-genome-eukaryote-draft-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q5-genome-prokaryote-complete-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q5-genome-prokaryote-draft-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q4-metagenome-binned-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q4-metagenome-tls-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q4-metagenome-other-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q4-transcriptome-other-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q3-other-dra->g-bp-bs-dra:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+q2-fgngs->g-bp-bs-dra-gea:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: GEA
+      ja:
+q3-transcriptome-expression->g-bp-bs-dra-gea:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: GEA
+      ja:
+q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-metagenome-other-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-transcriptome-tsa->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-other-dramss->g-bp-bs-dra-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: DRA
+      ja:
+  - name:
+      en: MSS
+      ja:
+q2-fgarray->g-bp-bs-gea:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-metagenome-mag-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-metagenome-other-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-transcriptome-est->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q4-transcriptome-other-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-other-mss->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-tpa-wgs-assembly->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-tpa-tsa-assembly->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-tpa-tls-assembly->g-bp-bs-mss:
+  destinations:
+  - name:
+      en: BioProject
+      ja:
+  - name:
+      en: BioSample
+      ja:
+  - name:
+      en: MSS
+      ja:
+q3-variation-nonhumsv->g-dgva:
+  destinations:
+  - name:
+      en: DGVa
+      ja:
+q3-variation-nonhumsnp->g-eva:
+  destinations:
+  - name:
+      en: EVA
+      ja:
+q1-yes->g-jga:
+  destinations:
+  - name:
+      en: NBDC
+      ja:
+  - name:
+      en: JGA
+      ja:
+q2-proteomics->g-jpost:
+  destinations:
+  - name:
+      en: jPOST
+      ja:
+q3-variation-humsnp->g-jvarsnp:
+  destinations:
+  - name:
+      en: JVar-SNP
+      ja:
+q3-variation-humsv->g-jvarsv:
+  destinations:
+  - name:
+      en: JVar-SV
+      ja:
+q2-metabolomics->g-mb:
+  destinations:
+  - name:
+      en: MetaboBank
+      ja:
+q4-genome-plasmid-mss->g-mss:
+  destinations:
+  - name:
+      en: MSS
+      ja:
+q4-genome-organelle-mss->g-mss:
+  destinations:
+  - name:
+      en: MSS
+      ja:
+mss->g-mss:
+  destinations:
+  - name:
+      en: MSS
+      ja:
+q4-genome-plasmid-nsss->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+q4-genome-organelle-nsss->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+nsss->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+q4-transcriptome-other-nsss->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+q3-other-nsss->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+q3-tpa-experimental->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:
+q3-tpa-inferential->g-nsss:
+  destinations:
+  - name:
+      en: NSSS
+      ja:

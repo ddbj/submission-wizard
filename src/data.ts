@@ -1,5 +1,5 @@
 export type QuestionId = string;
-export type ResultId = string;
+export type GoalId = string;
 
 export type Question = {
   type: 'question';
@@ -14,30 +14,28 @@ export type Choice = {
     type: 'question';
     id: QuestionId;
   } | {
-    type: 'result';
-    id: ResultId;
+    type: 'goal';
+    id: GoalId;
   };
 };
 
-export type Result = {
-  type: 'result';
+export type Goal = {
+  type: 'goal';
 
-  repository: {
-    url: string;
-    name: string;
-    description: string;
-  };
+  destinations: {
+    name: LocalizedString;
+  }[];
 };
 
 export type LocalizedString = {
   en: string,
-  ja: string
+  ja?: string
 };
 
 import _questions from '../data/questions.yml';
 
 export const questions: {[id: QuestionId]: Question} = _questions;
 
-import _results from '../data/results.yml';
+import _goals from '../data/goals.yml';
 
-export const results: {[id: ResultId]: Result} = _results;
+export const goals: {[id: GoalId]: Goal} = _goals;

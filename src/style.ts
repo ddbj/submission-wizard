@@ -14,6 +14,10 @@ export default css`
     padding: 0;
   }
 
+  ul {
+    padding-left: inherit;
+  }
+
   a {
     color: var(--link-color);
   }
@@ -51,7 +55,7 @@ export default css`
 
   .choice-button {
     display: inline-block;
-    padding: 0.5em 1.25em;
+    padding: 0.375em 0.75em;
     border-radius: 0.25rem;
     background-color: hsl(27deg, 100%, 50%);
     color: white !important;
