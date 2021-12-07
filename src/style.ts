@@ -31,7 +31,7 @@ export default css`
   }
 
   .box {
-    padding: 0.75rem 1rem;
+    padding: 1rem;
   }
 
   .cluster {
@@ -49,8 +49,13 @@ export default css`
     border-top: solid thin var(--text-color);
   }
 
-  .bg-light {
+  .translucent {
+    opacity: 0.5;
+  }
+
+  .question-text {
     background-color: hsl(53deg, 100%, 93%);
+    padding: 0.75rem 1rem;
   }
 
   .choice-button {

@@ -51,22 +51,26 @@ export class SubmissionWizard extends LitElement {
     {question: questions.q1}
   ];
 
+  @state()
+  peekingChoice?: Choice;
+
   get lastStep() {
     return this.steps[this.steps.length - 1];
   }
 
   get goal() {
-    const next = this.lastStep?.choice?.next;
+    const lastChoice = this.lastStep?.choice;
 
-    if (!next || next.type !== 'goal') { return undefined; }
+    if (lastChoice?.next.type !== 'goal') { return undefined; }
 
-    return goals[next.id];
+    return nextNode(lastChoice) as Goal;
   }
 
   render() {
     return html`
       <div class="stack border">
         ${this.stepsTemplate(this.steps)}
+        ${this.choicePreviewTemplate(this.peekingChoice)}
         ${this.goalTemplate(this.goal)}
       </div>
     `;
@@ -82,7 +86,7 @@ export class SubmissionWizard extends LitElement {
     if (choice) {
       return html`
         <div>
-          <p class="box bg-light">${this.localize(question.text)}</p>
+          <p class="question-text">${this.localize(question.text)}</p>
 
           <p class="box">
             ${this.localize(choice.label)}
@@ -93,13 +97,17 @@ export class SubmissionWizard extends LitElement {
     } else {
       return html`
         <div>
-          <p class="box bg-light">${this.localize(question.text)}</p>
+          <p class="question-text">${this.localize(question.text)}</p>
 
           <ul class="box cluster">
             ${question.choices.map((choice: Choice) => {
               return html`
                 <li>
-                  <a @click=${this.choose(step, choice)} href="#" class="choice-button">${this.localize(choice.label)}</a>
+                  <a href="#" class="choice-button"
+                    @click=${this.choose(step, choice)}
+                    @mouseenter=${() => { setTimeout(() => this.peekingChoice = choice, 400); }}
+                    @mouseleave=${() => { this.peekingChoice = undefined; }}
+                  >${this.localize(choice.label)}</a>
                 </li>
               `;
             })}
@@ -127,6 +135,28 @@ export class SubmissionWizard extends LitElement {
     `;
   }
 
+  choicePreviewTemplate(choice?: Choice) {
+    if (!choice) { return ''; }
+
+    const {next} = choice;
+
+    switch (next.type) {
+      case 'question': {
+        const question = nextNode(choice) as Question;
+
+        return html`<div class="translucent">${this.stepTemplate({question})}</div>`;
+      }
+      case 'goal': {
+        const goal = nextNode(choice) as Goal;
+
+        return html`<div class="translucent">${this.goalTemplate(goal)}</div>`;
+      }
+      default: {
+        const _: never = next; // eslint-disable-line @typescript-eslint/no-unused-vars
+      }
+    }
+  }
+
   choose(step: Step, choice: Choice) {
     return (e: Event) => {
       e.preventDefault();
@@ -135,7 +165,7 @@ export class SubmissionWizard extends LitElement {
 
       switch (choice.next.type) {
         case 'question': {
-          const question = questions[choice.next.id];
+          const question = nextNode(choice) as Question;
 
           this.steps.push({question});
           break;
@@ -148,6 +178,7 @@ export class SubmissionWizard extends LitElement {
         }
       }
 
+      this.peekingChoice = undefined;
       this.requestUpdate();
     }
   }
@@ -167,5 +198,30 @@ export class SubmissionWizard extends LitElement {
 
   localize(source: LocalizedString): string {
     return source[this.locale] || source.en;
+  }
+}
+
+function nextNode(choice: Choice): Question | Goal {
+  const {next} = choice;
+
+  switch (next.type) {
+    case 'question': {
+      const question = questions[next.id];
+
+      if (!question) { throw new Error(`undefined question: ${next.id}`); }
+
+      return question;
+    }
+    case 'goal':
+      const goal = goals[next.id];
+
+      if (!goal) { throw new Error(`undefined goal: ${next.id}`); }
+
+      return goal;
+    default: {
+      const _: never = next; // eslint-disable-line @typescript-eslint/no-unused-vars
+
+      return _;
+    }
   }
 }
