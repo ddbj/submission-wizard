@@ -65,8 +65,6 @@ export class SubmissionWizard extends LitElement {
   }
 
   renderSteps() {
-    console.log(this.steps.length);
-
     return this.steps.map((step) => {
       const {question, choice} = step;
 
