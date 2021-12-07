@@ -10,8 +10,6 @@ _shared:
       ja: いいえ
 
 q1:
-  type: question
-
   text:
     en: What type of data do you have?
     ja: 登録するデータの種別は何ですか？
@@ -20,44 +18,50 @@ q1:
     - label:
         en: DNA/RNA sequence
         ja: DNA/RNA 配列
-      next: q2
+      next:
+        type: question
+        id: q2
 
     - label:
         en: Expression data
         ja: 発現データ
-      next: q7
+      next:
+        type: question
+        id: q7
 
 q2:
-  type: question
-
   text:
     en: Are your data from human research subjects and do the data require controlled access?
     ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
 
   choices:
     - <<: *yes
-      next: ega
+      next:
+        type: result
+        id: ega
 
     - <<: *no
-      next: q3
+      next:
+        type: question
+        id: q3
 
 q3:
-  type: question
-
   text:
     en: Have the data that you will submit been produced experimentally (as opposed to coming through some annotation or curation process on existing data)?
     ja: そのデータは実験に基づいて作られたものですか？（既存のデータにアノテーションやキュレーションを施したのではなく）
 
   choices:
     - <<: *yes
-      next: q4
+      next:
+        type: question
+        id: q4
 
     - <<: *no
-      next: q5
+      next:
+        type: question
+        id: q5
 
 q4:
-  type: question
-
   text:
     en: To which type of study do your data most closely relate?
     ja: そのデータに最も関連する調査手法はどれですか？
@@ -66,58 +70,66 @@ q4:
     - label:
         en: Analysis of an environmental community (e.g. sea water, human gut)
         ja: 特定環境の生物集合の解析（例：海水、ヒトの腸）
-      next: metagenomics
+      next:
+        type: result
+        id: metagenomics
 
     - label:
         en: Quantitive analysis (e.g. expression study)
         ja: 定量的な分析（例：発現量の調査）
-      next: array-express
+      next:
+        type: result
+        id: array-express
 
 q5:
-  type: question
-
   text:
     en: Is your data specifically about variation?
     ja: そのデータは変異に特化したものですか？
 
   choices:
     - <<: *yes
-      next: q6
+      next:
+        type: question
+        id: q6
 
     - <<: *no
-      next: ena
+      next:
+        type: result
+        id: ena
 
 q6:
-  type: question
-
   text:
     en: Is your data structural variation only?
     ja: そのデータは構造的な変異のみを含みますか？
 
   choices:
     - <<: *yes
-      next: dgva
+      next:
+        type: result
+        id: dgva
 
     - <<: *no
-      next: eva
+      next:
+        type: result
+        id: eva
 
 q7:
-  type: question
-
   text:
     en: Are your data from human research subjects and do the data require controlled access?
     ja: そのデータはヒトを対象とした研究から得られたもので、管理されたアクセスを必要としますか？
 
   choices:
     - <<: *yes
-      next: ega
+      next:
+        type: result
+        id: ega
 
     - <<: *no
-      next: q8
+      next:
+        type: question
+        id: q8
 
 q8:
-  type: question
-
   text:
     en: To which type of study do your data most closely relate?
     ja: そのデータに最も関連する調査手法はどれですか？
@@ -126,65 +138,13 @@ q8:
     - label:
         en: Microarray or RNA-seq gene expression
         ja: マイクロアレイまたは RNA-seq による発現解析
-      next: array-express
+      next:
+        type: result
+        id: array-express
 
     - label:
         en: Proteomics methods
         ja: プロテオーム解析
-      next: pride
-
-array-express:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/arrayexpress/submit/overview.html
-    name: Array Express
-    description: functional genomics data
-
-dgva:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/dgva/data-submission
-    name: Database of Genomic Variants archive
-    description: structural genetic variation data
-
-ega:
-  type: result
-
-  repository:
-    url: https://ega-archive.org/submission
-    name: European Genome-Phenome Archive
-    description: human data that requires controlled access
-
-ena:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/ena/browser/submit
-    name: European Nucleotide Archive
-    description: nucleotide sequence data
-
-eva:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/submission/#:~:text=European%20Variation%20Archive
-    name: European Variation Archive
-    description: genetic variation data
-
-metagenomics:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/metagenomics/submission
-    name: Metagenomics
-    description: raw sequence data & associated meta-data
-
-pride:
-  type: result
-
-  repository:
-    url: https://www.ebi.ac.uk/pride/markdownpage/submitdatapage
-    name: Proteomics Identifications database
-    description: protein & peptide identification data
+      next:
+        type: result
+        id: pride

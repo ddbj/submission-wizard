@@ -1,6 +1,5 @@
-import data from '../data.yml';
-
-export type Node = Question | Result;
+export type QuestionId = string;
+export type ResultId = string;
 
 export type Question = {
   type: 'question';
@@ -10,7 +9,14 @@ export type Question = {
 
 export type Choice = {
   label: LocalizedString;
-  next: string;
+
+  next: {
+    type: 'question';
+    id: QuestionId;
+  } | {
+    type: 'result';
+    id: ResultId;
+  };
 };
 
 export type Result = {
@@ -28,4 +34,10 @@ export type LocalizedString = {
   ja: string
 };
 
-export default data as {[id: string]: Node};
+import _questions from '../questions.yml';
+
+export const questions: {[id: QuestionId]: Question} = _questions;
+
+import _results from '../results.yml';
+
+export const results: {[id: ResultId]: Result} = _results;
