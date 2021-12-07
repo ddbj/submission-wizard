@@ -58,13 +58,13 @@ export class SubmissionWizard extends LitElement {
   render() {
     return html`
       <div class="stack border">
-        ${this.renderSteps()}
-        ${this.renderGoal()}
+        ${this.stepsTemplate()}
+        ${this.goalTemplate()}
       </div>
     `;
   }
 
-  renderSteps() {
+  stepsTemplate() {
     return this.steps.map((step) => {
       const {question, choice} = step;
 
@@ -99,7 +99,7 @@ export class SubmissionWizard extends LitElement {
     });
   }
 
-  renderGoal() {
+  goalTemplate() {
     const next = this.lastStep?.choice?.next;
 
     if (!next || next.type !== 'goal') { return ''; }
