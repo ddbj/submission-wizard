@@ -34,10 +34,10 @@ export type LocalizedString = {
   ja: string
 };
 
-import _questions from '../questions.yml';
+import _questions from '../data/questions.yml';
 
 export const questions: {[id: QuestionId]: Question} = _questions;
 
-import _results from '../results.yml';
+import _results from '../data/results.yml';
 
 export const results: {[id: ResultId]: Result} = _results;
