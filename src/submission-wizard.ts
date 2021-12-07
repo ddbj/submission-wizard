@@ -3,7 +3,7 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { configureLocalization, msg, localized } from '@lit/localize';
 
 import * as localeJa from './generated/locales/ja';
-import { questions, goals, Question, Choice, LocalizedString } from './data';
+import { questions, goals, Question, Choice, Goal, LocalizedString } from './data';
 import style from './style';
 import { sourceLocale, targetLocales } from './generated/locales';
 
@@ -55,56 +55,64 @@ export class SubmissionWizard extends LitElement {
     return this.steps[this.steps.length - 1];
   }
 
+  get goal() {
+    const next = this.lastStep?.choice?.next;
+
+    if (!next || next.type !== 'goal') { return undefined; }
+
+    return goals[next.id];
+  }
+
   render() {
     return html`
       <div class="stack border">
-        ${this.stepsTemplate()}
-        ${this.goalTemplate()}
+        ${this.stepsTemplate(this.steps)}
+        ${this.goalTemplate(this.goal)}
       </div>
     `;
   }
 
-  stepsTemplate() {
-    return this.steps.map((step) => {
-      const {question, choice} = step;
-
-      if (choice) {
-        return html`
-          <div>
-            <p class="box bg-light">${this.localize(question.text)}</p>
-
-            <p class="box">
-              ${this.localize(choice.label)}
-              <small><a @click=${this.backTo(step)} href="#">${msg('Change')}</a></small>
-            </p>
-          </div>
-        `;
-      } else {
-        return html`
-          <div>
-            <p class="box bg-light">${this.localize(question.text)}</p>
-
-            <ul class="box cluster">
-              ${question.choices.map((choice: Choice) => {
-                return html`
-                  <li>
-                    <a @click=${this.choose(step, choice)} href="#" class="choice-button">${this.localize(choice.label)}</a>
-                  </li>
-                `;
-              })}
-            </ul>
-          </div>
-        `;
-      }
-    });
+  stepsTemplate(steps: Step[]) {
+    return steps.map(this.stepTemplate.bind(this));
   }
 
-  goalTemplate() {
-    const next = this.lastStep?.choice?.next;
+  stepTemplate(step: Step) {
+    const {question, choice} = step;
 
-    if (!next || next.type !== 'goal') { return ''; }
+    if (choice) {
+      return html`
+        <div>
+          <p class="box bg-light">${this.localize(question.text)}</p>
 
-    const {destinations} = goals[next.id];
+          <p class="box">
+            ${this.localize(choice.label)}
+            <small><a @click=${this.backTo(step)} href="#">${msg('Change')}</a></small>
+          </p>
+        </div>
+      `;
+    } else {
+      return html`
+        <div>
+          <p class="box bg-light">${this.localize(question.text)}</p>
+
+          <ul class="box cluster">
+            ${question.choices.map((choice: Choice) => {
+              return html`
+                <li>
+                  <a @click=${this.choose(step, choice)} href="#" class="choice-button">${this.localize(choice.label)}</a>
+                </li>
+              `;
+            })}
+          </ul>
+        </div>
+      `;
+    }
+  }
+
+  goalTemplate(goal?: Goal) {
+    if (!goal) { return ''; }
+
+    const {destinations} = goal;
 
     return html`
       <div class="box border-top">
