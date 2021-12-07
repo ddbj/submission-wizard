@@ -54,6 +54,9 @@ export class SubmissionWizard extends LitElement {
   @state()
   peekingChoice?: Choice;
 
+  @state()
+  previewTimeout?: ReturnType<typeof setTimeout>;
+
   get lastStep() {
     return this.steps[this.steps.length - 1];
   }
@@ -68,7 +71,7 @@ export class SubmissionWizard extends LitElement {
 
   render() {
     return html`
-      <div class="stack border">
+      <div class="stack">
         ${this.stepsTemplate(this.steps)}
         ${this.choicePreviewTemplate(this.peekingChoice)}
         ${this.goalTemplate(this.goal)}
@@ -85,7 +88,7 @@ export class SubmissionWizard extends LitElement {
 
     if (choice) {
       return html`
-        <div>
+        <div class="border">
           <p class="question-text">${this.localize(question.text)}</p>
 
           <p class="box">
@@ -96,7 +99,7 @@ export class SubmissionWizard extends LitElement {
       `;
     } else {
       return html`
-        <div>
+        <div class="border">
           <p class="question-text">${this.localize(question.text)}</p>
 
           <ul class="box cluster">
@@ -105,8 +108,16 @@ export class SubmissionWizard extends LitElement {
                 <li>
                   <a href="#" class="choice-button"
                     @click=${this.choose(step, choice)}
-                    @mouseenter=${() => { setTimeout(() => this.peekingChoice = choice, 400); }}
-                    @mouseleave=${() => { this.peekingChoice = undefined; }}
+                    @mouseenter=${() => {
+                      this.previewTimeout = setTimeout(() => this.peekingChoice = choice, 200);
+                    }}
+                    @mouseleave=${() => {
+                      this.peekingChoice = undefined;
+
+                      if (this.previewTimeout) {
+                        clearTimeout(this.previewTimeout);
+                      }
+                    }}
                   >${this.localize(choice.label)}</a>
                 </li>
               `;
@@ -123,7 +134,7 @@ export class SubmissionWizard extends LitElement {
     const {destinations} = goal;
 
     return html`
-      <div class="box border-top">
+      <div class="box border">
         <ul>
           ${destinations.map(({name}) => {
             return html`
@@ -144,12 +155,12 @@ export class SubmissionWizard extends LitElement {
       case 'question': {
         const question = nextNode(choice) as Question;
 
-        return html`<div class="translucent">${this.stepTemplate({question})}</div>`;
+        return html`<div class="preview">${this.stepTemplate({question})}</div>`;
       }
       case 'goal': {
         const goal = nextNode(choice) as Goal;
 
-        return html`<div class="translucent">${this.goalTemplate(goal)}</div>`;
+        return html`<div class="preview">${this.goalTemplate(goal)}</div>`;
       }
       default: {
         const _: never = next; // eslint-disable-line @typescript-eslint/no-unused-vars
@@ -179,6 +190,11 @@ export class SubmissionWizard extends LitElement {
       }
 
       this.peekingChoice = undefined;
+
+      if (this.previewTimeout) {
+        clearTimeout(this.previewTimeout);
+      }
+
       this.requestUpdate();
     }
   }
