@@ -22,29 +22,53 @@ q2:
     ja:
   choices:
   - label:
-      en: Whole-genome scale genome sequence TPA
+      en: Whole-genome scale genome sequence (not TPA)
       ja:
     next:
       type: question
       id: q3-genome
   - label:
-      en: Metagenomic sequence TPA
+      en: Whole-genome scale genome sequence (TPA)
+      ja:
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: Metagenomic sequence (not TPA)
       ja:
     next:
       type: question
       id: q3-metagenome
   - label:
-      en: Transcriptome sequence TPA
+      en: Metagenomic sequence (TPA)
+      ja:
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: Transcriptome sequence (not TPA)
       ja:
     next:
       type: question
       id: q3-transcriptome
   - label:
-      en: Other DNA/RNA sequences TPA
+      en: Transcriptome sequence (TPA)
+      ja:
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: Other DNA/RNA sequences (not TPA)
       ja:
     next:
       type: question
       id: q3-other
+  - label:
+      en: Other DNA/RNA sequences (TPA)
+      ja:
+    next:
+      type: question
+      id: q3-tpa
   - label:
       en: Functional genomics data (gene expression, gene regulation or epigenetics) by NGS
       ja:

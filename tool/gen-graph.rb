@@ -2,16 +2,15 @@
 
 require 'bundler/setup'
 
-require 'active_support/core_ext/string/filters'
-require 'active_support/core_ext/string/inflections'
+require 'active_support/all'
 require 'gviz'
-require 'nokogiri'
+require 'yaml'
 
 LABEL_LENGTH = 80
 SPLIT_GOALS  = ENV.fetch('SPLIT_GOALS', 'true') == 'true'
 
 def id(str)
-  str.to_s.underscore.camelize.to_sym
+  str.to_s.gsub('->', '-').underscore.camelize.to_sym
 end
 
 def edge_id(src, dest)
@@ -19,41 +18,23 @@ def edge_id(src, dest)
 end
 
 Graph do
-  doc = File.open('example.html') {|f| Nokogiri::HTML.parse(f) }
+  File.open('../data/goals.yml') {|f| YAML.load(f) }.each do |(_id, goal)|
+    goal = goal.deep_symbolize_keys
 
-  doc.css('.goal').each do |goal|
-    label = goal.css('.tab').map(&:text).reject {|s| s == 'Overview' }.join(', ')
+    label = goal[:destinations].map {|dest|
+      dest.dig(:name, :en)
+    }.join(', ')
 
-    if SPLIT_GOALS
-      goal.css('[data-from]').each do |readme|
-        id_from = readme['data-from']
-        id      = id([goal[:id], :from, id_from].join('-'))
-
-        node id, label: label.truncate(LABEL_LENGTH)
-      end
-    else
-      node id(goal[:id]), label: label.truncate(LABEL_LENGTH)
-    end
+    node id(_id), label: label.truncate(LABEL_LENGTH)
   end
 
-  doc.css('.question').each do |q|
-    id    = id(q[:id])
-    label = q.at_css(:p).text
+  File.open('../data/questions.yml') {|f| YAML.load(f) }.each do |(_id, q)|
+    q = q.deep_symbolize_keys
 
-    node id, label: label.truncate(LABEL_LENGTH), shape: 'rect'
-  end
+    node id(_id), label: q.dig(:text, :en).truncate(LABEL_LENGTH), shape: 'rect'
 
-  doc.css('[data-next]').each do |choice|
-    q = choice.ancestors('.question').first
-
-    choice['data-next'].split(',').each do |_next|
-      dest = if SPLIT_GOALS && _next.start_with?('g-')
-               [_next, :from, choice[:id]].join('-')
-             else
-               _next
-             end
-
-      edge edge_id(q[:id], dest), label: choice.text.truncate(LABEL_LENGTH)
+    q[:choices].each do |choice|
+      edge edge_id(_id, choice.dig(:next, :id)), label: choice.dig(:label, :en)
     end
   end
 

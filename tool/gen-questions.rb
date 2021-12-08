@@ -16,19 +16,32 @@ yaml = doc.css('.question').map {|q|
         ja: nil
       },
 
-      choices: q.css('[data-next]').map {|choice|
-        next_id = choice['data-next'].split(',').first # TODO
-        goal    = next_id.start_with?('g-')
+      choices: q.css('[data-next]').flat_map {|choice|
+        next_ids  = choice['data-next'].split(',')
+        maybe_tpa = next_ids.any? {|id| id.end_with?('-tpa') }
 
-        {
-          label: {
-            en: choice.text,
-            ja: nil
-          },
+        choice['data-next'].split(',').map {|next_id|
+          goal = next_id.start_with?('g-')
 
-          next: {
-            type: goal ? 'goal' : 'question',
-            id:   goal ? "#{choice[:id]}->#{next_id}" : next_id
+          label = if maybe_tpa
+                    label = choice.text.delete_suffix(' TPA')
+                    tpa   = next_id.end_with?('-tpa')
+
+                    tpa ? label + ' (TPA)' : label + ' (not TPA)'
+                  else
+                    choice.text
+                  end
+
+          {
+            label: {
+              en: label,
+              ja: nil
+            },
+
+            next: {
+              type: goal ? 'goal' : 'question',
+              id:   goal ? "#{choice[:id]}->#{next_id}" : next_id
+            }
           }
         }
       }
