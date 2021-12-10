@@ -23,7 +23,7 @@ export type Goal = {
   type: 'goal';
 
   sections: {
-    name: LocalizedString;
+    title: LocalizedString;
   }[];
 };
 

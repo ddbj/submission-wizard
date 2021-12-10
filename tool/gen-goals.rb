@@ -20,12 +20,12 @@ opts = {
 doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.goal').flat_map {|goal|
-  sections = goal.css('.tab').map(&:text).reject {|name|
-    name == 'Overview'
-  }.map {|name|
+  sections = goal.css('.tab').map(&:text).reject {|title|
+    title == 'Overview'
+  }.map {|title|
     {
-      name: {
-        en: name,
+      title: {
+        en: title,
         ja: nil
       }
     }

@@ -33,7 +33,7 @@ Graph do
     goal = goal.deep_symbolize_keys
 
     label = goal[:sections].map {|dest|
-      dest.dig(:name, :en)
+      dest.dig(:title, :en)
     }.join(', ')
 
     node id(_id), label: label.truncate(opts.fetch(:label_length))

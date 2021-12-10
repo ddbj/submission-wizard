@@ -117,9 +117,9 @@ export class SubmissionWizard extends LitElement {
     return html`
       <div class="box border rounded">
         <ul>
-          ${sections.map(({name}) => {
+          ${sections.map(({title}) => {
             return html`
-              <li>${this.localize(name)}</li>
+              <li>${this.localize(title)}</li>
             `;
           })}
         </ul>
