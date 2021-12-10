@@ -22,7 +22,7 @@ export type Choice = {
 export type Goal = {
   type: 'goal';
 
-  destinations: {
+  sections: {
     name: LocalizedString;
   }[];
 };

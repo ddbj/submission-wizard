@@ -112,12 +112,12 @@ export class SubmissionWizard extends LitElement {
   goalTemplate(goal?: Goal) {
     if (!goal) { return ''; }
 
-    const {destinations} = goal;
+    const {sections} = goal;
 
     return html`
       <div class="box border-top">
         <ul>
-          ${destinations.map(({name}) => {
+          ${sections.map(({name}) => {
             return html`
               <li>${this.localize(name)}</li>
             `;

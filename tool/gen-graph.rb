@@ -32,7 +32,7 @@ Graph do
   File.open(goals_yml) {|f| YAML.load(f) }.each do |(_id, goal)|
     goal = goal.deep_symbolize_keys
 
-    label = goal[:destinations].map {|dest|
+    label = goal[:sections].map {|dest|
       dest.dig(:name, :en)
     }.join(', ')
 

@@ -20,7 +20,7 @@ opts = {
 doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.goal').flat_map {|goal|
-  dests = goal.css('.tab').map(&:text).reject {|name|
+  sections = goal.css('.tab').map(&:text).reject {|name|
     name == 'Overview'
   }.map {|name|
     {
@@ -37,14 +37,14 @@ yaml = doc.css('.goal').flat_map {|goal|
 
       [
         id,
-        destinations: dests
+        sections: sections
       ]
     }
   else
     [
       [
         goal[:id],
-        destinations: dests
+        sections: sections
       ]
     ]
   end
