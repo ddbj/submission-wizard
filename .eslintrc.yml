@@ -19,9 +19,9 @@ plugins:
   - '@typescript-eslint'
 
 ignorePatterns:
+  - app/generated/
   - dist/
   - rollup.config.js
-  - src/generated/
   - test/__snapshots__/
 
 rules: {}
