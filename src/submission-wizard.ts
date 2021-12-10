@@ -65,7 +65,7 @@ export class SubmissionWizard extends LitElement {
 
   render() {
     return html`
-      <div class="stack border">
+      <div class="stack-large">
         ${this.stepsTemplate(this.steps)}
         ${this.goalTemplate(this.goal)}
       </div>
@@ -81,10 +81,10 @@ export class SubmissionWizard extends LitElement {
 
     if (choice) {
       return html`
-        <div>
-          <p class="box bg-light">${this.localize(question.text)}</p>
+        <div class="border rounded">
+          <p class="box question-text my-0">${this.localize(question.text)}</p>
 
-          <p class="box">
+          <p class="box my-0">
             ${this.localize(choice.label)}
             <small><a @click=${this.backTo(step)} href="#">${msg('Change')}</a></small>
           </p>
@@ -92,14 +92,14 @@ export class SubmissionWizard extends LitElement {
       `;
     } else {
       return html`
-        <div>
-          <p class="box bg-light">${this.localize(question.text)}</p>
+        <div class="border rounded">
+          <p class="box question-text my-0">${this.localize(question.text)}</p>
 
-          <ul class="box cluster">
+          <ul class="stack-small box list-unstyled">
             ${question.choices.map((choice: Choice) => {
               return html`
                 <li>
-                  <a @click=${this.choose(step, choice)} href="#" class="choice-button">${this.localize(choice.label)}</a>
+                  <a @click=${this.choose(step, choice)} href="#">${this.localize(choice.label)}</a>
                 </li>
               `;
             })}
@@ -115,7 +115,7 @@ export class SubmissionWizard extends LitElement {
     const {sections} = goal;
 
     return html`
-      <div class="box border-top">
+      <div class="box border rounded">
         <ul>
           ${sections.map(({name}) => {
             return html`
