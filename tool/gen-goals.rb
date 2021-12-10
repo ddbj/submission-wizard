@@ -4,9 +4,20 @@ require 'bundler/setup'
 
 require 'active_support/all'
 require 'nokogiri'
+require 'optparse'
 require 'yaml'
 
-doc = File.open('example.html') {|f| Nokogiri::HTML.parse(f) }
+opts = {
+  'split-goals': true
+}.tap {|opts|
+  OptionParser.new.tap {|opt|
+    opt.on '--[no-]split-goals', &:itself
+  }.parse! into: opts
+}.transform_keys {|k|
+  k.to_s.underscore.to_sym
+}
+
+doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.goal').flat_map {|goal|
   dests = goal.css('.tab').map(&:text).reject {|name|
@@ -20,14 +31,23 @@ yaml = doc.css('.goal').flat_map {|goal|
     }
   }
 
-  goal.css('[data-from]').map {|instruction|
-    id = "#{instruction['data-from']}->#{goal[:id]}"
+  if opts.fetch(:split_goals)
+    goal.css('[data-from]').map {|instruction|
+      id = "#{instruction['data-from']}->#{goal[:id]}"
 
+      [
+        id,
+        destinations: dests
+      ]
+    }
+  else
     [
-      id,
-      destinations: dests
+      [
+        goal[:id],
+        destinations: dests
+      ]
     ]
-  }
+  end
 }.to_h
 
 YAML.dump yaml.deep_stringify_keys, $stdout, line_width: -1

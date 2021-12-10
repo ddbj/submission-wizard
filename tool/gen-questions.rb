@@ -4,9 +4,20 @@ require 'bundler/setup'
 
 require 'active_support/all'
 require 'nokogiri'
+require 'optparse'
 require 'yaml'
 
-doc = File.open('example.html') {|f| Nokogiri::HTML.parse(f) }
+opts = {
+  'split-goals': true
+}.tap {|opts|
+  OptionParser.new.tap {|opt|
+    opt.on '--[no-]split-goals', &:itself
+  }.parse! into: opts
+}.transform_keys {|k|
+  k.to_s.underscore.to_sym
+}
+
+doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.question').map {|q|
   [
@@ -40,7 +51,7 @@ yaml = doc.css('.question').map {|q|
 
             next: {
               type: goal ? 'goal' : 'question',
-              id:   goal ? "#{choice[:id]}->#{next_id}" : next_id
+              id:   goal && opts.fetch(:split_goals) ? "#{choice[:id]}->#{next_id}" : next_id
             }
           }
         }

@@ -1,3 +1,5 @@
 /dist/
+/graph.dot
+/graph.png
 /node_modules/
 /src/generated/
