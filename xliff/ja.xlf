@@ -2,6 +2,14 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 <file target-language="ja" source-language="en" original="lit-localize-inputs" datatype="plaintext">
 <body>
+<trans-unit id="se17432ccc1b77506">
+  <source>Submission Instructions</source>
+  <target>データ登録の手引き</target>
+</trans-unit>
+<trans-unit id="s3d197283cb019b5a">
+  <source>Overview</source>
+  <target>概要</target>
+</trans-unit>
 <trans-unit id="s2f64461723d3df5d">
   <source>Change</source>
   <target>変更</target>

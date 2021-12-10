@@ -1,50 +1,21 @@
 import { LitElement, html } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
-import { configureLocalization, msg, localized } from '@lit/localize';
+import { customElement, state } from 'lit/decorators.js';
+import { localized, msg } from '@lit/localize';
 
-import * as localeJa from './generated/locales/ja';
-import { questions, goals, Question, Choice, Goal, LocalizedString } from './data';
+import './submission-wizard-goal';
 import style from './style';
-import { sourceLocale, targetLocales } from './generated/locales';
+import { LocalizationMixin } from './localization';
+import { Question, Choice, questions } from './data';
 
 type Step = {
   question: Question,
   choice?:  Choice
 };
 
-const {getLocale, setLocale} = configureLocalization({
-  sourceLocale,
-  targetLocales,
-
-  async loadLocale(locale) {
-    switch (locale) {
-      case 'ja':
-        return localeJa;
-      default:
-        throw new Error('must not happen');
-    }
-  }
-});
-
-type Locale = 'en' | 'ja';
-
 @localized()
 @customElement('submission-wizard')
-export class SubmissionWizard extends LitElement {
+export class SubmissionWizard extends LocalizationMixin(LitElement) {
   static styles = style;
-
-  set locale(newVal: Locale) {
-    const oldVal = getLocale();
-
-    setLocale(newVal).then(() => {
-      this.requestUpdate('locale', oldVal);
-    });
-  }
-
-  @property()
-  get locale() {
-    return getLocale() as Locale;
-  }
 
   @state()
   steps: Step[] = [
@@ -55,25 +26,17 @@ export class SubmissionWizard extends LitElement {
     return this.steps[this.steps.length - 1];
   }
 
-  get goal() {
-    const next = this.lastStep?.choice?.next;
-
-    if (!next || next.type !== 'goal') { return undefined; }
-
-    return goals[next.id];
-  }
-
   render() {
     return html`
       <div class="stack-large">
-        ${this.stepsTemplate(this.steps)}
-        ${this.goalTemplate(this.goal)}
+        ${this.stepsTemplate()}
+        ${this.goalTemplate()}
       </div>
     `;
   }
 
-  stepsTemplate(steps: Step[]) {
-    return steps.map(this.stepTemplate.bind(this));
+  stepsTemplate() {
+    return this.steps.map(this.stepTemplate.bind(this));
   }
 
   stepTemplate(step: Step) {
@@ -109,20 +72,14 @@ export class SubmissionWizard extends LitElement {
     }
   }
 
-  goalTemplate(goal?: Goal) {
-    if (!goal) { return ''; }
+  goalTemplate() {
+    const next = this.lastStep?.choice?.next;
 
-    const {sections} = goal;
+    if (!next || next.type !== 'goal') { return ''; }
 
     return html`
-      <div class="box border rounded">
-        <ul>
-          ${sections.map(({title}) => {
-            return html`
-              <li>${this.localize(title)}</li>
-            `;
-          })}
-        </ul>
+      <div>
+        <submission-wizard-goal locale=${this.locale} goal=${next.id}></submission-wizard-goal>
       </div>
     `;
   }
@@ -163,9 +120,5 @@ export class SubmissionWizard extends LitElement {
 
       this.requestUpdate();
     }
-  }
-
-  localize(source: LocalizedString): string {
-    return source[this.locale] || source.en;
   }
 }

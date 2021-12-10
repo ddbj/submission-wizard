@@ -1,9 +1,16 @@
+import _goals from '../data/goals.yml';
+import _questions from '../data/questions.yml';
+import { LocalizedString } from './localization';
+
+export const questions: {[id: QuestionId]: Question} = _questions;
+export const goals: {[id: GoalId]: Goal} = _goals;
+
 export type QuestionId = string;
 export type GoalId = string;
 
 export type Question = {
-  type: 'question';
-  text: LocalizedString;
+  type:    'question';
+  text:    LocalizedString;
   choices: Choice[];
 }
 
@@ -12,30 +19,20 @@ export type Choice = {
 
   next: {
     type: 'question';
-    id: QuestionId;
+    id:   QuestionId;
   } | {
     type: 'goal';
-    id: GoalId;
+    id:   GoalId;
   };
 };
 
 export type Goal = {
   type: 'goal';
 
+  overview: LocalizedString;
+
   sections: {
     title: LocalizedString;
+    body:  LocalizedString;
   }[];
 };
-
-export type LocalizedString = {
-  en: string,
-  ja?: string
-};
-
-import _questions from '../data/questions.yml';
-
-export const questions: {[id: QuestionId]: Question} = _questions;
-
-import _goals from '../data/goals.yml';
-
-export const goals: {[id: GoalId]: Goal} = _goals;
