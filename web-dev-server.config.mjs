@@ -17,6 +17,6 @@ export default {
   },
 
   nodeResolve: {
-    exportConditions: 'development'
+    exportConditions: ['development']
   }
 };
