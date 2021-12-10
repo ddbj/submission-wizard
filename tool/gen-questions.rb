@@ -46,7 +46,7 @@ yaml = doc.css('.question').map {|q|
           {
             label: {
               en: label,
-              ja: nil
+              ja: {'Yes' => 'はい', 'No' => 'いいえ'}[label]
             },
 
             next: {

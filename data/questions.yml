@@ -6,13 +6,13 @@ q1:
   choices:
   - label:
       en: 'Yes'
-      ja:
+      ja: はい
     next:
       type: goal
       id: q1-yes->g-jga
   - label:
       en: 'No'
-      ja:
+      ja: いいえ
     next:
       type: question
       id: q2
