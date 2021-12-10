@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
     concurrent-ruby (1.1.9)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     gviz (0.3.5)
       thor
     i18n (1.8.11)
@@ -27,6 +29,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  faker
   gviz
   nokogiri
   rake
