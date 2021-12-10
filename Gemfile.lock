@@ -16,6 +16,7 @@ GEM
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     racc (1.6.0)
+    rake (13.0.6)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -28,6 +29,7 @@ DEPENDENCIES
   activesupport
   gviz
   nokogiri
+  rake
 
 BUNDLED WITH
-   2.2.32
+   2.2.33
