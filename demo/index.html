@@ -26,26 +26,42 @@
       </div>
 
       <div class="p-3 bg-dark">
-        <pre class="m-0 text-white"><code>&lt;script type="module" src="<span id="src"></span>"&gt;&lt;/script&gt;
+        <pre class="m-0 text-white"><code>&lt;script type="module" src="<span id="src-url"></span>"&gt;&lt;/script&gt;
 
-&lt;submission-wizard locale="<span id="locale">en</span>"&gt;&lt;/submission-wizard&gt;</code></pre>
+&lt;submission-wizard locale="<span class="locale">en</span>"&gt;&lt;/submission-wizard&gt;</code></pre>
       </div>
 
       <div class="my-3">
         <submission-wizard locale="en"></submission-wizard>
       </div>
+
+      <div class="mt-5 p-3 bg-dark">
+        <pre class="m-0 text-white"><code>&lt;script type="module" src="<span id="src-url-goal"></span>"&gt;&lt;/script&gt;
+
+&lt;submission-wizard-goal locale="<span class="locale">en</span>"&gt;&lt;/submission-wizard-goal&gt;</code></pre>
+      </div>
+
+      <div class="my-3">
+        <submission-wizard-goal locale="en" goal="q5-genome-eukaryote-complete-dra->g-bp-bs-dra"></submission-wizard-goal>
+      </div>
     </div>
 
     <script>
-      document.getElementById('src').textContent = new URL('./submission-wizard.js', window.location.href);
+      document.getElementById('src-url').textContent      = new URL('./submission-wizard.js', window.location.href);
+      document.getElementById('src-url-goal').textContent = new URL('./submission-wizard-goal.js', window.location.href);
 
-      const el     = document.querySelector('submission-wizard');
-      const locale = document.getElementById('locale');
+      const els     = document.querySelectorAll('submission-wizard, submission-wizard-goal');
+      const locales = document.querySelectorAll('.locale');
 
       document.querySelectorAll('input[name="locale"]').forEach((radio) => {
         radio.addEventListener('change', ({target: {value}}) => {
-          el.setAttribute('locale', value);
-          locale.textContent = value;
+          els.forEach((el) => {
+            el.setAttribute('locale', value);
+          });
+
+          locales.forEach((locale) => {
+            locale.textContent = value;
+          });
         });
       });
     </script>

@@ -18,7 +18,7 @@ export default css`
     color: var(--link-hover-color);
   }
 
-  [class^='stack'] {
+  [class^='stack'] > * {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -33,6 +33,16 @@ export default css`
 
   .box {
     padding: 0.75rem 1rem;
+  }
+
+  .box-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .box-y {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .box > *:first-child {
@@ -51,17 +61,20 @@ export default css`
     gap: 1rem;
   }
 
+  .cluster.wide {
+    gap 1rem 2rem;
+  }
+
   .border {
     border: solid thin var(--text-color);
   }
 
-  .border.rounded {
-    border-radius: var(--border-radius);
+  .border-bottom {
+    border-bottom: solid thin var(--text-color);
   }
 
-  .my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  .border.rounded {
+    border-radius: var(--border-radius);
   }
 
   .border.rounded > *:first-child {
@@ -75,10 +88,20 @@ export default css`
   }
 
   .list-unstyled {
+    padding-left: 0;
     list-style: none;
   }
 
-  .question-text {
+  .bg-primary {
     background-color: hsl(53deg, 100%, 93%);
+  }
+
+  .my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
   }
 `;
