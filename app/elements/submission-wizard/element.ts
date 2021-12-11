@@ -39,16 +39,20 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   }
 
   stepsTemplate() {
-    return this.steps.map(this.stepTemplate.bind(this));
+    return this.steps.map((step, i) => this.stepTemplate(step, i + 1));
   }
 
-  stepTemplate(step: Step) {
+  stepTemplate(step: Step, seq: number) {
     const {question, choice} = step;
+
+    const questionTemplate = html`
+      <p class="box bg-primary my-0">Q${seq}. ${this.localize(question.text)}</p>
+    `;
 
     if (choice) {
       return html`
         <div class="border border-rounded">
-          <p class="box bg-primary my-0">${this.localize(question.text)}</p>
+          ${questionTemplate}
 
           <p class="box my-0">
             ${this.localize(choice.label)}
@@ -59,7 +63,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     } else {
       return html`
         <div class="border border-rounded fade">
-          <p class="box bg-primary my-0">${this.localize(question.text)}</p>
+          ${questionTemplate}
 
           <div class="box">
             <ul class="stack-small list-unstyled">

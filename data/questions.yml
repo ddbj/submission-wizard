@@ -1,7 +1,7 @@
 ---
 q1:
   text:
-    en: Q1. Are you submitting data from human research subjects and do the data require controlled access?
+    en: Are you submitting data from human research subjects and do the data require controlled access?
     ja:
   choices:
   - label:
@@ -18,7 +18,7 @@ q1:
       id: q2
 q2:
   text:
-    en: Q2. What type of data do you have?
+    en: What type of data do you have?
     ja:
   choices:
   - label:
@@ -101,7 +101,7 @@ q2:
       id: q3-variation
 q3-genome:
   text:
-    en: Q3. Where does the genome sequence come from?
+    en: Where does the genome sequence come from?
     ja:
   choices:
   - label:
@@ -136,7 +136,7 @@ q3-genome:
       id: q4-genome-virus
 q4-genome-eukaryote:
   text:
-    en: Q4. What type of genomic sequences do you have (or will you have)?
+    en: What type of genomic sequences do you have (or will you have)?
     ja:
   choices:
   - label:
@@ -153,7 +153,7 @@ q4-genome-eukaryote:
       id: q5-genome-eukaryote-draft
 q5-genome-eukaryote-complete:
   text:
-    en: Q5. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -176,7 +176,7 @@ q5-genome-eukaryote-complete:
       id: q5-genome-eukaryote-complete-dra->g-bp-bs-dra
 q5-genome-eukaryote-draft:
   text:
-    en: Q5. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -199,7 +199,7 @@ q5-genome-eukaryote-draft:
       id: q5-genome-eukaryote-draft-dra->g-bp-bs-dra
 q4-genome-prokaryote:
   text:
-    en: Q4. What type of genomic sequences do you have (or will you have)?
+    en: What type of genomic sequences do you have (or will you have)?
     ja:
   choices:
   - label:
@@ -216,7 +216,7 @@ q4-genome-prokaryote:
       id: q5-genome-prokaryote-draft
 q5-genome-prokaryote-complete:
   text:
-    en: Q5. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -239,7 +239,7 @@ q5-genome-prokaryote-complete:
       id: q5-genome-prokaryote-complete-dra->g-bp-bs-dra
 q5-genome-prokaryote-draft:
   text:
-    en: Q5. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -262,7 +262,7 @@ q5-genome-prokaryote-draft:
       id: q5-genome-prokaryote-draft-dra->g-bp-bs-dra
 q4-genome-plasmid:
   text:
-    en: Q4. How many/large is your sequence submission?
+    en: How many/large is your sequence submission?
     ja:
   choices:
   - label:
@@ -279,7 +279,7 @@ q4-genome-plasmid:
       id: q4-genome-plasmid-mss->g-mss
 q4-genome-organelle:
   text:
-    en: Q4. How many/large is your sequence submission?
+    en: How many/large is your sequence submission?
     ja:
   choices:
   - label:
@@ -296,7 +296,7 @@ q4-genome-organelle:
       id: q4-genome-organelle-mss->g-mss
 q4-genome-virus:
   text:
-    en: Q4. How many/large is your sequence submission?
+    en: How many/large is your sequence submission?
     ja:
   choices:
   - label:
@@ -313,7 +313,7 @@ q4-genome-virus:
       id: mss->g-mss
 q3-metagenome:
   text:
-    en: Q3. What type of metagenomic sequence do you have?
+    en: What type of metagenomic sequence do you have?
     ja:
   choices:
   - label:
@@ -342,7 +342,7 @@ q3-metagenome:
       id: q4-metagenome-other
 q4-metagenome-mag:
   text:
-    en: Q4. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -359,7 +359,7 @@ q4-metagenome-mag:
       id: q4-metagenome-mag-mss->g-bp-bs-mss
 q4-metagenome-binned:
   text:
-    en: Q4. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -370,7 +370,7 @@ q4-metagenome-binned:
       id: q4-metagenome-binned-dra->g-bp-bs-dra
 q4-metagenome-tls:
   text:
-    en: Q4. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -387,7 +387,7 @@ q4-metagenome-tls:
       id: q4-metagenome-tls-dra->g-bp-bs-dra
 q4-metagenome-other:
   text:
-    en: Q4. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -410,7 +410,7 @@ q4-metagenome-other:
       id: q4-metagenome-other-dra->g-bp-bs-dra
 q3-transcriptome:
   text:
-    en: Q3. What type of transcriptome sequence do you have?
+    en: What type of transcriptome sequence do you have?
     ja:
   choices:
   - label:
@@ -439,7 +439,7 @@ q3-transcriptome:
       id: q4-transcriptome-other
 q4-transcriptome-other:
   text:
-    en: Q4. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -468,7 +468,7 @@ q4-transcriptome-other:
       id: q4-transcriptome-other-dra->g-bp-bs-dra
 q3-other:
   text:
-    en: Q3. What type of data do you submit?
+    en: What type of data do you submit?
     ja:
   choices:
   - label:
@@ -497,7 +497,7 @@ q3-other:
       id: q3-other-nsss->g-nsss
 q3-variation:
   text:
-    en: Q3. What type of genetic variation do you have?
+    en: What type of genetic variation do you have?
     ja:
   choices:
   - label:
@@ -526,7 +526,7 @@ q3-variation:
       id: q3-variation-nonhumsv->g-dgva
 q3-tpa:
   text:
-    en: Q3. How are the annotation or assembly obtained?
+    en: How are the annotation or assembly obtained?
     ja:
   choices:
   - label:
