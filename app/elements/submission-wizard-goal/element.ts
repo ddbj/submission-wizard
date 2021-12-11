@@ -3,9 +3,9 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
-import resetScroll from '../directives/reset-scroll';
-import { Goal, Section, goals } from '../data';
-import { LocalizationMixin } from '../localization';
+import resetScroll from '../../directives/reset-scroll';
+import { Goal, Section, goals } from '../../data';
+import { LocalizationMixin } from '../../localization';
 
 import baseStyle from '../base.css';
 import style from './style.css';

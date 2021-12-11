@@ -1,1 +1,1 @@
-import './submission-wizard/element';
+import './elements/submission-wizard/element';
