@@ -21,11 +21,11 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
     if (!goal) { return ''; }
 
     return html`
-      <div class="border rounded scroll-container">
+      <div class="border border-rounded scroll-container">
         <h1 class="box bg-primary my-0">${msg('Submission Instructions')}</h1>
 
         <nav class="box border-bottom">
-          <ul class="cluster wide list-unstyled">
+          <ul class="cluster list-unstyled">
             <li>
               <a @click=${this.scrollToSection('overview')} href="#">${msg('Overview')}</a>
             </li>

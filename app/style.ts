@@ -2,12 +2,10 @@ import { css } from 'lit';
 
 export default css`
   :host {
-    --text-color: #1c1b19;
+    --border-color: #1c1b19;
+    --border-radius: 0.25rem;
     --link-color: #0d6efd;
     --link-hover-color: #0a58ca;
-    --border-radius: 0.25rem;
-
-    color: var(--text-color);
   }
 
   a {
@@ -61,28 +59,24 @@ export default css`
     gap: 1rem;
   }
 
-  .cluster.wide {
-    gap: 1rem 2rem;
-  }
-
   .border {
-    border: solid thin var(--text-color);
+    border: solid thin var(--border-color);
   }
 
   .border-bottom {
-    border-bottom: solid thin var(--text-color);
+    border-bottom: solid thin var(--border-color);
   }
 
-  .border.rounded {
+  .border-rounded {
     border-radius: var(--border-radius);
   }
 
-  .border.rounded > *:first-child {
+  .border-rounded > *:first-child {
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
   }
 
-  .border.rounded > *:last-child {
+  .border-rounded > *:last-child {
     border-bottom-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
   }

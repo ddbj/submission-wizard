@@ -45,7 +45,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
 
     if (choice) {
       return html`
-        <div class="border rounded">
+        <div class="border border-rounded">
           <p class="box bg-primary my-0">${this.localize(question.text)}</p>
 
           <p class="box my-0">
@@ -56,7 +56,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
       `;
     } else {
       return html`
-        <div class="border rounded">
+        <div class="border border-rounded">
           <p class="box bg-primary my-0">${this.localize(question.text)}</p>
 
           <div class="box">
