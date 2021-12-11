@@ -4,9 +4,10 @@ import litcss from 'rollup-plugin-lit-css';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
 import resolve from '@rollup/plugin-node-resolve';
 import summary from 'rollup-plugin-summary';
-import yaml from '@rollup/plugin-yaml';
 import { copy } from '@web/rollup-plugin-copy';
 import { defineConfig } from 'rollup';
+
+import yaml from './rollup/yaml.mjs';
 
 export default defineConfig({
   output: {

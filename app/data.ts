@@ -28,12 +28,10 @@ export type Choice = {
 };
 
 export type Goal = {
-  type: 'goal';
-
-  overview: LocalizedString;
-
-  sections: {
-    title: LocalizedString;
-    body:  LocalizedString;
-  }[];
+  sections: Section[];
 };
+
+export type Section = {
+  title: LocalizedString;
+  body:  LocalizedString;
+}

@@ -12,17 +12,17 @@ export type LocalizedString = {
 
 export const LocalizationMixin = <T extends Constructor<LitElement>>(Base: T) => {
    class Mixin extends Base {
+    @property()
+    get locale() {
+      return getLocale() as Locale;
+    }
+
     set locale(newVal: Locale) {
       const oldVal = getLocale();
 
       setLocale(newVal).then(() => {
         this.requestUpdate('locale', oldVal);
       });
-    }
-
-    @property()
-    get locale() {
-      return getLocale() as Locale;
     }
 
     localize(source: LocalizedString): string {

@@ -9,7 +9,7 @@ require 'optparse'
 require 'yaml'
 
 def dummy_body
-  Faker::Markdown.sandwich(repeat: 3)
+  Faker::Markdown.sandwich(repeat: 8)
 end
 
 Faker::Config.random = Random.new(42)
@@ -27,18 +27,11 @@ opts = {
 doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.goal').flat_map {|goal|
-  overview = {
-    en: dummy_body,
-    ja: nil
-  }
-
-  sections = goal.css('.tab').map(&:text).reject {|title|
-    title == 'Overview'
-  }.map {|title|
+  sections = goal.css('.tab').map(&:text).map {|title|
     {
       title: {
         en: title,
-        ja: nil
+        ja: title == 'Overview' ? '概要' : nil
       },
 
       body: {
@@ -54,7 +47,6 @@ yaml = doc.css('.goal').flat_map {|goal|
 
       [
         id,
-        overview: overview,
         sections: sections
       ]
     }
@@ -62,7 +54,6 @@ yaml = doc.css('.goal').flat_map {|goal|
     [
       [
         goal[:id],
-        overview: overview,
         sections: sections
       ]
     ]
