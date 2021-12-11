@@ -22,7 +22,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
     if (!goal) { return ''; }
 
     return html`
-      <div class="border border-rounded scroll-container">
+      <div class="border border-rounded scroll-container fade">
         <h1 class="box bg-primary my-0">${msg('Submission Instructions')}</h1>
 
         <nav class="box border-bottom">
