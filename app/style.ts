@@ -62,7 +62,7 @@ export default css`
   }
 
   .cluster.wide {
-    gap 1rem 2rem;
+    gap: 1rem 2rem;
   }
 
   .border {
