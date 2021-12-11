@@ -2,15 +2,16 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
-import commonStyle from '../style';
-import style from './style';
 import { Goal, goals } from '../data';
 import { LocalizationMixin } from '../localization';
+
+import baseStyle from '../base.css';
+import style from './style.css';
 
 @localized()
 @customElement('submission-wizard-goal')
 export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
-  static styles = [commonStyle, style];
+  static styles = [baseStyle, style];
 
   @property({converter: findGoal})
   goal?: Goal;

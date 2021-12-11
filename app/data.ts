@@ -1,6 +1,7 @@
+import { LocalizedString } from './localization';
+
 import _goals from '../data/goals.yml';
 import _questions from '../data/questions.yml';
-import { LocalizedString } from './localization';
 
 export const questions: {[id: QuestionId]: Question} = _questions;
 export const goals: {[id: GoalId]: Goal} = _goals;

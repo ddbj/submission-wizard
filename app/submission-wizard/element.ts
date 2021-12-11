@@ -2,11 +2,13 @@ import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
-import '../submission-wizard-goal';
-import commonStyle from '../style';
-import style from './style';
 import { LocalizationMixin } from '../localization';
 import { Question, Choice, questions } from '../data';
+
+import baseStyle from '../base.css';
+import style from './style.css';
+
+import '../submission-wizard-goal';
 
 type Step = {
   question: Question,
@@ -16,7 +18,7 @@ type Step = {
 @localized()
 @customElement('submission-wizard')
 export class SubmissionWizard extends LocalizationMixin(LitElement) {
-  static styles = [commonStyle, style];
+  static styles = [baseStyle, style];
 
   @state()
   steps: Step[] = [
