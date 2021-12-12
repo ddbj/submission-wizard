@@ -2,28 +2,8 @@
   --max-height: calc(100vh - 2rem);
 }
 
-.tabs {
-  border-bottom: solid 1px var(--border-color);
-  padding: 0.5rem 0.75rem 0;
-}
-
-.tabs.cluster {
-  gap: 1rem 0;
-}
-
-.tabs > a {
-  padding: 0.35rem 1rem;
-  position: relative;
-  top: 1px;
-  text-decoration: none;
-}
-
-.tabs > a.active {
-  border: solid 1px var(--border-color);
-  border-bottom: solid 1px white;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-  color: inherit;
+h1 {
+  font-size: 1.25rem;
 }
 
 .scroll-container {
@@ -36,11 +16,29 @@
   height: 100%;
   box-sizing: border-box;
   overflow-y: auto;
-  scroll-padding-top: 1rem;
-  scroll-behavior: smooth;
   flex: 1;
 }
 
-h1 {
-  font-size: 1.75rem;
+.tabs {
+  border-bottom: solid 1px #eee;
+  font-size: 1.25rem;
+}
+
+.tabs.cluster {
+  gap: 0;
+}
+
+.tabs > a {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+
+.tabs > a:hover:not(.active) {
+  background-color: #eee;
+}
+
+.tabs > a.active {
+  border-bottom: solid 3px #ff7370;
+  color: inherit;
+  font-weight: bold;
 }

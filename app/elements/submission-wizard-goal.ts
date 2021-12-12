@@ -39,7 +39,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
 
     return html`
       <div class="border border-rounded scroll-container fade">
-        <h1 class="box bg-primary my-0">${msg('Submission Instructions')}</h1>
+        <h1 class="box bg-primary my-0">📋 ${msg('Submission Instructions')}</h1>
 
         <nav class="tabs cluster">
           ${goal.sections.map((section) => {
