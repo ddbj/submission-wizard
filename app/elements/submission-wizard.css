@@ -1,0 +1,12 @@
+a.choice {
+  display: block;
+  text-decoration: none;
+}
+
+a.choice:hover {
+  background-color: #eee;
+}
+
+.divide > * + * {
+  border-top: solid thin #eee;
+}

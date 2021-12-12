@@ -20,7 +20,7 @@ h1 {
 }
 
 .tabs {
-  border-bottom: solid 1px #eee;
+  border-bottom: solid thin #eee;
   font-size: 1.25rem;
 }
 

@@ -46,7 +46,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     const {question, choice} = step;
 
     const questionTemplate = html`
-      <p class="box bg-primary my-0">Q${seq}. ${this.localize(question.text)}</p>
+      <p class="box bg-primary my-0"><b>Q${seq}.</b> ${this.localize(question.text)}</p>
     `;
 
     if (choice) {
@@ -65,17 +65,15 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
         <div class="border border-rounded fade">
           ${questionTemplate}
 
-          <div class="box">
-            <ul class="stack-small list-unstyled">
-              ${question.choices.map((choice: Choice) => {
-                return html`
-                  <li>
-                    <a @click=${this.choose(step, choice)} href="#">${this.localize(choice.label)}</a>
-                  </li>
-                `;
-              })}
-            </ul>
-          </div>
+          <ul class="divide list-unstyled my-0">
+            ${question.choices.map((choice: Choice) => {
+              return html`
+                <li>
+                  <a @click=${this.choose(step, choice)} href="#" class="box choice">${this.localize(choice.label)}</a>
+                </li>
+              `;
+            })}
+          </ul>
         </div>
       `;
     }
