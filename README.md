@@ -16,23 +16,13 @@ $ yarn install
 ## Starting the development server
 
 ```
-$ yarn start
-or
 $ yarn start --open
 ```
 
-## Running tests
+## Running tests and linting code
 
 ```
-$ yarn test
-or
-$ yarn test --watch
-```
-
-## Linting
-
-```
-$ yarn lint
+$ yarn check-all
 ```
 
 ## Building for production
