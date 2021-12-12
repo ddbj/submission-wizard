@@ -8,8 +8,22 @@ require 'nokogiri'
 require 'optparse'
 require 'yaml'
 
-def dummy_body
-  Faker::Markdown.sandwich(repeat: 8)
+def generate_sections(goal, &block)
+  goal.css('.tab').map(&:text).map {|title|
+    body = Faker::Markdown.sandwich(repeat: 6)
+
+    {
+      title: {
+        en: title,
+        ja: title == 'Overview' ? '概要' : nil
+      },
+
+      body: {
+        en: block ? block.call(body) : body,
+        ja: nil
+      }
+    }
+  }
 end
 
 Faker::Config.random = Random.new(42)
@@ -27,34 +41,27 @@ opts = {
 doc = Nokogiri::HTML.parse(ARGF)
 
 yaml = doc.css('.goal').flat_map {|goal|
-  sections = goal.css('.tab').map(&:text).map {|title|
-    {
-      title: {
-        en: title,
-        ja: title == 'Overview' ? '概要' : nil
-      },
-
-      body: {
-        en: dummy_body,
-        ja: nil
-      }
-    }
-  }
-
   if opts.fetch(:split_goals)
-    goal.css('[data-from]').map {|instruction|
-      id = "#{instruction['data-from']}->#{goal[:id]}"
+    goal.css('[data-from]').map {|readme|
+      id = "#{readme['data-from']}->#{goal[:id]}"
 
       [
         id,
-        sections: sections
+
+        sections: generate_sections(goal) {|body|
+          <<~MD
+            # data-from="#{readme['data-from']}"
+
+            #{body}
+          MD
+        }
       ]
     }
   else
     [
       [
         goal[:id],
-        sections: sections
+        sections: generate_sections(goal)
       ]
     ]
   end
