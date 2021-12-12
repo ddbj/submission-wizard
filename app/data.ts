@@ -12,10 +12,10 @@ export type GoalId = string;
 export type Question = {
   type:    'question';
   text:    LocalizedString;
-  choices: Choice[];
+  options: Option[];
 }
 
-export type Choice = {
+export type Option = {
   label: LocalizedString;
 
   next: {

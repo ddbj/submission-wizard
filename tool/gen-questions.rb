@@ -19,8 +19,8 @@ def transform_question(question, split_goals:)
           ja: nil
         },
 
-        choices: options.map {|choice|
-          transform_choice(choice, split_goals)
+        options: options.map {|option|
+          transform_option(option, split_goals)
         }
       }
     ],
@@ -29,8 +29,8 @@ def transform_question(question, split_goals:)
   ]
 end
 
-def transform_choice(choice, split_goals)
-  next_ids = choice['data-next'].split(',')
+def transform_option(option, split_goals)
+  next_ids = option['data-next'].split(',')
   tpa_ids, non_tpa_ids = next_ids.partition {|id| id.end_with?('-tpa') }
 
   raise "The number of non-TPA IDs must be exactly one, but: #{non_tpa_ids}" unless non_tpa_ids.size == 1
@@ -39,7 +39,7 @@ def transform_choice(choice, split_goals)
   tpa_id     = tpa_ids.first
   non_tpa_id = non_tpa_ids.first
 
-  label = choice.text.sub(/\AQ\d+\. /, '').then {|label|
+  label = option.text.sub(/\AQ\d+\. /, '').then {|label|
     tpa_id ? label.delete_suffix(' TPA') : label
   }
 
@@ -54,14 +54,14 @@ def transform_choice(choice, split_goals)
 
     next: {
       type: goal ? 'goal' : 'question',
-      id:   goal && split_goals ? "#{choice[:id]}->#{next_id}" : next_id
+      id:   goal && split_goals ? "#{option[:id]}->#{next_id}" : next_id
     }
   }
 end
 
-def generate_tpa_nodes(choices, split_goals)
-  choices.filter_map {|choice|
-    next_ids = choice['data-next'].split(',')
+def generate_tpa_nodes(options, split_goals)
+  options.filter_map {|option|
+    next_ids = option['data-next'].split(',')
     tpa_ids, non_tpa_ids = next_ids.partition {|id| id.end_with?('-tpa') }
 
     raise "The number of non-TPA IDs must be exactly one, but: #{non_tpa_ids}" unless non_tpa_ids.size == 1
@@ -78,7 +78,7 @@ def generate_tpa_nodes(choices, split_goals)
           ja: nil
         },
 
-        choices: [
+        options: [
           {
             label: {
               en: 'Yes',
@@ -99,7 +99,7 @@ def generate_tpa_nodes(choices, split_goals)
 
             next: {
               type: goal ? 'goal' : 'question',
-              id:   goal && split_goals ? "#{choice[:id]}->#{non_tpa_id}" : non_tpa_id
+              id:   goal && split_goals ? "#{option[:id]}->#{non_tpa_id}" : non_tpa_id
             }
           }
         ]

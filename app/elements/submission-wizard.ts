@@ -3,7 +3,7 @@ import { customElement, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
 import { LocalizationMixin } from '../localization';
-import { Question, Choice, questions } from '../data';
+import { Question, Option, questions } from '../data';
 
 import baseStyle from './base.css';
 import style from './submission-wizard.css';
@@ -12,7 +12,7 @@ import './submission-wizard-goal';
 
 type Step = {
   question: Question,
-  choice?:  Choice
+  answer?:  Option
 };
 
 @localized()
@@ -43,19 +43,19 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   }
 
   stepTemplate(step: Step, seq: number) {
-    const {question, choice} = step;
+    const {question, answer} = step;
 
     const questionEl = html`
       <p class="box bg-primary my-0"><b>Q${seq}.</b> ${this.localize(question.text)}</p>
     `;
 
-    if (choice) {
+    if (answer) {
       return html`
         <div class="border border-rounded">
           ${questionEl}
 
           <p class="box my-0">
-            ${this.localize(choice.label)}
+            ${this.localize(answer.label)}
             <small><a @click=${this.backTo(step)} href="#">${msg('Change')}</a></small>
           </p>
         </div>
@@ -66,10 +66,10 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
           ${questionEl}
 
           <ul class="divide list-unstyled my-0">
-            ${question.choices.map((choice: Choice) => {
+            ${question.options.map((option: Option) => {
               return html`
                 <li>
-                  <a @click=${this.choose(step, choice)} href="#" class="box choice">${this.localize(choice.label)}</a>
+                  <a @click=${this.choose(step, option)} href="#" class="box option">${this.localize(option.label)}</a>
                 </li>
               `;
             })}
@@ -80,7 +80,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   }
 
   goalTemplate() {
-    const next = this.lastStep?.choice?.next;
+    const next = this.lastStep?.answer?.next;
 
     if (!next || next.type !== 'goal') { return ''; }
 
@@ -91,15 +91,15 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     `;
   }
 
-  choose(step: Step, choice: Choice) {
+  choose(step: Step, option: Option) {
     return (e: Event) => {
       e.preventDefault();
 
-      step.choice = choice;
+      step.answer = option;
 
-      switch (choice.next.type) {
+      switch (option.next.type) {
         case 'question': {
-          const question = questions[choice.next.id];
+          const question = questions[option.next.id];
 
           this.steps.push({question});
           break;
@@ -108,7 +108,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
           // do nothing
           break;
         default: {
-          const _: never = choice.next; // eslint-disable-line @typescript-eslint/no-unused-vars
+          const _: never = option.next; // eslint-disable-line @typescript-eslint/no-unused-vars
         }
       }
 

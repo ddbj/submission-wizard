@@ -44,8 +44,8 @@ Graph do
 
     node id(_id), label: q.dig(:text, :en).truncate(opts.fetch(:label_length)), shape: 'rect'
 
-    q[:choices].each do |choice|
-      edge edge_id(_id, choice.dig(:next, :id)), label: choice.dig(:label, :en).truncate(opts.fetch(:label_length))
+    q[:options].each do |option|
+      edge edge_id(_id, option.dig(:next, :id)), label: option.dig(:label, :en).truncate(opts.fetch(:label_length))
     end
   end
 

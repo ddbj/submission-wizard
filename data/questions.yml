@@ -3,7 +3,7 @@ q1:
   text:
     en: Are you submitting data from human research subjects and do the data require controlled access?
     ja:
-  choices:
+  options:
   - label:
       en: 'Yes'
       ja: はい
@@ -20,7 +20,7 @@ q2:
   text:
     en: What type of data do you have?
     ja:
-  choices:
+  options:
   - label:
       en: Whole-genome scale genome sequence
       ja:
@@ -79,7 +79,7 @@ q3-genome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
-  choices:
+  options:
   - label:
       en: 'Yes'
       ja: はい
@@ -96,7 +96,7 @@ q3-metagenome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
-  choices:
+  options:
   - label:
       en: 'Yes'
       ja: はい
@@ -113,7 +113,7 @@ q3-transcriptome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
-  choices:
+  options:
   - label:
       en: 'Yes'
       ja: はい
@@ -130,7 +130,7 @@ q3-other/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
-  choices:
+  options:
   - label:
       en: 'Yes'
       ja: はい
@@ -147,7 +147,7 @@ q3-genome:
   text:
     en: Where does the genome sequence come from?
     ja:
-  choices:
+  options:
   - label:
       en: Eukaryote
       ja:
@@ -182,7 +182,7 @@ q4-genome-eukaryote:
   text:
     en: What type of genomic sequences do you have (or will you have)?
     ja:
-  choices:
+  options:
   - label:
       en: Complete genomes
       ja:
@@ -199,7 +199,7 @@ q5-genome-eukaryote-complete:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and assembled sequences
       ja:
@@ -222,7 +222,7 @@ q5-genome-eukaryote-draft:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and assembled sequences
       ja:
@@ -245,7 +245,7 @@ q4-genome-prokaryote:
   text:
     en: What type of genomic sequences do you have (or will you have)?
     ja:
-  choices:
+  options:
   - label:
       en: Complete genomes
       ja:
@@ -262,7 +262,7 @@ q5-genome-prokaryote-complete:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and assembled sequences
       ja:
@@ -285,7 +285,7 @@ q5-genome-prokaryote-draft:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and assembled sequences
       ja:
@@ -308,7 +308,7 @@ q4-genome-plasmid:
   text:
     en: How many/large is your sequence submission?
     ja:
-  choices:
+  options:
   - label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
@@ -325,7 +325,7 @@ q4-genome-organelle:
   text:
     en: How many/large is your sequence submission?
     ja:
-  choices:
+  options:
   - label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
@@ -342,7 +342,7 @@ q4-genome-virus:
   text:
     en: How many/large is your sequence submission?
     ja:
-  choices:
+  options:
   - label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
@@ -359,7 +359,7 @@ q3-metagenome:
   text:
     en: What type of metagenomic sequence do you have?
     ja:
-  choices:
+  options:
   - label:
       en: Highest-quality, representative metagenome-assembled genome (MAG)
       ja:
@@ -388,7 +388,7 @@ q4-metagenome-mag:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and metagenome-assembled genome (MAG)
       ja:
@@ -405,7 +405,7 @@ q4-metagenome-binned:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and binned metagenome
       ja:
@@ -416,7 +416,7 @@ q4-metagenome-tls:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and targeted sequences
       ja:
@@ -433,7 +433,7 @@ q4-metagenome-other:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and metagenomes
       ja:
@@ -456,7 +456,7 @@ q3-transcriptome:
   text:
     en: What type of transcriptome sequence do you have?
     ja:
-  choices:
+  options:
   - label:
       en: Large-scale transcriptome assemblies
       ja:
@@ -485,7 +485,7 @@ q4-transcriptome-other:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS and assembled sequences
       ja:
@@ -514,7 +514,7 @@ q3-other:
   text:
     en: What type of data do you submit?
     ja:
-  choices:
+  options:
   - label:
       en: Raw reads from NGS only
       ja:
@@ -543,7 +543,7 @@ q3-variation:
   text:
     en: What type of genetic variation do you have?
     ja:
-  choices:
+  options:
   - label:
       en: Human short variations (=<50bp)
       ja:
@@ -572,7 +572,7 @@ q3-tpa:
   text:
     en: How are the annotation or assembly obtained?
     ja:
-  choices:
+  options:
   - label:
       en: Annotation of sequence data is supported by peer-reviewed wet-lab experimental evidence
       ja:

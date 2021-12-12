@@ -1,9 +1,9 @@
-a.choice {
+a.option {
   display: block;
   text-decoration: none;
 }
 
-a.choice:hover {
+a.option:hover {
   background-color: #eee;
 }
 
