@@ -8,7 +8,7 @@ require 'optparse'
 require 'yaml'
 
 def id(str)
-  str.to_s.gsub('->', '-').underscore.camelize.to_sym
+  str.to_s.gsub('->', '-to-').gsub('/', '-or-').underscore.camelize.to_sym
 end
 
 def edge_id(src, dest)
@@ -45,7 +45,7 @@ Graph do
     node id(_id), label: q.dig(:text, :en).truncate(opts.fetch(:label_length)), shape: 'rect'
 
     q[:choices].each do |choice|
-      edge edge_id(_id, choice.dig(:next, :id)), label: choice.dig(:label, :en)
+      edge edge_id(_id, choice.dig(:next, :id)), label: choice.dig(:label, :en).truncate(opts.fetch(:label_length))
     end
   end
 

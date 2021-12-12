@@ -22,53 +22,29 @@ q2:
     ja:
   choices:
   - label:
-      en: Whole-genome scale genome sequence (not TPA)
+      en: Whole-genome scale genome sequence
       ja:
     next:
       type: question
-      id: q3-genome
+      id: q3-genome/q3-tpa
   - label:
-      en: Whole-genome scale genome sequence (TPA)
+      en: Metagenomic sequence
       ja:
     next:
       type: question
-      id: q3-tpa
+      id: q3-metagenome/q3-tpa
   - label:
-      en: Metagenomic sequence (not TPA)
+      en: Transcriptome sequence
       ja:
     next:
       type: question
-      id: q3-metagenome
+      id: q3-transcriptome/q3-tpa
   - label:
-      en: Metagenomic sequence (TPA)
+      en: Other DNA/RNA sequences
       ja:
     next:
       type: question
-      id: q3-tpa
-  - label:
-      en: Transcriptome sequence (not TPA)
-      ja:
-    next:
-      type: question
-      id: q3-transcriptome
-  - label:
-      en: Transcriptome sequence (TPA)
-      ja:
-    next:
-      type: question
-      id: q3-tpa
-  - label:
-      en: Other DNA/RNA sequences (not TPA)
-      ja:
-    next:
-      type: question
-      id: q3-other
-  - label:
-      en: Other DNA/RNA sequences (TPA)
-      ja:
-    next:
-      type: question
-      id: q3-tpa
+      id: q3-other/q3-tpa
   - label:
       en: Functional genomics data (gene expression, gene regulation or epigenetics) by NGS
       ja:
@@ -99,6 +75,74 @@ q2:
     next:
       type: question
       id: q3-variation
+q3-genome/q3-tpa:
+  text:
+    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
+    ja:
+  choices:
+  - label:
+      en: 'Yes'
+      ja: はい
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: 'No'
+      ja: いいえ
+    next:
+      type: question
+      id: q3-genome
+q3-metagenome/q3-tpa:
+  text:
+    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
+    ja:
+  choices:
+  - label:
+      en: 'Yes'
+      ja: はい
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: 'No'
+      ja: いいえ
+    next:
+      type: question
+      id: q3-metagenome
+q3-transcriptome/q3-tpa:
+  text:
+    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
+    ja:
+  choices:
+  - label:
+      en: 'Yes'
+      ja: はい
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: 'No'
+      ja: いいえ
+    next:
+      type: question
+      id: q3-transcriptome
+q3-other/q3-tpa:
+  text:
+    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
+    ja:
+  choices:
+  - label:
+      en: 'Yes'
+      ja: はい
+    next:
+      type: question
+      id: q3-tpa
+  - label:
+      en: 'No'
+      ja: いいえ
+    next:
+      type: question
+      id: q3-other
 q3-genome:
   text:
     en: Where does the genome sequence come from?
