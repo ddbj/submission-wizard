@@ -10,8 +10,8 @@ export type LocalizedString = {
   ja?: string
 };
 
-export const LocalizationMixin = <T extends Constructor<LitElement>>(Base: T) => {
-   class Mixin extends Base {
+export function LocalizationMixin<T extends Constructor<LitElement>>(Base: T) {
+  class Mixin extends Base {
     @property()
     get locale() {
       return getLocale() as Locale;
@@ -33,7 +33,7 @@ export const LocalizationMixin = <T extends Constructor<LitElement>>(Base: T) =>
   return Mixin;
 }
 
-type Constructor<T = {}> = new (...args: any[]) => T;
+type Constructor<T> = new (...args: any[]) => T; // eslint-disable-line @typescript-eslint/no-explicit-any
 type Locale = 'en' | 'ja';
 
 const {getLocale, setLocale} = configureLocalization({

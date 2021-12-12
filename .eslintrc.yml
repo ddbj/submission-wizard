@@ -24,4 +24,7 @@ ignorePatterns:
   - rollup.config.js
   - test/__snapshots__/
 
-rules: {}
+rules:
+  '@typescript-eslint/ban-ts-comment':
+    - error
+    - ts-ignore: allow-with-description

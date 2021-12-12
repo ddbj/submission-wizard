@@ -75,6 +75,6 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
   }
 }
 
-function findGoal(id: string | null, _type?: unknown) {
+function findGoal(id: string | null) {
   return id ? goals[id] : undefined;
 }
