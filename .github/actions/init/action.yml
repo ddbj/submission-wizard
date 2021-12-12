@@ -1,0 +1,16 @@
+name: Init
+description: Initialize the environment
+
+runs:
+  using: composite
+
+  steps:
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 16
+        # https://github.com/actions/setup-node/issues/378
+        # cache: yarn
+
+    - shell: bash
+      run: |
+        yarn install --frozen-lockfile

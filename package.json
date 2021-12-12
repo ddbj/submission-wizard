@@ -7,7 +7,7 @@
     "start": "lit-localize build && web-dev-server --watch",
     "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js",
     "test": "lit-localize build && web-test-runner",
-    "lint": "tsc --noEmit && eslint ."
+    "lint": "lit-localize build && tsc --noEmit && eslint ."
   },
   "dependencies": {
     "@lit/localize": "^0.11.1",
