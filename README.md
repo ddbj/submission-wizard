@@ -1,7 +1,5 @@
 # Submission Wizard
 
-Demo: https://ursm-submission-wizard.pages.dev/
-
 ## Requirements
 
 - Node.js 16.x
