@@ -13,7 +13,9 @@ def transform_question(question, split_goals:)
 
   [
     [
-      question[:id], {
+      question[:id],
+
+      {
         text: {
           en: label,
           ja: nil
@@ -72,7 +74,9 @@ def generate_tpa_nodes(options, split_goals)
     goal = non_tpa_id.start_with?('g-')
 
     [
-      [non_tpa_id, tpa_id].join('/'), {
+      [non_tpa_id, tpa_id].join('/'),
+
+      {
         text: {
           en: 'Is the sequence assembly and/or annotation of existing INSDC reads and sequences?',
           ja: nil
