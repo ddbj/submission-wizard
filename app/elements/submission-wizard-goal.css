@@ -16,7 +16,7 @@
 }
 
 .tabs {
-  border-bottom: solid thin #eee;
+  border-bottom: solid thin var(--border-light-color);
 }
 
 .tabs.cluster {

@@ -1,5 +1,6 @@
 :host {
   --border-color: #736357;
+  --border-light-color: #ccc;
   --link-color: #1c1b19;
   --link-hover-color: #ff7300;
 }
