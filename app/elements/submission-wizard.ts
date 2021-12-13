@@ -34,7 +34,8 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
 
       if (!lastStep) { throw new Error('must not happen'); }
 
-      const nextQuestion = option.next.type === 'question' && questions[option.next.id];
+      const {type, id}   = option.next;
+      const nextQuestion = type === 'question' && questions[id];
 
       return [
         ...steps.slice(0, -1),
