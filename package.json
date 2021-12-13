@@ -2,7 +2,7 @@
   "name": "submission-wizard",
   "private": true,
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "lit-localize build && web-dev-server --watch",
     "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js",
