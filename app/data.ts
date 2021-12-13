@@ -10,7 +10,6 @@ export type QuestionId = string;
 export type GoalId = string;
 
 export type Question = {
-  type:    'question';
   text:    LocalizedString;
   options: Option[];
 }
