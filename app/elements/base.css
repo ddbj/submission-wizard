@@ -1,12 +1,12 @@
 :host {
-  --border-color: #1c1b19;
-  --border-radius: 0.25rem;
-  --link-color: #0d6efd;
-  --link-hover-color: #0a58ca;
+  --border-color: #736357;
+  --link-color: #1c1b19;
+  --link-hover-color: #ff7300;
 }
 
 a {
   color: var(--link-color);
+  transition: color 0.2s;
 }
 
 a:hover {
@@ -62,11 +62,6 @@ a:hover {
 
 .border-bottom {
   border-bottom: solid thin var(--border-color);
-}
-
-.border-round {
-  border-radius: var(--border-radius);
-  overflow: hidden;
 }
 
 .list-unstyled {

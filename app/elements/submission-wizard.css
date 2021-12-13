@@ -1,6 +1,6 @@
 a.option {
   display: block;
-  text-decoration: none;
+  transition: background-color 0.2s;
 }
 
 a.option:hover {

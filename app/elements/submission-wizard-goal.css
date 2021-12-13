@@ -2,10 +2,6 @@
   --max-height: calc(100vh - 2rem);
 }
 
-h1 {
-  font-size: 1.25rem;
-}
-
 .scroll-container {
   display: flex;
   flex-direction: column;
@@ -31,6 +27,7 @@ h1 {
 .tabs > a {
   padding: 0.5rem 2rem;
   text-decoration: none;
+  transition: background-color 0.2s;
 }
 
 .tabs > a:hover:not(.active) {
