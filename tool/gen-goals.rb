@@ -3,15 +3,23 @@
 require 'bundler/setup'
 
 require 'active_support/all'
+require 'erb'
 require 'faker'
 require 'nokogiri'
 require 'optparse'
 require 'yaml'
 
-def generate_sections(goal, &block)
-  goal.css('.tab').map(&:text).map {|title|
-    body = Faker::Markdown.sandwich(repeat: 6)
+SECTION_BODY = ERB.new(<<~ERB, trim_mode: '-')
+  <%- if heading -%>
+  <h1><%= heading %></h1>
+  <%- end -%>
+  <%- Faker::Lorem.paragraphs(number: 4).each do |p| -%>
+  <p><%= p %></p>
+  <%- end -%>
+ERB
 
+def generate_sections(goal, heading: nil)
+  goal.css('.tab').map(&:text).map {|title|
     {
       title: {
         en: title,
@@ -19,7 +27,7 @@ def generate_sections(goal, &block)
       },
 
       body: {
-        en: block ? block.call(body) : body,
+        en: SECTION_BODY.result_with_hash(heading: heading),
         ja: nil
       }
     }
@@ -47,14 +55,7 @@ yaml = doc.css('.goal').flat_map {|goal|
 
       [
         id,
-
-        sections: generate_sections(goal) {|body|
-          <<~MD
-            # data-from="#{readme['data-from']}"
-
-            #{body}
-          MD
-        }
+        sections: generate_sections(goal, heading: "data-from: #{readme['data-from']}")
       ]
     }
   else
