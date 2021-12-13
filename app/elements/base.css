@@ -95,3 +95,7 @@ a:hover {
 .fade {
   animation: fade-in 0.3s;
 }
+
+.font-large {
+  font-size: large;
+}

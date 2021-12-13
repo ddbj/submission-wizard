@@ -38,10 +38,10 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
     if (!goal) { return ''; }
 
     return html`
-      <div class="border scroll-container fade">
-        <h1 class="box bg-primary my-0">📋 ${msg('Submission Instructions')}</h1>
+      <section class="border scroll-container fade">
+        <h1 class="box bg-primary my-0 font-large">📋 ${msg('Submission Instructions')}</h1>
 
-        <nav class="tabs cluster">
+        <nav class="tabs cluster font-large">
           ${goal.sections.map((section) => {
             return html`
               <a @click=${this.selectSection(section)} class="${this.section === section ? 'active' : ''}" href="#">${this.localize(section.title)}</a>
@@ -50,7 +50,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
         </nav>
 
         ${this.sectionTemplate()}
-      </div>
+      </section>
     `;
   }
 
