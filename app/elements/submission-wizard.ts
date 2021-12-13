@@ -21,12 +21,34 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   static styles = [baseStyle, style];
 
   @state()
-  steps: Step[] = [
-    {question: questions.q1}
-  ];
+  answers: Option[] = [];
 
-  get lastStep() {
-    return this.steps[this.steps.length - 1];
+  @state()
+  get steps(): Step[] {
+    const init = {
+      question: questions.q1
+    };
+
+    return this.answers.reduce((steps, option) => {
+      const lastStep = last(steps);
+
+      if (!lastStep) { throw new Error('must not happen'); }
+
+      const nextQuestion = option.next.type === 'question' && questions[option.next.id];
+
+      return [
+        ...steps.slice(0, -1),
+
+        {
+          ...lastStep,
+          answer: option
+        }
+      ].concat(nextQuestion ? [
+        {
+          question: nextQuestion
+        }
+      ] : []);
+    }, [init]);
   }
 
   render() {
@@ -56,7 +78,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
 
           <p class="box my-0">
             ${this.localize(answer.label)}
-            <small><a @click=${this.backTo(step)} href="#">${msg('Change')}</a></small>
+            <small><a @click=${this.revert(answer)} href="#">${msg('Change')}</a></small>
           </p>
         </div>
       `;
@@ -69,7 +91,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
             ${question.options.map((option: Option) => {
               return html`
                 <li>
-                  <a @click=${this.choose(step, option)} href="#" class="box option">${this.localize(option.label)}</a>
+                  <a @click=${this.choose(option)} href="#" class="box option">${this.localize(option.label)}</a>
                 </li>
               `;
             })}
@@ -80,7 +102,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   }
 
   goalTemplate() {
-    const next = this.lastStep?.answer?.next;
+    const next = last(this.answers)?.next;
 
     if (!next || next.type !== 'goal') { return ''; }
 
@@ -91,41 +113,28 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     `;
   }
 
-  choose(step: Step, option: Option) {
+  choose(option: Option) {
     return (e: Event) => {
       e.preventDefault();
 
-      step.answer = option;
-
-      switch (option.next.type) {
-        case 'question': {
-          const question = questions[option.next.id];
-
-          this.steps.push({question});
-          break;
-        }
-        case 'goal':
-          // do nothing
-          break;
-        default: {
-          const _: never = option.next; // eslint-disable-line @typescript-eslint/no-unused-vars
-        }
-      }
-
-      this.requestUpdate();
+      this.answers = [
+        ...this.answers,
+        option
+      ];
     }
   }
 
-  backTo(step: Step) {
+  revert(option: Option) {
     return (e: Event) => {
       e.preventDefault();
 
-      const i = this.steps.indexOf(step);
+      const i = this.answers.indexOf(option);
 
-      this.steps.splice(i);
-      this.steps.push({question: step.question});
-
-      this.requestUpdate();
+      this.answers = this.answers.slice(0, i);
     }
   }
+}
+
+function last<T>(ary: T[]): T | undefined {
+  return ary[ary.length - 1];
 }
