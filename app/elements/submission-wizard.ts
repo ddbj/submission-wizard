@@ -27,22 +27,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   get questions(): Question[] {
     return [
       initialQuestion,
-
-      ...this.answers.flatMap(({next}) => {
-        const {id, type} = next;
-
-        switch (type) {
-          case 'question':
-            return [findQuestion(id)];
-          case 'goal':
-            return [];
-          default: {
-            const _never: never = next;
-
-            return _never;
-          }
-        }
-      })
+      ...this.answers.flatMap(({next: {type, id}}) => type === 'question' ? [findQuestion(id)] : [])
     ]
   }
 
