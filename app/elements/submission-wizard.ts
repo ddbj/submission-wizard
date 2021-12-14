@@ -3,7 +3,7 @@ import { customElement, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
 import { LocalizationMixin } from '../localization';
-import { Question, Option, questions } from '../data';
+import { Question, Option, findQuestion, initialQuestion } from '../data';
 
 import baseStyle from './base.css';
 import style from './submission-wizard.css';
@@ -24,45 +24,48 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   answers: Option[] = [];
 
   @state()
+  get questions(): Question[] {
+    return [
+      initialQuestion,
+
+      ...this.answers.flatMap(({next}) => {
+        const {id, type} = next;
+
+        switch (type) {
+          case 'question':
+            return [findQuestion(id)];
+          case 'goal':
+            return [];
+          default: {
+            const _never: never = next;
+
+            return _never;
+          }
+        }
+      })
+    ]
+  }
+
+  @state()
   get steps(): Step[] {
-    const init = {
-      question: questions.q1
-    };
-
-    return this.answers.reduce((steps, option) => {
-      const lastStep = last(steps);
-
-      if (!lastStep) { throw new Error('must not happen'); }
-
-      const {type, id}   = option.next;
-      const nextQuestion = type === 'question' && questions[id];
-
-      return [
-        ...steps.slice(0, -1),
-
-        {
-          ...lastStep,
-          answer: option
-        }
-      ].concat(nextQuestion ? [
-        {
-          question: nextQuestion
-        }
-      ] : []);
-    }, [init]);
+    return this.questions.map((question, i) => {
+      return {
+        question,
+        answer: this.answers[i]
+      }
+    });
   }
 
   render() {
     return html`
       <div class="stack-large">
-        ${this.stepsTemplate()}
+        ${this.steps.map((step, i) => {
+          return this.stepTemplate(step, i + 1);
+        })}
+
         ${this.goalTemplate()}
       </div>
     `;
-  }
-
-  stepsTemplate() {
-    return this.steps.map((step, i) => this.stepTemplate(step, i + 1));
   }
 
   stepTemplate(step: Step, seq: number) {

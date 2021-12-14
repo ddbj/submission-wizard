@@ -4,7 +4,7 @@ import { localized, msg } from '@lit/localize';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 import resetScroll from '../directives/reset-scroll';
-import { Goal, Section, goals } from '../data';
+import { Goal, Section, findGoal } from '../data';
 import { LocalizationMixin } from '../localization';
 
 import baseStyle from './base.css';
@@ -15,7 +15,7 @@ import style from './submission-wizard-goal.css';
 export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
   static styles = [baseStyle, style];
 
-  @property({converter: findGoal})
+  @property({converter: findGoalIf})
   goal?: Goal;
 
   #section?: Section;
@@ -75,6 +75,6 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
   }
 }
 
-function findGoal(id: string | null) {
-  return id ? goals[id] : undefined;
+function findGoalIf(id: string | null) {
+  return id ? findGoal(id) : undefined;
 }
