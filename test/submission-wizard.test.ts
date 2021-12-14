@@ -1,5 +1,6 @@
 import { elementUpdated, expect, fixture, html } from '@open-wc/testing';
 import '../app/elements/submission-wizard.ts';
+import '../app/elements/submission-wizard-goal.ts';
 
 it('simple', async () => {
   const el           = await fixture(html`<submission-wizard></submission-wizard>`);

@@ -3,12 +3,12 @@ import { customElement, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
 import { LocalizationMixin } from '../localization';
-import { Question, Option, findQuestion, initialQuestion } from '../data';
+import { Question, Option, findQuestion, initialQuestion } from '../data/question';
 
 import baseStyle from './base.css';
 import style from './submission-wizard.css';
 
-import './submission-wizard-goal';
+import('./submission-wizard-goal');
 
 type Step = {
   question: Question,
