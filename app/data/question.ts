@@ -1,9 +1,9 @@
 import { LocalizedString } from '../localization';
 
 import _questions from '../../data/questions.yml';
-import { Id as GoalId } from './goal';
+import { GoalId } from './goal';
 
-export type Id = string;
+type QuestionId = string;
 
 export type Question = {
   text:    LocalizedString;
@@ -15,18 +15,18 @@ export type Option = {
 
   next: {
     type: 'question';
-    id:   Id;
+    id:   QuestionId;
   } | {
     type: 'goal';
     id:   GoalId;
   };
 };
 
-const questions: {[id: Id]: Question} = _questions;
+const questions: {[id: QuestionId]: Question} = _questions;
 
 export const initialQuestion = questions.q1;
 
-export function findQuestion(id: Id) {
+export function findQuestion(id: QuestionId) {
   const question = questions[id];
 
   if (!question) { throw new Error(`question not found: id=${id}`) }
