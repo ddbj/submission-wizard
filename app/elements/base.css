@@ -1,8 +1,13 @@
 :host {
   --border-color: #736357;
   --border-light-color: #ccc;
+  --heading-font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
   --link-color: #1c1b19;
   --link-hover-color: #ff7300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
 }
 
 a {
