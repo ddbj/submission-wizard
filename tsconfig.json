@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true, // due to @open-wc/testing
     "experimentalDecorators": true,
+    "module": "es2022",
     "moduleResolution": "node",
     "strict": true,
     "target": "es2021"
