@@ -1,32 +1,54 @@
 :host {
-  --max-height: calc(100vh - 2rem);
+  --max-height: calc(100vh - 2em);
 }
 
-.scroll-container {
-  display: flex;
-  flex-direction: column;
+.container {
+  display: grid;
+
+  grid-template:
+    "header     header"  auto
+    "nav        content" 1fr /
+    min-content 1fr;
+
   max-height: var(--max-height);
 }
 
-.scroll-pane {
-  height: 100%;
-  box-sizing: border-box;
-  overflow-y: auto;
-  flex: 1;
+.container > h1 {
+  grid-area: header;
 }
 
-.tabs {
-  border-bottom: solid thin var(--border-light-color);
+.container > nav {
+  grid-area: nav;
+  text-align: center;
 }
 
-.tabs.cluster {
-  gap: 0;
+.container > main {
+  grid-area: content;
+  overflow: auto;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-margin-around-y > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.no-margin-around-y > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .tabs > a {
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  transition: background-color 0.2s;
+  display: block;
+  padding: calc(0.5em / 1.2) calc(1.75em / 1.2);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 3px 0;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .tabs > a:hover:not(.active) {
@@ -34,13 +56,14 @@
 }
 
 .tabs > a.active {
-  border-bottom: solid 3px #ff7370;
+  border-bottom-color: #ff7370;
+  text-decoration: none;
   color: inherit;
   font-weight: bold;
 }
 
 svg.icon {
-  height: 1.1em;
-  width: 1.1em;
-  vertical-align: -0.15em;
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.1em;
 }

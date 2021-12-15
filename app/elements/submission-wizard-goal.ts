@@ -22,7 +22,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
 
   @state()
   get section() {
-    return this.#section || this.goal?.sections?.[0];
+    return this.#section || this.goal?.sections[0];
   }
 
   set section(newVal) {
@@ -32,18 +32,40 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
     this.requestUpdate('section', oldVal);
   }
 
+  @state()
+  get previousSection() {
+    const {goal, section} = this;
+
+    if (!goal || !section) { return undefined; }
+
+    const i = goal.sections.indexOf(section);
+
+    return i <= 0 ? undefined : goal.sections[i - 1];
+  }
+
+  @state()
+  get nextSection() {
+    const {goal, section} = this;
+
+    if (!goal || !section) { return undefined; }
+
+    const i = goal.sections.indexOf(section);
+
+    return i === -1 || i >= goal.sections.length ? undefined : goal.sections[i + 1];
+  }
+
   render() {
     const {goal} = this;
 
     if (!goal) { return ''; }
 
     return html`
-      <section class="border scroll-container fade">
+      <div class="container border fade">
         <h1 class="box bg-primary my-0 font-large">
-          <span class="icon">${databaseIcon}</span> ${msg('Submission Instructions')}
+          ${databaseIcon} ${msg('Submission Instructions')}
         </h1>
 
-        <nav class="tabs cluster font-heading font-large">
+        <nav class="box tabs font-heading font-large">
           ${goal.sections.map((section) => {
             return html`
               <a @click=${this.selectSection(section)} class="${this.section === section ? 'active' : ''}" href="#">${this.localize(section.title)}</a>
@@ -51,8 +73,10 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
           })}
         </nav>
 
-        ${this.sectionTemplate()}
-      </section>
+        <main ${resetScroll()} class="box stack">
+          ${this.sectionTemplate()}
+        </main>
+      </div>
     `;
   }
 
@@ -62,9 +86,27 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
     const {body} = this.section;
 
     return html`
-      <main ${resetScroll()} class="scroll-pane box-x">
+      <div class="no-margin-around-y">
         ${unsafeHTML(this.localize(body))}
-      </main>
+      </div>
+
+      <nav class="space-between">
+        <div>
+          ${this.sectionLinkTemplate(`« ${msg('Prev')}`, this.previousSection)}
+        </div>
+
+        <div>
+          ${this.sectionLinkTemplate(`${msg('Next')} »`, this.nextSection)}
+        </div>
+      </nav>
+    `;
+  }
+
+  sectionLinkTemplate(label: string, section?: Section) {
+    if (!section) { return ''; }
+
+    return html`
+      <a @click=${this.selectSection(section)} href="#">${label}</a>
     `;
   }
 

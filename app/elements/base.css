@@ -19,55 +19,21 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-[class^='stack'] > * {
+.stack > * {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.stack-large > * + * {
-  margin-top: 1rem;
-}
-
-.stack-small > * + * {
-  margin-top: 0.5rem;
+.stack > * + * {
+  margin-top: 1em;
 }
 
 .box {
-  padding: 0.75rem 1rem;
-}
-
-.box-x {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.box-y {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.box > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.box > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.cluster {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  padding: 0.5em 1em;
 }
 
 .border {
   border: solid thin var(--border-color);
-}
-
-.border-bottom {
-  border-bottom: solid thin var(--border-color);
 }
 
 .list-unstyled {
@@ -82,10 +48,6 @@ a:hover {
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.pb-0 {
-  padding-bottom: 0;
 }
 
 @keyframes fade-in {
@@ -103,5 +65,5 @@ a:hover {
 }
 
 .font-large {
-  font-size: large;
+  font-size: 1.2em;
 }
