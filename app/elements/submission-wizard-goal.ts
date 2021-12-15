@@ -41,7 +41,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
       <section class="border scroll-container fade">
         <h1 class="box bg-primary my-0 font-large">📋 ${msg('Submission Instructions')}</h1>
 
-        <nav class="tabs cluster font-large">
+        <nav class="tabs cluster font-heading font-large">
           ${goal.sections.map((section) => {
             return html`
               <a @click=${this.selectSection(section)} class="${this.section === section ? 'active' : ''}" href="#">${this.localize(section.title)}</a>

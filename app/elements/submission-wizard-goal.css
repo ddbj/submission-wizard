@@ -17,7 +17,6 @@
 
 .tabs {
   border-bottom: solid thin var(--border-light-color);
-  font-family: var(--heading-font-family);
 }
 
 .tabs.cluster {

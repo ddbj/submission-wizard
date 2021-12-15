@@ -57,7 +57,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     const {question, answer} = step;
 
     const questionEl = html`
-      <p class="box bg-primary my-0"><b>Q${seq}.</b> ${this.localize(question.text)}</p>
+      <p class="box bg-primary my-0"><b class="font-heading">Q${seq}.</b> ${this.localize(question.text)}</p>
     `;
 
     if (answer) {
