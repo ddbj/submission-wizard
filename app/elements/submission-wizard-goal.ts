@@ -1,3 +1,4 @@
+import databaseIcon from 'health-icons/public/icons/svg/filled/symbols/database.svg';
 import { LitElement, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
@@ -39,7 +40,9 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
 
     return html`
       <section class="border scroll-container fade">
-        <h1 class="box bg-primary my-0 font-large">📋 ${msg('Submission Instructions')}</h1>
+        <h1 class="box bg-primary my-0 font-large">
+          <span class="icon">${databaseIcon}</span> ${msg('Submission Instructions')}
+        </h1>
 
         <nav class="tabs cluster font-heading font-large">
           ${goal.sections.map((section) => {

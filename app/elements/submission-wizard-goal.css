@@ -38,3 +38,9 @@
   color: inherit;
   font-weight: bold;
 }
+
+.icon > svg {
+  height: 1.1em;
+  width: 1.1em;
+  vertical-align: -0.15em;
+}
