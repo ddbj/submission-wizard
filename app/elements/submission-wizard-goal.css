@@ -39,7 +39,7 @@
   font-weight: bold;
 }
 
-.icon > svg {
+svg.icon {
   height: 1.1em;
   width: 1.1em;
   vertical-align: -0.15em;

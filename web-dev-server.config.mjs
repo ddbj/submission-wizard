@@ -19,18 +19,11 @@ export default {
   plugins: [
     esbuildPlugin({ts: true}),
     litcss(),
-
-    litcss({
-      include: ['**/*.svg'],
-      tag:     'svg'
-    }),
-
     yaml(),
   ],
 
   mimeTypes: {
     '**/*.css': 'js',
-    '**/*.svg': 'js',
     '**/*.yml': 'js'
   },
 

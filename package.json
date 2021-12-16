@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@lit/localize": "^0.11.1",
-    "health-icons": "resolvetosavelives/healthicons",
     "lit": "^2.0.2"
   },
   "devDependencies": {

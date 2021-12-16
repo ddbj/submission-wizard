@@ -23,12 +23,6 @@ export default defineConfig({
     }),
 
     litcss(),
-
-    litcss({
-      include: ['**/*.svg'],
-      tag:     'svg'
-    }),
-
     yaml(),
     resolve(),
     minifyHTML(),
