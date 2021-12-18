@@ -1750,33 +1750,35 @@ q1-yes->g-jga:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q1-yes</h1>
-        <p>Quibusdam aut aut. Qui animi voluptatem. Voluptatem sunt deleniti.</p>
-        <p>Nihil in animi. Consectetur quaerat nulla. Quia ut occaecati.</p>
-        <p>Sapiente voluptatem nesciunt. Rem dolore magni. Quia ullam maxime.</p>
-        <p>Veniam dolores harum. Porro nulla non. Ea vel et.</p>
+    		<p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to apply a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
+  	  	<ol>
+	  	  	<li>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
+			    <li>After the data submission application is approved by NBDC, upload metadata and data files to JGA.</li>
+		    </ol>
       ja:
   - title:
       en: NBDC
       ja:
     body:
       en: |
-        <h1>data-from: q1-yes</h1>
-        <p>Delectus recusandae nam. Possimus iure expedita. Et ratione ut.</p>
-        <p>Repudiandae sunt aliquam. Neque animi iusto. Repellendus dolorum optio.</p>
-        <p>Quam et soluta. Voluptas placeat quia. Assumenda id vel.</p>
-        <p>Amet culpa recusandae. Nulla qui esse. Qui vitae sequi.</p>
+    		<p>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>. A D-way account is necessary for the data submission application. If you do not have an account, <a href="/account-e.html">create a D-way account</a> before the application.</p> See the <a href="/jga/submission-step-e.html">JGA submission steps</a> and the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC Data Submission</a> web pages.</p>
+				<ol>
+					<li>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
+					<li>After the data submission application is approved by NBDC, a JGA submission ID will be created. Upload metadata and data files to the submission directory of the JGA server.</li>
+				</ol>
       ja:
   - title:
       en: JGA
       ja:
     body:
       en: |
-        <h1>data-from: q1-yes</h1>
-        <p>Velit esse non. Vel fugiat aut. Recusandae in praesentium.</p>
-        <p>Eos fuga porro. Dolor consequatur tempore. Odio eos sapiente.</p>
-        <p>Accusamus molestiae ut. Iste nesciunt minima. Et sunt consequatur.</p>
-        <p>Doloremque recusandae voluptates. Et sed et. Aut corrupti inventore.</p>
+    		<p>After the data submission application is approved by NBDC, prepare metadata and data files and upload them to JGA by sftp. The sftp data transfer is authenticated by a key pair, generate a public and private key pair and <a href="/account-e.html#enable-dra-submission-in-account">register the public key to your D-way account</a> for data transfer.</p>
+		    <ul>
+			    <li>Enter metadata in the <a href="/jga/submission-step-e.html#create-metadata-using-excel">JGA metadata excel file</a>.</li>
+			    <li>Prepare <a href="/jga/submission-e.html">data files</a>.</li>
+	     		<li>Upload the metadata and data files to the submission directory of the JGA server by sftp (<a href="/jga/submission-e.html">instructions</a>).</li>
+	    	</ul>
+    		<p>If the submission is successfully registered, <a href="/jga/submission-e.html#submission">JGA accessions</a> will be issued.</p>
       ja:
 q2-proteomics->g-jpost:
   sections:
