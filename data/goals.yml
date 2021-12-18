@@ -1702,22 +1702,14 @@ q3-variation-nonhumsv->g-dgva:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-variation-nonhumsv</h1>
-        <p>Et necessitatibus voluptas. Corrupti numquam ut. Et delectus est.</p>
-        <p>Reprehenderit omnis perferendis. Harum aperiam qui. Quam minima eveniet.</p>
-        <p>Et mollitia quia. Fugiat excepturi commodi. Cumque est iste.</p>
-        <p>Dolores sint id. Ut voluptas repellat. Vero harum rerum.</p>
+       <p>Submit non-human structural variations (&gt;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar">dbVar</a> no longer accepts submissions of non-human organisms variations.</p>
       ja:
   - title:
       en: DGVa
       ja:
     body:
       en: |
-        <h1>data-from: q3-variation-nonhumsv</h1>
-        <p>A assumenda error. Numquam aperiam est. Ipsam dolorum ab.</p>
-        <p>Voluptatum voluptate nesciunt. Assumenda eaque facilis. Et tempore odit.</p>
-        <p>Repellat occaecati id. Et culpa dolore. Hic laborum aut.</p>
-        <p>Qui pariatur quae. In ducimus asperiores. Eum illum enim.</p>
+        <p>Submit non-human structural variations (&gt;50bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> (former DGVa) of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of structural variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
       ja:
 q3-variation-nonhumsnp->g-eva:
   sections:
@@ -1726,22 +1718,13 @@ q3-variation-nonhumsnp->g-eva:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-variation-nonhumsnp</h1>
-        <p>Impedit earum quia. Dicta qui inventore. Necessitatibus voluptate ut.</p>
-        <p>Temporibus et voluptatibus. Quis numquam eius. Velit adipisci veniam.</p>
-        <p>Ea autem recusandae. Eaque veniam omnis. Laboriosam accusamus modi.</p>
-        <p>Odio est aliquam. Dolores voluptas reiciendis. Ad officia similique.</p>
-      ja:
+        <p>Submit non-human short genetic variations (&le;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> no longer accepts submissions of non-human organisms variations.</p>      ja:
   - title:
       en: EVA
       ja:
     body:
       en: |
-        <h1>data-from: q3-variation-nonhumsnp</h1>
-        <p>Quod magnam doloremque. Et ullam sequi. Earum dolor exercitationem.</p>
-        <p>Hic dicta ipsa. Similique dolore eius. Sit sed non.</p>
-        <p>Illum qui et. Officia natus voluptatem. Rem et sint.</p>
-        <p>Ea maxime qui. Quia eum similique. Sapiente provident et.</p>
+        <p>Submit non-human short genetic variations (&le;50bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of precise short genetic variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
       ja:
 q1-yes->g-jga:
   sections:
