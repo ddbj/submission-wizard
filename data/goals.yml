@@ -1787,22 +1787,14 @@ q2-proteomics->g-jpost:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q2-proteomics</h1>
-        <p>Blanditiis quasi in. Aperiam fugiat dignissimos. Beatae et deserunt.</p>
-        <p>Nulla quos sunt. Voluptas perferendis maiores. Provident ratione tempora.</p>
-        <p>Unde modi totam. Et sit unde. Sit nihil recusandae.</p>
-        <p>Aut voluptatibus nam. Et aut earum. Et placeat aspernatur.</p>
+        <p>Submit proteomics data to the <a href="https://repository.jpostdb.org/">Japan Proteome Standard Repository (jPOSTrepo)</a>. jPOSTrepo is a public repository for datasets obtained from proteomics experiments and a member of <a href="http://www.proteomexchange.org/">ProteomeXchange Consortium</a>. jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> and not by Bioinformation and DDBJ Center.</p>
       ja:
   - title:
       en: jPOST
       ja:
     body:
       en: |
-        <h1>data-from: q2-proteomics</h1>
-        <p>Voluptate velit odio. Quis qui in. Laudantium exercitationem ea.</p>
-        <p>Dolorem sit non. Voluptas blanditiis temporibus. Aut minus possimus.</p>
-        <p>Ipsa numquam animi. Minus dicta et. Delectus minus quia.</p>
-        <p>Debitis occaecati voluptatum. Reiciendis vero harum. Similique qui consequuntur.</p>
+        <p>Submit your proteomics data to <a href="https://repository.jpostdb.org/">jPOSTrepo</a> (<a href="https://repository.jpostdb.org/help">instructions</a>). Please note that jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> consisting of <a href="http://dbcls.rois.ac.jp/index-en.html">DBCLS</a> and Japanese universites and not by Bioinformation and DDBJ Center.</p>
       ja:
 q3-variation-humsnp->g-jvarsnp:
   sections:
