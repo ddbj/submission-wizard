@@ -6,6 +6,14 @@
   <source>Submission Instructions</source>
   <target>データ登録の流れ</target>
 </trans-unit>
+<trans-unit id="safec7f1a369755f0">
+  <source>Prev</source>
+  <target>前へ</target>
+</trans-unit>
+<trans-unit id="s0fbf6dc6a1966408">
+  <source>Next</source>
+  <target>次へ</target>
+</trans-unit>
 <trans-unit id="s2f64461723d3df5d">
   <source>Change</source>
   <target>変更</target>

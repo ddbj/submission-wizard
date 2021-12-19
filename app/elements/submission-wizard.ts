@@ -43,7 +43,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
 
   render() {
     return html`
-      <div class="stack-large">
+      <div class="stack">
         ${this.steps.map((step, i) => {
           return this.stepTemplate(step, i + 1);
         })}
