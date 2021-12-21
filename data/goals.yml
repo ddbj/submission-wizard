@@ -1127,15 +1127,16 @@ q2-fgarray->g-bp-bs-gea:
        <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using a <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. BioSample is a record of biological sample with unique physical properties and majority of GEA submissions require more than one sample.</p>
       ja:
   - title:
-      en: MSS
+      en: GEA
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgarray</h1>
-        <p>Veritatis et aut. Et ut rerum. Voluptatem sint quos.</p>
-        <p>Deleniti voluptas ipsam. Ab provident occaecati. Repellat pariatur non.</p>
-        <p>Velit at consectetur. Ex minima aut. Eum in vel.</p>
-        <p>Quasi aut et. In corporis sint. Quo ut sapiente.</p>
+       <ul>
+         <li>Create a new GEA submission in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</li>
+         <li><a href="/gea/submit-array-e.html#upload-data">Upload the raw and processed data files by scp/sftp</a> to the GEA submission directory in the file server.</li>
+         <li>In the GEA submission, select the BioProject and BioSamples that have been registered for this submission. The metadata <a href="/gea/metadata-e.html#idf">IDF</a> and <a href="/gea/metadata-e.html#sdrf">SDRF</a> template files are generated. Describe an overview of the experiment in the IDF, and the relationship between samples, raw and processed data files in the SDRF.</li>
+         <li>Submit the metadata IDF/SDRF and validate the data files.</li>
+       </ul>
       ja:
 q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
   sections:
