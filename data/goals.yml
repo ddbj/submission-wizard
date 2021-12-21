@@ -467,7 +467,7 @@ q2-fgngs->g-bp-bs-dra-gea:
         <h1>data-from: q2-fgngs</h1>
         <p>Neque et consectetur. Commodi assumenda pariatur. Sint sit ut.</p>
         <p>Fugiat eveniet rerum. Libero aliquid fugiat. Quia voluptatem quia.</p>
-        <p>Officia aut velit. Ullam inventore et. Deserunt repellendus hic.</p>
+        <p>Officia aut velit. Ullam inventorefa et. Deserunt repellendus hic.</p>
         <p>Aliquam voluptas numquam. Provident hic officiis. Sit quidem ut.</p>
       ja:
 q3-transcriptome-expression->g-bp-bs-dra-gea:
@@ -1104,33 +1104,27 @@ q2-fgarray->g-bp-bs-gea:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q2-fgarray</h1>
-        <p>Illo rem sit. Occaecati amet asperiores. Sit exercitationem enim.</p>
-        <p>Rerum nulla necessitatibus. Et sequi ad. Quia cum accusamus.</p>
-        <p>Rerum et illum. Explicabo suscipit beatae. Est qui facilis.</p>
-        <p>Quas dolores atque. Et ut consequatur. Ex totam quia.</p>
+       <p>Submit functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray to the <a href="/gea/index-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered before the GEA submission. Microarray data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/bsg-s000177/">MIAME</a> guideline.</p>
+       <ol>
+         <li>Register a project in BioProject in the D-way submission portal.</li>
+         <li>Register samples in BioSample in the D-way submission portal.</li>
+         <li>Upload raw and processed data files to a GEA submission directory by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the GEA submission. Enter metadata in MAGE-TAB template files and submit them in the D-way submission portal.</li>
+       </ol>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgarray</h1>
-        <p>Odio animi laborum. Molestiae et nemo. Autem rerum architecto.</p>
-        <p>Sit excepturi quo. Ad omnis eos. Fugiat amet ab.</p>
-        <p>Minima dolorem est. Eligendi consequatur fuga. Eius aliquid quia.</p>
-        <p>Qui non impedit. Maiores a voluptatum. Optio consequuntur dolore.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgarray</h1>
-        <p>Explicabo nam non. Neque fuga facilis. Assumenda non inventore.</p>
-        <p>Suscipit beatae natus. Est sequi ut. Molestiae eum ut.</p>
-        <p>Fugit odit perspiciatis. Omnis excepturi et. Veniam eos soluta.</p>
-        <p>Neque dolore aliquam. Possimus omnis et. Ea mollitia in.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using a <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. BioSample is a record of biological sample with unique physical properties and majority of GEA submissions require more than one sample.</p>
       ja:
   - title:
       en: MSS
