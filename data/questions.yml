@@ -22,19 +22,19 @@ q2:
     ja:
   options:
   - label:
-      en: Whole-genome scale genome sequence
+      en: Whole-genome scale genomic sequences
       ja:
     next:
       type: question
       id: q3-genome/q3-tpa
   - label:
-      en: Metagenomic sequence
+      en: Metagenomic sequences
       ja:
     next:
       type: question
       id: q3-metagenome/q3-tpa
   - label:
-      en: Transcriptome sequence
+      en: Transcriptome sequences
       ja:
     next:
       type: question
@@ -184,7 +184,7 @@ q4-genome-eukaryote:
     ja:
   options:
   - label:
-      en: Complete genomes
+      en: Finished level genome sequences
       ja:
     next:
       type: question
