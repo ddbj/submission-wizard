@@ -420,55 +420,52 @@ q2-fgngs->g-bp-bs-dra-gea:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q2-fgngs</h1>
-        <p>Eligendi eaque dolores. Odio inventore commodi. Fugiat consequatur dignissimos.</p>
-        <p>Vero praesentium enim. Sed sequi aspernatur. Ab sunt et.</p>
-        <p>Quo vitae recusandae. Iusto quos in. Est saepe est.</p>
-        <p>Mollitia libero et. Nisi recusandae suscipit. Quam qui beatae.</p>
+       <p>For functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by sequencing, submit raw data to the <a href="/dra/submission-e.html">Sequence Read Archive (DRA)</a> and processed data to the <a href="/gea/submit-sequence-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered for the DRA and GEA submissions. You can complete both your BioProject and BioSample submissions in the course of the DRA submission. Sequencing-based functional genomics data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/10.25504/FAIRsharing.a55z32">MINSEQE</a> guideline.</p>
+       <ol>
+         <li>Register a project to BioProject in the D-way submission portal.</li>
+         <li>Register samples to BioSample in the D-way submission portal.</li>
+         <li>Register raw sequencing data to DRA in the D-way submission portal.</li>
+         <li>Upload processed data files to a GEA submission directory by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA and GEA submissions. Enter metadata in MAGE-TAB template files and submit them in the D-way submission portal.</li>
+       </ol>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgngs</h1>
-        <p>Cumque voluptas libero. Perspiciatis nesciunt magnam. Quae unde delectus.</p>
-        <p>Excepturi rem sed. Inventore alias voluptates. Quasi porro autem.</p>
-        <p>Dolorem ut doloremque. Sint facere ut. Veritatis qui omnis.</p>
-        <p>Nostrum expedita rem. Eum ducimus praesentium. Magnam culpa et.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and GEA data. You can complete the BioProject submission in the course of the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgngs</h1>
-        <p>Quo molestias neque. Et facilis aperiam. Ut quod nihil.</p>
-        <p>Ducimus doloribus rerum. Iste aut assumenda. Sed ut alias.</p>
-        <p>Excepturi repellat eaque. Quibusdam impedit voluptatem. Id ex qui.</p>
-        <p>Architecto et dolorem. Eius sed optio. Aut cumque sit.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using a <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. BioSample is a record of biological sample with unique physical properties and majority of GEA submissions require more than one sample. You can complete the BioSample submission in the course of the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgngs</h1>
-        <p>Aut repellendus dolorum. Dolores ipsa veniam. Corrupti saepe qui.</p>
-        <p>Cum sit quis. Labore suscipit dolor. Consectetur temporibus amet.</p>
-        <p>Tempora vel odio. Accusamus voluptatem inventore. Repudiandae temporibus excepturi.</p>
-        <p>Possimus doloremque animi. Sit dicta quas. Rerum dicta asperiores.</p>
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs is more than 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol>
       ja:
   - title:
       en: GEA
       ja:
     body:
       en: |
-        <h1>data-from: q2-fgngs</h1>
-        <p>Neque et consectetur. Commodi assumenda pariatur. Sint sit ut.</p>
-        <p>Fugiat eveniet rerum. Libero aliquid fugiat. Quia voluptatem quia.</p>
-        <p>Officia aut velit. Ullam inventorefa et. Deserunt repellendus hic.</p>
-        <p>Aliquam voluptas numquam. Provident hic officiis. Sit quidem ut.</p>
+       <ul>
+         <li>Create a new GEA submission in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</li>
+         <li><a href="/gea/submit-sequence-e.html#upload-data">Upload processed data files by scp/sftp</a> to the GEA submission directory in the file server.</li>
+         <li>In the GEA submission, select the DRA submission that have been registered for this submission. The metadata <a href="/gea/metadata-e.html#idf">IDF</a> and <a href="/gea/metadata-e.html#sdrf">SDRF</a> template files are generated. Describe an overview of the experiment in the IDF, and the relationship between samples, the DRA runs and processed data files in the SDRF.</li>
+         <li>Submit the metadata IDF/SDRF and validate the data files.</li>
+       </ul>
       ja:
 q3-transcriptome-expression->g-bp-bs-dra-gea:
   sections:
@@ -1104,10 +1101,10 @@ q2-fgarray->g-bp-bs-gea:
       ja: 概要
     body:
       en: |
-       <p>Submit functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray to the <a href="/gea/index-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered before the GEA submission. Microarray data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/bsg-s000177/">MIAME</a> guideline.</p>
+       <p>Submit functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray to the <a href="/gea/submit-array-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered before the GEA submission. Microarray data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/bsg-s000177/">MIAME</a> guideline.</p>
        <ol>
-         <li>Register a project in BioProject in the D-way submission portal.</li>
-         <li>Register samples in BioSample in the D-way submission portal.</li>
+         <li>Register a project to BioProject in the D-way submission portal.</li>
+         <li>Register samples to BioSample in the D-way submission portal.</li>
          <li>Upload raw and processed data files to a GEA submission directory by scp/sftp.</li>
          <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the GEA submission. Enter metadata in MAGE-TAB template files and submit them in the D-way submission portal.</li>
        </ol>
@@ -1133,7 +1130,7 @@ q2-fgarray->g-bp-bs-gea:
       en: |
        <ul>
          <li>Create a new GEA submission in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</li>
-         <li><a href="/gea/submit-array-e.html#upload-data">Upload the raw and processed data files by scp/sftp</a> to the GEA submission directory in the file server.</li>
+         <li><a href="/gea/submit-array-e.html#upload-data">Upload raw and processed data files by scp/sftp</a> to the GEA submission directory in the file server.</li>
          <li>In the GEA submission, select the BioProject and BioSamples that have been registered for this submission. The metadata <a href="/gea/metadata-e.html#idf">IDF</a> and <a href="/gea/metadata-e.html#sdrf">SDRF</a> template files are generated. Describe an overview of the experiment in the IDF, and the relationship between samples, raw and processed data files in the SDRF.</li>
          <li>Submit the metadata IDF/SDRF and validate the data files.</li>
        </ul>
