@@ -16,7 +16,7 @@ q5-genome-eukaryote-complete-dra->g-bp-bs-dra:
       ja:
     body:
       en: |
-       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and has links to the public data. The BioProject submission can be done during the DRA submission.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
@@ -34,7 +34,7 @@ q5-genome-eukaryote-complete-dra->g-bp-bs-dra:
        <ol>
          <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
          <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs is more than 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
 q5-genome-eukaryote-draft-dra->g-bp-bs-dra:
@@ -44,136 +44,89 @@ q5-genome-eukaryote-draft-dra->g-bp-bs-dra:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-dra</h1>
-        <p>Qui inventore pariatur. Molestiae dolorem aperiam. Asperiores velit distinctio.</p>
-        <p>Atque ea voluptatibus. Qui vitae et. Omnis repudiandae non.</p>
-        <p>Perspiciatis fugit omnis. Ipsa nostrum cum. Commodi aut id.</p>
-        <p>Illo unde ullam. Quis placeat velit. Error aut repellat.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-dra</h1>
-        <p>Rerum veniam occaecati. Ipsam exercitationem molestias. Possimus odio enim.</p>
-        <p>Accusantium esse eos. Eaque sint doloremque. Quasi quae at.</p>
-        <p>Distinctio eius quidem. Ut qui labore. Consequuntur provident enim.</p>
-        <p>Ea sed est. Nemo est doloribus. Ut labore dolor.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-dra</h1>
-        <p>Illo fugiat praesentium. Libero odit exercitationem. Nesciunt qui fugit.</p>
-        <p>Qui sit reprehenderit. Sit non sequi. Et quia sint.</p>
-        <p>Libero modi possimus. Labore accusantium quas. Et sunt vero.</p>
-        <p>Accusamus quod nostrum. At maxime sapiente. Quia corporis est.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-dra</h1>
-        <p>Aut numquam velit. Quia laudantium sunt. Tempore blanditiis voluptas.</p>
-        <p>Molestiae dolorem maxime. Nostrum est repudiandae. Autem illo ab.</p>
-        <p>Illum quasi iste. Animi a cum. Et saepe voluptates.</p>
-        <p>Iure iste doloremque. Deleniti atque quia. Tempore incidunt non.</p>
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
-q5-genome-prokaryote-complete-dra->g-bp-bs-dra:
+q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss:
   sections:
   - title:
       en: Overview
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dra</h1>
-        <p>Rerum atque et. Eum rerum et. Cum officia fugiat.</p>
-        <p>Non culpa possimus. Mollitia ad ipsam. Et est tempore.</p>
-        <p>Sequi ipsam sint. Omnis voluptatem eos. Maxime et quas.</p>
-        <p>Iusto dolores quis. Cumque omnis sed. Non voluptatem expedita.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Submit complete genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dra</h1>
-        <p>Est ullam reiciendis. Eum nisi fugiat. Voluptatem quisquam enim.</p>
-        <p>Inventore veritatis in. Aperiam qui deleniti. Qui rerum dolorem.</p>
-        <p>Facere nam ab. Qui aut qui. Qui aut enim.</p>
-        <p>Numquam atque et. Nostrum libero molestias. Aut dolore vel.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes the DRA and genome data. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dra</h1>
-        <p>Eaque voluptatem vel. Hic voluptas tempora. Blanditiis aut numquam.</p>
-        <p>Commodi aspernatur accusantium. Harum molestiae mollitia. Consectetur voluptas iure.</p>
-        <p>Voluptas laudantium deserunt. Rerum ullam officiis. Veniam vel error.</p>
-        <p>Provident explicabo consequuntur. Expedita eum distinctio. Ratione quia error.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dra</h1>
-        <p>Omnis deleniti cumque. Laboriosam id distinctio. Corrupti nostrum consequatur.</p>
-        <p>Possimus architecto eum. Voluptas aliquam enim. Quisquam debitis saepe.</p>
-        <p>Deserunt ipsam autem. Error dolor quasi. Incidunt facere totam.</p>
-        <p>Maxime magnam ipsam. Molestiae ad aut. Esse dolorum et.</p>
-      ja:
-q5-genome-prokaryote-draft-dra->g-bp-bs-dra:
-  sections:
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
   - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dra</h1>
-        <p>Quod autem odit. Dicta aliquid exercitationem. Omnis cupiditate facere.</p>
-        <p>Reiciendis amet qui. Cum porro dolore. Nostrum at quo.</p>
-        <p>Quia id repellendus. Aut rerum aut. Aut voluptatum dolorem.</p>
-        <p>Earum voluptas nihil. Nam voluptas magni. In aspernatur accusantium.</p>
-      ja:
-  - title:
-      en: BioProject
+      en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dra</h1>
-        <p>Velit voluptatum incidunt. Sed qui et. Autem aliquam quam.</p>
-        <p>Ad adipisci tempore. Est neque ut. Doloribus quo error.</p>
-        <p>Corrupti magni reprehenderit. Ipsum quidem magnam. Quia nulla atque.</p>
-        <p>Sequi voluptas aspernatur. Recusandae reprehenderit quod. Aut molestiae nostrum.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dra</h1>
-        <p>Libero ea quisquam. Est adipisci maxime. Consequatur rerum voluptas.</p>
-        <p>Repellat minus nihil. Qui dolorem fugit. Dignissimos nemo rerum.</p>
-        <p>Ducimus vitae nulla. Commodi perspiciatis quia. Autem corrupti ex.</p>
-        <p>Quod dolores voluptas. Magni voluptates fugiat. In sunt hic.</p>
-      ja:
-  - title:
-      en: DRA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dra</h1>
-        <p>Dolores quae assumenda. Expedita quibusdam qui. Voluptatem sit vitae.</p>
-        <p>Molestias occaecati eos. Sit voluptatem sint. Deleniti quia expedita.</p>
-        <p>Consequatur culpa voluptas. Quae accusamus dolor. Autem et tenetur.</p>
-        <p>Architecto et aut. Explicabo esse doloribus. Et deserunt maiores.</p>
+       <p>Submit complete genome sequences (non-WGS) of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
+         <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix.</li>
+         <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
       ja:
 q4-metagenome-binned-dra->g-bp-bs-dra:
   sections:
@@ -444,7 +397,7 @@ q2-fgngs->g-bp-bs-dra-gea:
        <ol>
          <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
          <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-         <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs is more than 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
   - title:
@@ -534,14 +487,14 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and genome data. The BioProject submission can be done during the raw reads registration to the DRA.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and genome data. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the raw reads registration to the DRA.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
@@ -552,7 +505,7 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
        <ol>
          <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
          <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs is more than 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
   - title:
@@ -560,7 +513,7 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit finished level genomic sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -571,7 +524,7 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences without any problems.</p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level genome sequencess.</p>
       ja:
 q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
   sections:
@@ -591,14 +544,14 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and draft genome data. The BioProject submission can be done during the raw reads registration to the DRA.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and draft genome data. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the raw reads registration to the DRA.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
@@ -609,7 +562,7 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
        <ol>
          <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
          <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs is more than 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
   - title:
@@ -617,7 +570,7 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (whole genome shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -628,64 +581,7 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences without any problem.</p>
-      ja:
-q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dramss</h1>
-        <p>Corrupti quam blanditiis. Cum aut ducimus. Aperiam sed expedita.</p>
-        <p>Vitae autem dignissimos. Pariatur consectetur sequi. Enim sapiente ipsum.</p>
-        <p>Fugit quisquam sit. Ea suscipit consequuntur. Perspiciatis et quisquam.</p>
-        <p>Pariatur doloribus id. Quae facere modi. Consectetur commodi aut.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dramss</h1>
-        <p>Necessitatibus voluptas maxime. Odio aliquid id. Atque nisi fuga.</p>
-        <p>Debitis nostrum perspiciatis. Alias placeat dolorem. Possimus rem consequatur.</p>
-        <p>Veniam numquam odit. Nihil modi id. Est excepturi quasi.</p>
-        <p>Deserunt nihil doloribus. Sunt autem quos. Maiores repellendus tenetur.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dramss</h1>
-        <p>Dolor nemo voluptates. Sit quia molestiae. Eveniet sed perspiciatis.</p>
-        <p>Voluptatibus at nulla. Reiciendis id numquam. Eum saepe iste.</p>
-        <p>Cum aut praesentium. Rerum qui eveniet. Quasi voluptatibus vel.</p>
-        <p>Sit voluptatem est. Suscipit dignissimos explicabo. Laborum amet veniam.</p>
-      ja:
-  - title:
-      en: DRA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dramss</h1>
-        <p>Facilis illum assumenda. Tempore aut voluptatibus. Harum dolorem est.</p>
-        <p>Sunt autem eos. Commodi autem fugiat. Illo enim quia.</p>
-        <p>Quae numquam sed. Consequatur ad nesciunt. Dolorem esse enim.</p>
-        <p>Libero odit dolorem. Necessitatibus enim officiis. Repudiandae qui enim.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q5-genome-prokaryote-complete-dramss</h1>
-        <p>Minus non a. Officiis quo eveniet. Architecto officiis velit.</p>
-        <p>Ipsa sapiente earum. Corrupti quis dignissimos. Voluptatem dolor eos.</p>
-        <p>Excepturi sequi velit. Non neque explicabo. Architecto iure repudiandae.</p>
-        <p>Qui enim minima. Vero repellat quasi. Autem nihil natus.</p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
       ja:
 q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
   sections:
@@ -694,55 +590,128 @@ q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dramss</h1>
-        <p>Architecto earum ut. Est quibusdam quae. Suscipit qui officiis.</p>
-        <p>Eligendi similique sit. Dolorem occaecati fugit. Exercitationem nostrum sed.</p>
-        <p>Occaecati quibusdam nostrum. Ut quam est. Facere quia sunt.</p>
-        <p>Consequatur vitae quod. Ducimus dolores eveniet. Sed sit rem.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
+         <li>Submit draft genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dramss</h1>
-        <p>Tenetur maiores assumenda. Sunt nisi mollitia. Facilis natus sunt.</p>
-        <p>Iusto dolor modi. Ad non quas. Voluptas qui officiis.</p>
-        <p>Voluptatem non nemo. Architecto modi est. Eum nihil assumenda.</p>
-        <p>Rem quam deserunt. Sint eum cumque. Perferendis voluptate esse.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and draft genome data. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dramss</h1>
-        <p>Odio et ipsam. Aut veniam velit. Exercitationem nesciunt placeat.</p>
-        <p>Aut suscipit ut. Eveniet repudiandae aut. Sed assumenda rem.</p>
-        <p>Repudiandae amet reprehenderit. Maiores et dolor. Atque necessitatibus dicta.</p>
-        <p>Est quasi nobis. Nam distinctio dolor. Ipsam molestiae laborum.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dramss</h1>
-        <p>Excepturi corrupti est. Molestiae unde at. Iure exercitationem sit.</p>
-        <p>Quia est sunt. Qui est praesentium. Modi voluptas est.</p>
-        <p>Asperiores cupiditate modi. Adipisci et vero. Qui repudiandae quia.</p>
-        <p>Veritatis officiis iure. Ipsa hic qui. In asperiores id.</p>
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-dramss</h1>
-        <p>Praesentium quod dolore. Id assumenda doloremque. Voluptas necessitatibus vitae.</p>
-        <p>Laboriosam sed ut. Animi et veniam. Aut est rerum.</p>
-        <p>Impedit sed ut. Qui fuga quae. Ipsum molestiae praesentium.</p>
-        <p>Aut velit omnis. Earum ea voluptas. Ipsum et corrupti.</p>
+       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
+         <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix.</li>
+        <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
+      ja:
+q5-genome-prokaryote-complete-dra->g-bp-bs-dra:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
+      ja:
+q5-genome-prokaryote-draft-dra->g-bp-bs-dra:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
 q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
   sections:
@@ -1106,7 +1075,7 @@ q2-fgarray->g-bp-bs-gea:
       ja:
     body:
       en: |
-       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject contains the description of the research effort and has links to the public data.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject contains the description of the research effort.</p>
       ja:
   - title:
       en: BioSample
@@ -1144,7 +1113,7 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and has links to the public data.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
@@ -1158,7 +1127,7 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit finished level genomic sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -1169,7 +1138,7 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences without any problems.</p>       
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequencess.</p>       
       ja:
 q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
   sections:
@@ -1178,44 +1147,42 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-mss</h1>
-        <p>Inventore autem commodi. Vel quam provident. Exercitationem illo quia.</p>
-        <p>Sequi et illo. Doloremque ea quis. Odit ipsum nulla.</p>
-        <p>Illo doloribus qui. Error veniam eos. Nemo et eius.</p>
-        <p>Officiis nemo dolore. Quaerat velit mollitia. Commodi cupiditate excepturi.</p>
+       <ul>
+         <li>Register a BioProject and a BioSample during or before the draft genome submission.</li>
+         <li>Submit draft genome sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-mss</h1>
-        <p>Aut illo expedita. Et neque et. Quia fugiat iure.</p>
-        <p>Architecto sed a. Unde eaque rerum. Autem placeat laborum.</p>
-        <p>Voluptatum quasi quas. Accusantium qui consectetur. Itaque voluptas repellat.</p>
-        <p>Necessitatibus voluptas unde. Rerum minima quisquam. Sit labore excepturi.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-mss</h1>
-        <p>Et amet dolore. Temporibus maiores aliquid. Et reprehenderit minus.</p>
-        <p>Omnis amet enim. Rem sunt ratione. Quod dolores consequatur.</p>
-        <p>Ipsam ab et. Sint dicta repellendus. Id beatae repellat.</p>
-        <p>Aspernatur suscipit quaerat. Explicabo est rerum. Nobis sunt voluptates.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-eukaryote-draft-mss</h1>
-        <p>Quia quibusdam consequatur. Alias aut veniam. Explicabo totam dolor.</p>
-        <p>Dolores ex in. Inventore ipsa esse. Veniam rerum repudiandae.</p>
-        <p>Blanditiis rerum laboriosam. Omnis tenetur possimus. Adipisci ut mollitia.</p>
-        <p>Non praesentium maiores. Nam voluptas molestiae. Assumenda voluptatum animi.</p>
+       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
+         <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
       ja:
 q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
   sections:
@@ -1224,44 +1191,39 @@ q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-mss</h1>
-        <p>Corporis eum repellendus. Nostrum praesentium id. Soluta dignissimos officiis.</p>
-        <p>Asperiores accusamus cumque. Aut atque et. Rerum ut sunt.</p>
-        <p>Natus beatae voluptas. Quia quod consequatur. Quibusdam autem deserunt.</p>
-        <p>Et rerum perferendis. Aut non et. In ut dolore.</p>
+       <ul>
+         <li>Register a BioProject and a BioSample before the genome submission.</li>
+         <li>Submit complete genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-mss</h1>
-        <p>Commodi aut velit. Dolore nihil odio. Omnis voluptate maiores.</p>
-        <p>Perspiciatis aut temporibus. Laudantium ducimus officiis. Similique quidem perspiciatis.</p>
-        <p>Reiciendis est voluptatibus. Aut qui aut. In quas voluptatibus.</p>
-        <p>Qui pariatur esse. Iure modi sed. Rerum explicabo repellat.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-mss</h1>
-        <p>Qui quos sit. Sapiente harum veniam. Placeat sed quis.</p>
-        <p>Quae reiciendis voluptatem. Sit totam modi. Et dolorum aut.</p>
-        <p>Vel minima veritatis. Impedit cumque laborum. In sapiente est.</p>
-        <p>Nulla et est. Beatae sint libero. Omnis error eos.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-complete-mss</h1>
-        <p>Officia qui minus. Est et et. Dolorem sunt sit.</p>
-        <p>Magnam sit quae. Voluptatem distinctio qui. Modi numquam voluptas.</p>
-        <p>Aliquid esse aut. Alias impedit aut. Qui dolores aut.</p>
-        <p>Ab quidem enim. Illum perspiciatis rem. Nostrum assumenda expedita.</p>
+       <p>Submit complete genome sequences (non-WGS) of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
+         <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix.</li>
+         <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
       ja:
 q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
   sections:
@@ -1270,44 +1232,40 @@ q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-mss</h1>
-        <p>Sit ut tenetur. Est dicta et. Sint voluptate dicta.</p>
-        <p>Ipsam sit sint. Saepe reprehenderit voluptatem. Rerum sed voluptatum.</p>
-        <p>Sunt corporis voluptate. Dolores deserunt sed. Voluptate eligendi esse.</p>
-        <p>Molestias expedita totam. Eum cupiditate mollitia. Est eaque dolores.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register a BioProject and a BioSample before the draft genome submissions.</li>
+         <li>Submit draft genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-mss</h1>
-        <p>Porro et sed. Sequi unde nihil. Rerum eos praesentium.</p>
-        <p>A molestiae aperiam. Doloremque tempora harum. Fuga quos aut.</p>
-        <p>Corporis aut quasi. Doloribus accusantium quis. Ex suscipit voluptas.</p>
-        <p>Voluptatibus porro nostrum. Iusto autem non. Quidem officiis sed.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-mss</h1>
-        <p>Consequatur et eveniet. Quibusdam sunt quos. Tempore illum alias.</p>
-        <p>Velit praesentium dolorum. Repellendus eveniet enim. Quod qui modi.</p>
-        <p>Beatae quod nihil. Animi esse repudiandae. Totam et dicta.</p>
-        <p>Maxime culpa exercitationem. Earum deleniti voluptatum. Sit possimus impedit.</p>
+       <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q5-genome-prokaryote-draft-mss</h1>
-        <p>Aut quidem placeat. Velit exercitationem illo. Doloremque et corporis.</p>
-        <p>Quia ab repellat. Consectetur et veniam. Sed quis voluptates.</p>
-        <p>Est porro vel. Qui consequatur reprehenderit. Ut soluta tenetur.</p>
-        <p>Ut et voluptatem. Et architecto enim. Tenetur blanditiis voluptatem.</p>
+       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
+         <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix.</li>
+        <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
       ja:
 q4-metagenome-mag-mss->g-bp-bs-mss:
   sections:
