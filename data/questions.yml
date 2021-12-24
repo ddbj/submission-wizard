@@ -348,13 +348,13 @@ q4-genome-virus:
       ja:
     next:
       type: goal
-      id: nsss->g-nsss
+      id: q4-genome-virus-nsss->g-nsss
   - label:
       en: More than 500 sequences and/or longer than 500kb
       ja:
     next:
       type: goal
-      id: mss->g-mss
+      id: q4-genome-virus-mss->g-mss
 q3-metagenome:
   text:
     en: What type of metagenomic sequence do you have?

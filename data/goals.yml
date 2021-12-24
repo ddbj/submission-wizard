@@ -1815,29 +1815,53 @@ q4-genome-organelle-nsss->g-nsss:
         <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
         <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
       ja:
-nsss->g-nsss:
+q4-genome-virus-nsss->g-nsss:
   sections:
   - title:
       en: Overview
       ja: 概要
     body:
       en: |
-        <h1>data-from: nsss</h1>
-        <p>Rerum vel voluptate. Est nihil qui. Autem quasi minima.</p>
-        <p>Ratione ea labore. Suscipit nesciunt id. Dolorum eos non.</p>
-        <p>Beatae sequi repellendus. Quasi dolorem praesentium. Deleniti id fugit.</p>
-        <p>Eligendi eius quos. Et dolores voluptatibus. Vero vel voluptate.</p>
+        <h1>data-from: q4-genome-virus-nsss</h1>
+        <p>Sapiente corrupti cum. Autem iure aperiam. Dolorum ratione officiis.</p>
+        <p>Et et iure. Dolores dolorem et. Quos soluta illo.</p>
+        <p>Error aut totam. Illo sit repellat. Quo omnis repudiandae.</p>
+        <p>Corrupti amet voluptas. Repellat voluptate et. Labore modi vel.</p>
       ja:
   - title:
       en: NSSS
       ja:
     body:
       en: |
-        <h1>data-from: nsss</h1>
-        <p>Aut rem amet. Sapiente aut nostrum. Autem ut saepe.</p>
-        <p>Qui architecto dolorem. Repudiandae assumenda sequi. Itaque quas ipsam.</p>
-        <p>Soluta deserunt consequatur. Earum sed laborum. Autem incidunt quidem.</p>
-        <p>Sunt provident ducimus. Consequuntur ut natus. Incidunt itaque aut.</p>
+        <h1>data-from: q4-genome-virus-nsss</h1>
+        <p>Eaque officia fuga. Explicabo maiores repudiandae. Excepturi voluptatem quae.</p>
+        <p>Hic aut fuga. Voluptatum omnis amet. Esse qui dolorum.</p>
+        <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
+        <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
+      ja:
+q4-genome-virus-mss->g-mss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+        <h1>data-from: q4-genome-virus-mss</h1>
+        <p>Sapiente corrupti cum. Autem iure aperiam. Dolorum ratione officiis.</p>
+        <p>Et et iure. Dolores dolorem et. Quos soluta illo.</p>
+        <p>Error aut totam. Illo sit repellat. Quo omnis repudiandae.</p>
+        <p>Corrupti amet voluptas. Repellat voluptate et. Labore modi vel.</p>
+      ja:
+  - title:
+      en: NSSS
+      ja:
+    body:
+      en: |
+        <h1>data-from: q4-genome-virus-mss</h1>
+        <p>Eaque officia fuga. Explicabo maiores repudiandae. Excepturi voluptatem quae.</p>
+        <p>Hic aut fuga. Voluptatum omnis amet. Esse qui dolorum.</p>
+        <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
+        <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
       ja:
 q4-transcriptome-other-nsss->g-nsss:
   sections:
