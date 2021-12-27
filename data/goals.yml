@@ -265,53 +265,6 @@ q4-transcriptome-other-dra->g-bp-bs-dra:
          <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
-q3-other-dra->g-bp-bs-dra:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-other-dra</h1>
-        <p>Atque voluptatem dolor. Minus commodi quisquam. Quo soluta non.</p>
-        <p>Occaecati sunt ut. Et enim laudantium. Amet necessitatibus facilis.</p>
-        <p>Inventore accusantium eaque. Nemo dolores ut. Id voluptatem animi.</p>
-        <p>Voluptas omnis et. Quas dolor totam. Pariatur inventore ab.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dra</h1>
-        <p>Ea amet quos. Nostrum voluptatem quis. Aspernatur illo dolor.</p>
-        <p>Et doloribus placeat. Ut expedita eligendi. Error est incidunt.</p>
-        <p>Eum alias magnam. Esse explicabo libero. Fugiat doloremque ut.</p>
-        <p>Maxime exercitationem omnis. Autem veniam beatae. Vel fugiat sunt.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dra</h1>
-        <p>Ipsa molestiae non. Amet porro voluptatem. Fugiat et in.</p>
-        <p>Ut vel et. Nam consequatur provident. Cumque debitis molestias.</p>
-        <p>Eum et vel. Eaque distinctio mollitia. Placeat nemo sunt.</p>
-        <p>Ut suscipit inventore. Numquam est voluptas. Consequatur voluptas dolorem.</p>
-      ja:
-  - title:
-      en: DRA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dra</h1>
-        <p>Dolores amet dolor. Magni porro necessitatibus. Laborum dolores ipsam.</p>
-        <p>Eveniet ut modi. Blanditiis sint ipsum. Aut quam quis.</p>
-        <p>Eos qui qui. Vel recusandae dolore. Omnis nostrum aut.</p>
-        <p>Dolorem debitis facilis. Occaecati qui labore. Et facilis deserunt.</p>
-      ja:
-q2-fgngs->g-bp-bs-dra-gea:
 q3-transcriptome-expression->g-bp-bs-dra-gea:
   sections:
   - title:
@@ -365,63 +318,6 @@ q3-transcriptome-expression->g-bp-bs-dra-gea:
          <li>In the GEA submission, select the DRA submission that have been registered for this submission. The metadata <a href="/gea/metadata-e.html#idf">IDF</a> and <a href="/gea/metadata-e.html#sdrf">SDRF</a> template files are generated. Describe an overview of the experiment in the IDF, and the relationship between samples, the DRA runs and processed data files in the SDRF.</li>
          <li>Submit the metadata IDF/SDRF and validate the data files.</li>
        </ul>
-      ja:
-q3-transcriptome-expression->g-bp-bs-dra-gea:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-transcriptome-expression</h1>
-        <p>Dicta quia blanditiis. Et ducimus neque. Quod repellendus aut.</p>
-        <p>Magnam aut excepturi. Tenetur et doloremque. Et harum nihil.</p>
-        <p>Dolor dolor rerum. Quidem illo magni. Recusandae occaecati ad.</p>
-        <p>Inventore ratione a. Magni laudantium et. In adipisci consectetur.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-transcriptome-expression</h1>
-        <p>Voluptatibus sapiente officiis. Ut veritatis dolor. Commodi expedita dolore.</p>
-        <p>Minima non laudantium. Aut voluptatem sed. Illum eum suscipit.</p>
-        <p>Sint voluptatem eos. Occaecati alias sed. Aliquam atque assumenda.</p>
-        <p>Laudantium aut molestias. Rem quibusdam dolore. Natus dolore autem.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-transcriptome-expression</h1>
-        <p>At facilis consectetur. Quos esse saepe. Id ipsum quo.</p>
-        <p>Blanditiis molestiae magni. Earum in odit. Voluptatibus velit quidem.</p>
-        <p>Aut accusamus quos. Voluptatem dolores odio. Optio eos officia.</p>
-        <p>Incidunt delectus nesciunt. Recusandae et ratione. Corrupti error voluptas.</p>
-      ja:
-  - title:
-      en: DRA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-transcriptome-expression</h1>
-        <p>Et enim dicta. Rerum quaerat aut. Ab repudiandae et.</p>
-        <p>Non sunt odit. Voluptatibus eligendi qui. Consectetur magni quia.</p>
-        <p>Dolores aut id. Vel aut ratione. Sit enim quia.</p>
-        <p>In officiis sit. Ex qui consequuntur. Architecto exercitationem et.</p>
-      ja:
-  - title:
-      en: GEA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-transcriptome-expression</h1>
-        <p>Non deserunt hic. Voluptatibus non tempora. Tenetur quo esse.</p>
-        <p>Tempore dolor quam. Sed animi occaecati. Nihil quia est.</p>
-        <p>Sint ipsum est. Recusandae non provident. Qui incidunt quasi.</p>
-        <p>Voluptatum autem at. Dolores maxime ut. Iste est dolor.</p>
       ja:
 q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
   sections:
@@ -943,63 +839,6 @@ q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
       ja:
-q3-other-dramss->g-bp-bs-dra-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-other-dramss</h1>
-        <p>Magni nisi minus. Consectetur repellat voluptas. Et rerum aperiam.</p>
-        <p>Sequi deleniti quaerat. Qui officiis non. Consequuntur dolores laborum.</p>
-        <p>Excepturi assumenda natus. Hic velit asperiores. Blanditiis ratione eveniet.</p>
-        <p>Assumenda nostrum quisquam. Fuga eum recusandae. Qui pariatur et.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dramss</h1>
-        <p>Qui distinctio atque. Ut dolores qui. At quasi et.</p>
-        <p>Ullam minima ratione. Et ea nam. Explicabo quis eaque.</p>
-        <p>Quasi repellat quia. Sunt amet dolorem. Excepturi non sint.</p>
-        <p>Inventore rerum praesentium. Rerum voluptas est. Nihil perspiciatis voluptatem.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dramss</h1>
-        <p>Ducimus quo porro. Quis consequuntur voluptatem. Et iste quod.</p>
-        <p>Dolorem illum commodi. Accusantium quia incidunt. Nesciunt non quibusdam.</p>
-        <p>Corporis perspiciatis quibusdam. Consequatur modi veritatis. Quod veritatis nihil.</p>
-        <p>Modi incidunt id. Unde sit ad. Quos aspernatur est.</p>
-      ja:
-  - title:
-      en: DRA
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dramss</h1>
-        <p>Magni illo repellat. Corrupti tenetur est. Labore culpa at.</p>
-        <p>Corrupti incidunt ut. Velit nesciunt exercitationem. Id nostrum perferendis.</p>
-        <p>Officiis modi perspiciatis. Eligendi aut quo. Et excepturi voluptas.</p>
-        <p>Est culpa eos. Ducimus neque ea. Qui harum iure.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-dramss</h1>
-        <p>Architecto voluptatem et. Soluta tenetur incidunt. Qui quasi qui.</p>
-        <p>Adipisci dolores dolores. Minus sint aut. Omnis quia debitis.</p>
-        <p>Et sed aliquid. Dignissimos quos quibusdam. Earum quo cupiditate.</p>
-        <p>Doloremque laudantium omnis. Voluptas quis consequatur. Pariatur at distinctio.</p>
-      ja:
 q2-fgarray->g-bp-bs-gea:
   sections:
   - title:
@@ -1304,9 +1143,7 @@ q4-transcriptome-other-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-       <ul>
-         <li>Submit large-scale (more than 500 sequences and/or longer than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the RNA sequencing is part of a larger project.</li>
-       </ul>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the RNA sequencing is part of a larger project.</p>
       ja:
   - title:
       en: BioProject
@@ -1339,6 +1176,100 @@ q4-transcriptome-other-mss->g-bp-bs-mss:
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
       ja:
+q3-other-dramss->g-bp-bs-dra-mss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
+         <li>Submit other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
+      ja:
+  - title:
+      en: MSS
+      ja:
+    body:
+      en: |
+       <p>Submit other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
+         <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
+      ja:
+q3-other-dra->g-bp-bs-dra:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
+      ja:
 q3-other-mss->g-bp-bs-mss:
   sections:
   - title:
@@ -1346,44 +1277,62 @@ q3-other-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-other-mss</h1>
-        <p>Vel adipisci aut. Explicabo amet eum. Aliquid qui aut.</p>
-        <p>Quos autem nostrum. Possimus est recusandae. Sint temporibus totam.</p>
-        <p>Et vitae perferendis. Et labore itaque. Voluptatem fugiat sit.</p>
-        <p>Amet aliquam quia. Sit rerum consequatur. Illo voluptas nisi.</p>
+        <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the other DNA/RNA sequencing is part of a larger project.</p>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q3-other-mss</h1>
-        <p>Ad nemo quam. Enim ipsa tempora. Dignissimos autem voluptatem.</p>
-        <p>Voluptatum rem ullam. Quasi aut ut. Odit dolorem rerum.</p>
-        <p>Eos eaque neque. Consequatur harum alias. Sit nesciunt magni.</p>
-        <p>Illum a quia. Aut ipsam voluptate. Reprehenderit ea cupiditate.</p>
+       <p>You may register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q3-other-mss</h1>
-        <p>Est et a. Eligendi vitae ad. Eveniet velit et.</p>
-        <p>Delectus earum ea. Commodi dolore ipsam. Odit vel asperiores.</p>
-        <p>Voluptatem dolorem sed. Praesentium ex repellendus. Fugiat eos sed.</p>
-        <p>Quam eos corporis. Eum fugiat est. Reiciendis dolorum alias.</p>
+       <p>You may register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q3-other-mss</h1>
-        <p>Eius omnis voluptas. Ea assumenda nihil. Ipsam inventore sint.</p>
-        <p>Cum asperiores quia. Qui et eveniet. Quis iure qui.</p>
-        <p>Dolorum distinctio omnis. Nesciunt et voluptatum. Illo voluptas et.</p>
-        <p>Accusantium itaque nemo. Voluptatem sed qui. Debitis molestiae amet.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the other DNA/RNA sequencing is part of a larger project.</li>
+         <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
+      ja:
+q3-other-nsss->g-nsss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+      ja:
+  - title:
+      en: NSSS
+      ja:
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>Select an annotation template and describe annotation.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the other DNA/RNA sequences.</p>
       ja:
 q3-tpa-wgs-assembly->g-bp-bs-mss:
   sections:
@@ -1614,22 +1563,16 @@ q3-variation-humsnp->g-jvarsnp:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-variation-humsnp</h1>
-        <p>Placeat nisi cupiditate. Assumenda quia laudantium. Suscipit error rem.</p>
-        <p>Quis dolores laboriosam. Voluptatum ut libero. Qui est et.</p>
-        <p>Dicta voluptate quis. Tempora molestias excepturi. Laboriosam cumque vitae.</p>
-        <p>Vel voluptatum reiciendis. Aliquam est ab. Eius sed dolorum.</p>
+       <p>Submit human short genetic variations (&le;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
+       <p>JVar is under construction.</p>
       ja:
   - title:
       en: JVar-SNP
       ja:
     body:
       en: |
-        <h1>data-from: q3-variation-humsnp</h1>
-        <p>Nihil aliquid placeat. Et quidem maxime. Sunt facere et.</p>
-        <p>Accusamus aut officia. Sunt sed suscipit. Cum maxime voluptatem.</p>
-        <p>Et aperiam officia. Quaerat culpa nobis. Quae alias quia.</p>
-        <p>Dolor sint facere. Quibusdam dolorem error. Dolorem explicabo soluta.</p>
+       <p>Submit human short genetic variations (&le;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
+       <p>JVar is under construction.</p>
       ja:
 q3-variation-humsv->g-jvarsv:
   sections:
@@ -1638,22 +1581,16 @@ q3-variation-humsv->g-jvarsv:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-variation-humsv</h1>
-        <p>Ullam qui harum. Architecto fugit in. Ratione nostrum sequi.</p>
-        <p>Beatae aut necessitatibus. Aut nihil delectus. Deserunt error qui.</p>
-        <p>Sunt provident facere. Quos nostrum ab. Consequatur quia placeat.</p>
-        <p>Quae quos omnis. Aut sit soluta. Beatae blanditiis at.</p>
+       <p>Submit human structural variations (&gt;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
+       <p>JVar is under construction.</p>
       ja:
   - title:
       en: JVar-SV
       ja:
     body:
       en: |
-        <h1>data-from: q3-variation-humsv</h1>
-        <p>Qui similique incidunt. Velit et sint. Ut saepe cum.</p>
-        <p>Id eaque quos. Distinctio tenetur officia. Corrupti corporis laudantium.</p>
-        <p>Ipsa perferendis exercitationem. Iure pariatur praesentium. Saepe nihil consectetur.</p>
-        <p>Veniam hic qui. Aliquid fugiat non. Quaerat veniam officiis.</p>
+       <p>Submit human structural variations (&gt;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
+       <p>JVar is under construction.</p>
       ja:
 q2-metabolomics->g-mb:
   sections:
@@ -1662,22 +1599,14 @@ q2-metabolomics->g-mb:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q2-metabolomics</h1>
-        <p>Consequatur maxime repudiandae. Molestiae deleniti et. Odio id est.</p>
-        <p>Consequatur qui voluptas. Exercitationem voluptatem odit. Ipsa molestiae quis.</p>
-        <p>Sapiente quis occaecati. Culpa eos excepturi. Vero illum consectetur.</p>
-        <p>Aut fuga voluptate. Molestiae quod et. Non est dolore.</p>
+        <p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>.</p>
       ja:
   - title:
       en: MetaboBank
       ja:
     body:
       en: |
-        <h1>data-from: q2-metabolomics</h1>
-        <p>Sit consequatur reiciendis. Voluptatem aperiam sint. Expedita ab ut.</p>
-        <p>Quod excepturi dicta. Reiciendis harum iste. Magni placeat molestiae.</p>
-        <p>Suscipit blanditiis omnis. Magni odio consequatur. Quis aut incidunt.</p>
-        <p>Nesciunt magni odit. Molestiae aliquid libero. Molestiae sunt harum.</p>
+        <p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>. You need to register your project to <a href="/bioproject/submission-e.html">BioProject</a> and your samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Please contact the <a href="/contact-ddbj-e.html">MetaboBank team</a> before submission.</p>
       ja:
 q4-genome-plasmid-mss->g-mss:
   sections:
@@ -1686,22 +1615,22 @@ q4-genome-plasmid-mss->g-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-genome-plasmid-mss</h1>
-        <p>Vitae doloribus sit. Qui dolore quae. Consectetur et distinctio.</p>
-        <p>Adipisci ut porro. Rerum alias non. Perspiciatis qui officia.</p>
-        <p>Id vitae qui. Et voluptatum aut. Inventore eum quo.</p>
-        <p>Vitae totam facilis. Eos modi explicabo. Quis voluptas nobis.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-genome-plasmid-mss</h1>
-        <p>Dolores architecto tempora. Et adipisci aspernatur. Et consectetur sed.</p>
-        <p>Blanditiis dicta aut. Laudantium labore fugit. Quia ad magnam.</p>
-        <p>Facere quia rerum. In ipsum in. Temporibus deleniti rerum.</p>
-        <p>Reprehenderit et assumenda. Excepturi velit praesentium. Dolor autem earum.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
       ja:
 q4-genome-organelle-mss->g-mss:
   sections:
@@ -1710,118 +1639,22 @@ q4-genome-organelle-mss->g-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-genome-organelle-mss</h1>
-        <p>Occaecati doloribus voluptatibus. Iusto fugit commodi. Sit voluptatem sed.</p>
-        <p>Assumenda temporibus praesentium. Officiis modi maiores. Dolorem qui cupiditate.</p>
-        <p>Quam quae excepturi. Aliquam architecto voluptas. Quam magnam sunt.</p>
-        <p>Consectetur sed molestiae. Et cum voluptatibus. Voluptatum dolore sunt.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-genome-organelle-mss</h1>
-        <p>Ratione porro molestiae. Dolores repellat rerum. Sit similique aut.</p>
-        <p>Debitis vel quia. Nisi explicabo soluta. Soluta aut quis.</p>
-        <p>Sint quas quia. Culpa suscipit est. Voluptatem ipsa est.</p>
-        <p>Rerum ut mollitia. Est voluptate nam. Rerum repellendus voluptas.</p>
-      ja:
-mss->g-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: mss</h1>
-        <p>Id nulla voluptas. Iure recusandae amet. Iure ut unde.</p>
-        <p>Quis qui nulla. Non et quae. Laborum perspiciatis voluptates.</p>
-        <p>Dignissimos aut dolore. Molestias eveniet voluptate. Et molestias eveniet.</p>
-        <p>Nobis quaerat molestiae. Amet temporibus quaerat. Officiis qui sit.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: mss</h1>
-        <p>Pariatur ipsum deserunt. Qui dicta cupiditate. Voluptates dignissimos repudiandae.</p>
-        <p>Consequatur accusantium praesentium. Optio qui voluptatem. Consequatur quas doloremque.</p>
-        <p>Magnam officiis aspernatur. Non excepturi eaque. Est pariatur nam.</p>
-        <p>Sequi qui quidem. Et occaecati placeat. Nesciunt voluptatem impedit.</p>
-      ja:
-q4-genome-plasmid-nsss->g-nsss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q4-genome-plasmid-nsss</h1>
-        <p>Saepe mollitia quia. Odio consequuntur esse. Cum consectetur deserunt.</p>
-        <p>Ut cumque et. Sed voluptas unde. Ullam et cum.</p>
-        <p>Est sunt et. Adipisci ipsam eveniet. Perferendis aperiam officiis.</p>
-        <p>Quisquam dicta autem. Voluptatem consequatur sint. Ut sed molestiae.</p>
-      ja:
-  - title:
-      en: NSSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q4-genome-plasmid-nsss</h1>
-        <p>A qui ad. Quis vitae iure. Eos reiciendis quis.</p>
-        <p>Et qui illum. Nesciunt totam incidunt. Reiciendis repudiandae quidem.</p>
-        <p>Consequuntur et aut. Dolorem omnis aspernatur. Ut porro sapiente.</p>
-        <p>Dignissimos nemo minus. Id necessitatibus consequatur. Consequuntur sit voluptas.</p>
-      ja:
-q4-genome-organelle-nsss->g-nsss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q4-genome-organelle-nsss</h1>
-        <p>Sapiente corrupti cum. Autem iure aperiam. Dolorum ratione officiis.</p>
-        <p>Et et iure. Dolores dolorem et. Quos soluta illo.</p>
-        <p>Error aut totam. Illo sit repellat. Quo omnis repudiandae.</p>
-        <p>Corrupti amet voluptas. Repellat voluptate et. Labore modi vel.</p>
-      ja:
-  - title:
-      en: NSSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q4-genome-organelle-nsss</h1>
-        <p>Eaque officia fuga. Explicabo maiores repudiandae. Excepturi voluptatem quae.</p>
-        <p>Hic aut fuga. Voluptatum omnis amet. Esse qui dolorum.</p>
-        <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
-        <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
-      ja:
-q4-genome-virus-nsss->g-nsss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q4-genome-virus-nsss</h1>
-        <p>Sapiente corrupti cum. Autem iure aperiam. Dolorum ratione officiis.</p>
-        <p>Et et iure. Dolores dolorem et. Quos soluta illo.</p>
-        <p>Error aut totam. Illo sit repellat. Quo omnis repudiandae.</p>
-        <p>Corrupti amet voluptas. Repellat voluptate et. Labore modi vel.</p>
-      ja:
-  - title:
-      en: NSSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q4-genome-virus-nsss</h1>
-        <p>Eaque officia fuga. Explicabo maiores repudiandae. Excepturi voluptatem quae.</p>
-        <p>Hic aut fuga. Voluptatum omnis amet. Esse qui dolorum.</p>
-        <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
-        <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
       ja:
 q4-genome-virus-mss->g-mss:
   sections:
@@ -1830,22 +1663,94 @@ q4-genome-virus-mss->g-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-genome-virus-mss</h1>
-        <p>Sapiente corrupti cum. Autem iure aperiam. Dolorum ratione officiis.</p>
-        <p>Et et iure. Dolores dolorem et. Quos soluta illo.</p>
-        <p>Error aut totam. Illo sit repellat. Quo omnis repudiandae.</p>
-        <p>Corrupti amet voluptas. Repellat voluptate et. Labore modi vel.</p>
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+      ja:
+  - title:
+      en: MSS
+      ja:
+    body:
+      en: |
+       <p>Submit large-scale (more than 500 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
+      ja:
+q4-genome-plasmid-nsss->g-nsss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
       ja:
   - title:
       en: NSSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-genome-virus-mss</h1>
-        <p>Eaque officia fuga. Explicabo maiores repudiandae. Excepturi voluptatem quae.</p>
-        <p>Hic aut fuga. Voluptatum omnis amet. Esse qui dolorum.</p>
-        <p>Eum possimus quis. Dolor cum est. Ad esse nulla.</p>
-        <p>Laudantium tempora quas. Itaque nostrum nisi. Doloribus sit exercitationem.</p>
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>Select an annotation template and describe annotation.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
+      ja:
+q4-genome-organelle-nsss->g-nsss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+      ja:
+  - title:
+      en: NSSS
+      ja:
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>Select an annotation template and describe annotation.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
+      ja:
+q4-genome-virus-nsss->g-nsss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+      ja:
+  - title:
+      en: NSSS
+      ja:
+    body:
+      en: |
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>Select an annotation template and describe annotation.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
       ja:
 q4-transcriptome-other-nsss->g-nsss:
   sections:
@@ -1854,9 +1759,7 @@ q4-transcriptome-other-nsss->g-nsss:
       ja: 概要
     body:
       en: |
-       <ul>
-         <li>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</li>
-       </ul>
+        <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
       ja:
   - title:
       en: NSSS
@@ -1872,30 +1775,6 @@ q4-transcriptome-other-nsss->g-nsss:
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
-      ja:
-q3-other-nsss->g-nsss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-other-nsss</h1>
-        <p>Sit sunt dolor. Asperiores nobis iusto. Similique magnam quaerat.</p>
-        <p>Omnis debitis delectus. Tenetur animi nesciunt. Aliquam magnam atque.</p>
-        <p>Maxime eos distinctio. Commodi qui est. Quia officia amet.</p>
-        <p>Delectus facilis deleniti. Expedita et ullam. Officiis voluptas temporibus.</p>
-      ja:
-  - title:
-      en: NSSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-other-nsss</h1>
-        <p>Rerum neque aspernatur. Necessitatibus fuga et. Accusantium distinctio et.</p>
-        <p>Est nulla et. Aut et voluptate. Dolorem ut recusandae.</p>
-        <p>Ut illum sequi. Consequatur ratione et. Possimus alias illum.</p>
-        <p>Sunt dolore sunt. Aut ipsa sit. Eos aut saepe.</p>
       ja:
 q3-tpa-experimental->g-nsss:
   sections:
