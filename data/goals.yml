@@ -8,7 +8,7 @@ q5-genome-eukaryote-complete-dra->g-bp-bs-dra:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -46,7 +46,7 @@ q5-genome-eukaryote-draft-dra->g-bp-bs-dra:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -84,8 +84,8 @@ q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
-         <li>Submit complete genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
+         <li>Submit complete genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
        </ul>
       ja:
   - title:
@@ -118,7 +118,7 @@ q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit complete genome sequences (non-WGS) of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+       <p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -136,7 +136,7 @@ q4-metagenome-binned-dra->g-bp-bs-dra:
     body:
       en: |
          <p>Binned metagenome assemblies asserted to known taxonomies (Binned metagenome) should be submitted to <a href="/dra/submission-e.html#Analysis">DRA Analysis.</a>. The raw sequence reads from which the binned metagenomes are derived should be submitted to <a href="/dra/submission-e.html">DRA Run.</a></p>
-         <p>Register a BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for binned metagenoms are necessary.</p>
+         <p>Register a project to BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for binned metagenoms are necessary.</p>
          <p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
       ja:
   - title:
@@ -172,7 +172,7 @@ q4-metagenome-tls-dra->g-bp-bs-dra:
        <p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms.</p>
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -198,7 +198,7 @@ q4-metagenome-other-dra->g-bp-bs-dra:
       en: |
        <ul>
          <li>Register raw metagenomic sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -439,8 +439,8 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and genome submissions.</li>
-         <li>Submit finished level genomic sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+         <li>Register a project to BioProject and a sample to BioSample during the DRA submission or before the DRA and genome submissions.</li>
+         <li>Submit finished level genomic sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
        </ul>
       ja:
   - title:
@@ -474,7 +474,7 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -485,7 +485,7 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level genome sequencess.</p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level genome sequences.</p>
       ja:
 q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
   sections:
@@ -496,8 +496,8 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
-         <li>Submit draft genome sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+         <li>Register a project to BioProject and a sample to BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
+         <li>Submit draft genome sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
        </ul>
       ja:
   - title:
@@ -531,7 +531,7 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -553,8 +553,8 @@ q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
-         <li>Submit draft genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+         <li>Register a project to BioProject and a sample to BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
+         <li>Submit draft genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
        </ul>
       ja:
   - title:
@@ -588,7 +588,7 @@ q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -607,7 +607,7 @@ q5-genome-prokaryote-complete-dra->g-bp-bs-dra:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -645,7 +645,7 @@ q5-genome-prokaryote-draft-dra->g-bp-bs-dra:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
        </ul>
       ja:
   - title:
@@ -681,11 +681,11 @@ q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-         <p>A highest quality representative binned assembly (Metagenome-Assembled Genome, MAG) predicted to be derived from taxonomically defined organisms should be submitted to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as genome entries of <a href="/ddbj/env-e.html">ENV</a> division.</p>
+         <p>A highest quality representative binned assembly (Metagenome-Assembled Genome, MAG) predicted to be derived from taxonomically defined organisms should be submitted to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as genome entries of <a href="/ddbj/env-e.html">ENV</a> division.</p>
          <ul>
            <li>Register unassembled raw reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-           <li>Register a BioProject and BioSamples. Two samples, one is for raw metagenomic sequencing reads and the other is for a MAG are necessary.</li>
-           <li>Submit MAG through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+           <li>Register a project to BioProject and BioSamples. Two samples, one is for raw metagenomic sequencing reads and the other is for a MAG are necessary.</li>
+           <li>Submit MAG to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
          </ul>         
          <p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
       ja:
@@ -722,7 +722,7 @@ q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit the MAG as a genome entry of <a href="/ddbj/env-e.html">ENV division</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+       <p>Submit the MAG as a genome entry of <a href="/ddbj/env-e.html">ENV division</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
@@ -742,11 +742,11 @@ q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-       <p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms. Submit TLS data to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms. Submit TLS data to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
-         <li>Submit <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
+         <li>Submit <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
        </ul>
       ja:
   - title:
@@ -768,7 +768,7 @@ q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit the <a href="/ddbj/tls-e.html">TLS</a> data through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+       <p>Submit the <a href="/ddbj/tls-e.html">TLS</a> data to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the TLS submission.</li>           
@@ -786,11 +786,11 @@ q4-metagenome-other-dramss->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-         <p>Submit metagenomic, environmental sequences to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</p>
+         <p>Submit metagenomic, environmental sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</p>
          <ul>
-           <li>Register a BioProject and a BioSample for metagenomic sequences.</li>
+           <li>Register a project to BioProject and a sample to BioSample for metagenomic sequences.</li>
            <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-           <li>Submit metagenomic sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</li>
+           <li>Submit metagenomic sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</li>
          </ul>         
       ja:
   - title:
@@ -824,7 +824,7 @@ q4-metagenome-other-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+       <p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the DRA submission.</li>
@@ -843,55 +843,56 @@ q3-transcriptome-tsa->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-transcriptome-tsa</h1>
-        <p>Nihil et libero. Aut quia enim. Doloremque itaque nihil.</p>
-        <p>Alias aliquid rerum. Odio quo corporis. Sit vel praesentium.</p>
-        <p>Enim quos odit. Aliquam unde quod. Et quo fugiat.</p>
-        <p>Ullam earum illum. Et est ea. Debitis voluptate omnis.</p>
+       <p><a href="/ddbj/tsa-e.html">TSA (Transcriptome Shotgun Assembly)</a> data are computationally assembled transcribed RNA sequences from primary data including next generation sequencing reads. The primary sequence data used in the assemblies must be publicly available in INSDC.</p>
+       <ul>
+         <li>Register unassembled raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register your project in BioProject and your library information in BioSample during or before the DRA submission.</li>
+         <li>Submit TSA data to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-tsa</h1>
-        <p>Fuga at non. Veritatis debitis et. Eos inventore sit.</p>
-        <p>Labore excepturi possimus. Vel et vero. Impedit quo distinctio.</p>
-        <p>Quidem deleniti cumque. Aut sequi quibusdam. Nam repudiandae ipsa.</p>
-        <p>Non dicta quis. Tempore eum perspiciatis. Omnis quae ut.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related transcriptome data. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-tsa</h1>
-        <p>Mollitia est quo. Omnis nam est. Voluptate modi porro.</p>
-        <p>Dolorum provident rerum. Quod numquam nesciunt. Quisquam exercitationem sed.</p>
-        <p>Neque voluptatum enim. Vero minima omnis. Possimus excepturi consectetur.</p>
-        <p>Commodi aut sapiente. Placeat aut quo. Sed fuga qui.</p>
+       <p>Register your library information to <a href="/biosample/submission-e.html">BioSample</a> as sample(s) by using the <a href="/biosample/attribute.html?Core=Generic&definition=definition">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-tsa</h1>
-        <p>Aliquid iste rerum. Excepturi in et. Facilis veniam mollitia.</p>
-        <p>Ipsa in aut. Blanditiis sequi harum. Sit eum et.</p>
-        <p>Voluptatibus qui dolore. Aut voluptatibus aut. Suscipit veniam dolor.</p>
-        <p>Provident deserunt ea. Qui eaque ut. Consequatur libero voluptas.</p>
+       <p>Register unassembled raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-tsa</h1>
-        <p>Sapiente tenetur cupiditate. Aliquid ipsa tenetur. Sunt nesciunt laborum.</p>
-        <p>Quod dolore provident. Labore qui recusandae. Exercitationem voluptate ipsa.</p>
-        <p>Itaque et consequuntur. Provident qui praesentium. Id qui ipsam.</p>
-        <p>Voluptatem veritatis vel. Cum sunt ex. Iure cum maiores.</p>
+       <p>Submit <a href="/ddbj/tsa-e.html">TSA</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Assemblies obtained from multiple species are not acceptable except those derived from environmental samples.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
+         <li>Annotation is optional. If you submit TSA with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TSA sequences.</p>
       ja:
 q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
   sections:
@@ -1056,8 +1057,8 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
     body:
       en: |
        <ul>
-         <li>Register a BioProject and a BioSample before the genome submission.</li>
-         <li>Submit finished level genomic sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+         <li>Register a project to BioProject and a sample to BioSample before the genome submission.</li>
+         <li>Submit finished level genomic sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
        </ul>
       ja:
   - title:
@@ -1079,7 +1080,7 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+       <p>Submit finished level genomic sequences (non-WGS) of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -1090,7 +1091,7 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequencess.</p>       
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>       
       ja:
 q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
   sections:
@@ -1100,8 +1101,8 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
     body:
       en: |
        <ul>
-         <li>Register a BioProject and a BioSample during or before the draft genome submission.</li>
-         <li>Submit draft genome sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+         <li>Register a project to BioProject and a sample to BioSample during or before the draft genome submission.</li>
+         <li>Submit draft genome sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
        </ul>
       ja:
   - title:
@@ -1123,7 +1124,7 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+       <p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -1144,8 +1145,8 @@ q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
     body:
       en: |
        <ul>
-         <li>Register a BioProject and a BioSample before the genome submission.</li>
-         <li>Submit complete genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+         <li>Register a project to BioProject and a sample to BioSample before the genome submission.</li>
+         <li>Submit complete genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
        </ul>
       ja:
   - title:
@@ -1167,7 +1168,7 @@ q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit complete genome sequences (non-WGS) of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+       <p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
        <p>In the MSS submission, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -1186,8 +1187,8 @@ q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
       en: |
        <ul>
          <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
-         <li>Register a BioProject and a BioSample before the draft genome submissions.</li>
-         <li>Submit draft genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+         <li>Register a project to BioProject and a sample to BioSample before the draft genome submissions.</li>
+         <li>Submit draft genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
        </ul>
       ja:
   - title:
@@ -1209,10 +1210,10 @@ q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+       <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
        <p>In the MSS submission, you will need to:
        <ul>
-         <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
+         <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a sample to BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix.</li>
         <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
        </ul>
@@ -1226,10 +1227,10 @@ q4-metagenome-other-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-         <p>Submit metagenomic, environmental sequences to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</p>
+         <p>Submit metagenomic, environmental sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</p>
          <ul>
-           <li>Register a BioProject and a BioSample for metagenomic sequences.</li>
-           <li>Submit metagenomic sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</li>
+           <li>Register a project to BioProject and a sample to BioSample for metagenomic sequences.</li>
+           <li>Submit metagenomic sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</li>
          </ul>         
       ja:
   - title:
@@ -1251,7 +1252,7 @@ q4-metagenome-other-mss->g-bp-bs-mss:
       ja:
     body:
       en: |
-       <p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+       <p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the metagenome sequences submission.</li>
