@@ -1128,7 +1128,7 @@ q3-transcriptome-est->g-bp-bs-mss:
        <p>In the MSS submission, you will need to:
        <ul>
          <li>You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</li>
-         <li>No <a href="/ddbj/flat-file-e.html#FeaturesB">feature</a> information should not be included except source information.</li>
+         <li>No <a href="/ddbj/flat-file-e.html#FeaturesB">feature</a> annotation should not be included except source.</li>
          <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
          <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
@@ -1783,11 +1783,14 @@ q3-tpa-experimental->g-nsss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-tpa-experimental</h1>
-        <p>Nobis quas dolorum. Molestiae id ut. Tempora ratione rem.</p>
-        <p>Porro dolores et. Tempora hic non. Quos pariatur eum.</p>
-        <p>Sunt fugiat quidem. Deleniti quo qui. Eius quo aut.</p>
-        <p>Et assumenda culpa. Qui aliquid explicabo. Id placeat accusamus.</p>
+       <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
+       <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:experimental</a> describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.</p>
+       <p>The following data are NOT acceptable in TPA:
+       <ul>
+         <li>Microsatellites and related types of repeat regions.</li>
+         <li>Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan, or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.</li>
+         <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
+       </ul></p>
       ja:
   - title:
       en: NSSS
