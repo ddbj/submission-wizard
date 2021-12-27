@@ -234,44 +234,36 @@ q4-transcriptome-other-dra->g-bp-bs-dra:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dra</h1>
-        <p>Iure nulla enim. Fuga doloremque sunt. Laudantium dolorem tempora.</p>
-        <p>Error eius ab. Repudiandae dolore expedita. Est ab impedit.</p>
-        <p>Rerum id adipisci. Ut fuga repellendus. Nulla rerum quaerat.</p>
-        <p>Quasi atque aut. Sed aspernatur et. A accusamus atque.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dra</h1>
-        <p>At hic reprehenderit. Rerum dolorem ut. Molestiae doloremque nulla.</p>
-        <p>Hic dolor voluptatem. Est et quod. Error possimus autem.</p>
-        <p>Omnis amet quod. Non reprehenderit odio. Tempora autem aspernatur.</p>
-        <p>Distinctio quo qui. Sit numquam temporibus. Dolor autem laudantium.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dra</h1>
-        <p>Dolores quisquam qui. Aut corrupti voluptatem. Iusto itaque illo.</p>
-        <p>Facere velit et. Quo necessitatibus unde. Aut quisquam quia.</p>
-        <p>Aspernatur ad aperiam. Exercitationem iste laboriosam. Eos expedita repellendus.</p>
-        <p>Tempore et labore. Et dicta est. Earum commodi error.</p>
+       <p>Register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute.html?Core=Generic&definition=definition">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dra</h1>
-        <p>Vitae ab enim. Animi veniam maxime. Delectus ipsa vel.</p>
-        <p>Esse quae quis. Necessitatibus voluptas reprehenderit. Quis id ipsum.</p>
-        <p>Et illo veniam. Dolore qui quia. Aut soluta tempora.</p>
-        <p>Sequi aperiam excepturi. Veniam sapiente et. Incidunt illo repellendus.</p>
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
 q3-other-dra->g-bp-bs-dra:
   sections:
@@ -320,13 +312,14 @@ q3-other-dra->g-bp-bs-dra:
         <p>Dolorem debitis facilis. Occaecati qui labore. Et facilis deserunt.</p>
       ja:
 q2-fgngs->g-bp-bs-dra-gea:
+q3-transcriptome-expression->g-bp-bs-dra-gea:
   sections:
   - title:
       en: Overview
       ja: 概要
     body:
       en: |
-       <p>For functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by sequencing, submit raw data to the <a href="/dra/submission-e.html">Sequence Read Archive (DRA)</a> and processed data to the <a href="/gea/submit-sequence-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered for the DRA and GEA submissions. Both BioProject and BioSample submissions can be created during the DRA submission. Sequencing-based functional genomics data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/10.25504/FAIRsharing.a55z32">MINSEQE</a> guideline.</p>
+       <p>For gene expression data by sequencing, submit raw data to the <a href="/dra/submission-e.html">Sequence Read Archive (DRA)</a> and processed data to the <a href="/gea/submit-sequence-e.html">Genomic Expression Archive (GEA)</a>. A BioProject and BioSamples should be registered for the DRA and GEA submissions. Both BioProject and BioSample submissions can be created during the DRA submission. Sequencing-based functional genomics data are accepted in the <a href="/gea/metadata-e.html">MAGE-TAB</a> format in compliance with the <a href="https://fairsharing.org/10.25504/FAIRsharing.a55z32">MINSEQE</a> guideline.</p>
        <ol>
          <li>Register a project to BioProject in the D-way submission portal.</li>
          <li>Register samples to BioSample in the D-way submission portal.</li>
@@ -901,55 +894,54 @@ q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dramss</h1>
-        <p>Voluptate velit rerum. Animi ut vero. At assumenda quae.</p>
-        <p>Accusantium dolores praesentium. Ex nisi est. Enim quos veniam.</p>
-        <p>Qui sequi aut. Voluptatem in doloremque. Accusamus perferendis aspernatur.</p>
-        <p>Vel expedita quia. Voluptatem sit expedita. Sed blanditiis consequatur.</p>
+       <ul>
+         <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+         <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
+         <li>Submit RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dramss</h1>
-        <p>Nesciunt id ad. Molestias expedita eos. Qui distinctio neque.</p>
-        <p>Atque ea aliquam. Ipsum fugiat nobis. Minima ut ut.</p>
-        <p>Nisi aut doloremque. Ducimus non doloremque. Expedita maxime qui.</p>
-        <p>Est officiis reiciendis. Laboriosam accusantium excepturi. Ut et at.</p>
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dramss</h1>
-        <p>Eaque vero ducimus. Est aliquam dolor. Quibusdam autem velit.</p>
-        <p>Dolores doloribus hic. Temporibus quibusdam earum. Quaerat aliquid ab.</p>
-        <p>Similique aspernatur et. Alias omnis quibusdam. Omnis corrupti nisi.</p>
-        <p>Ipsa in tempore. Optio cumque autem. Animi amet illum.</p>
+       <p>Register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute.html?Core=Generic&definition=definition">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
       ja:
   - title:
       en: DRA
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dramss</h1>
-        <p>At debitis molestias. Est ut adipisci. Quod sit beatae.</p>
-        <p>Dolores impedit voluptatem. Qui magnam unde. Quis excepturi porro.</p>
-        <p>Illo beatae incidunt. Repudiandae pariatur tenetur. At doloremque tempore.</p>
-        <p>Vero fugiat nam. Adipisci inventore sed. Omnis est quidem.</p>
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol></p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-dramss</h1>
-        <p>Quisquam dolores molestiae. Et corporis et. Ullam alias cumque.</p>
-        <p>Omnis mollitia at. Debitis et repellendus. Voluptate et qui.</p>
-        <p>Unde est quia. Beatae quis consequatur. Sequi unde vel.</p>
-        <p>Ab neque officiis. Dolore fugit magni. Velit et mollitia.</p>
+       <p>Submit RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
+         <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
       ja:
 q3-other-dramss->g-bp-bs-dra-mss:
   sections:
@@ -1271,44 +1263,39 @@ q3-transcriptome-est->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-transcriptome-est</h1>
-        <p>Eveniet expedita pariatur. Assumenda earum magnam. Cum eum est.</p>
-        <p>Beatae possimus iste. Animi atque laboriosam. Voluptatem enim repellendus.</p>
-        <p>Molestiae numquam illum. Eos recusandae aliquid. Tenetur molestiae illo.</p>
-        <p>Est rem et. Sed fuga voluptatem. Cupiditate est consequuntur.</p>
+       <p><a href="/ddbj/est-e.html">Expressed Sequence Tags (ESTs)</a> are single-pass sequence reads from cDNA generated from mRNA or other RNA transcripts. They are tags of expression for the cDNA library of interest for a number of organisms. Sequences generated from next generation sequencing technologies should be submitted to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>. Assembled sequences should not be submitted as EST. <a href="/ddbj/index-e.html">DDBJ</a> accepts assembled EST sequences as the <a href="/ddbj/tsa-e.html">TSA (Transcriptome Shotgun Assembly) division</a>.</p>
+       <p>Submit ESTs to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</p>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-est</h1>
-        <p>Voluptatem ut velit. Sit in placeat. Consectetur alias vitae.</p>
-        <p>Tenetur rerum officia. Eos voluptate est. Quis sunt ducimus.</p>
-        <p>Fugit qui dolores. Et non ratione. Eos hic animi.</p>
-        <p>Dolores dolorum molestias. Culpa iure autem. Quo consequatur eum.</p>
+       <p>You may register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-est</h1>
-        <p>Saepe eius placeat. Quia voluptas non. Magni fugiat qui.</p>
-        <p>Autem nulla architecto. Maiores nesciunt qui. Repellendus fugiat sed.</p>
-        <p>Ratione maxime ducimus. Deleniti perferendis blanditiis. Voluptatem magni atque.</p>
-        <p>Voluptatibus necessitatibus et. Beatae dolores eum. Quos ipsa est.</p>
+       <p>You may register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q3-transcriptome-est</h1>
-        <p>Minus mollitia beatae. Praesentium architecto consequatur. Reiciendis rerum ab.</p>
-        <p>Quo et autem. Et dolorem ab. Non reiciendis non.</p>
-        <p>Sequi aut minus. Et quo quidem. Saepe iste tenetur.</p>
-        <p>Ducimus nemo perferendis. Omnis iusto autem. Rerum molestiae voluptatem.</p>
+       <p>Submit EST sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> (<a href="/ddbj/est-e.html">instructions</a>).</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</li>
+         <li>No <a href="/ddbj/flat-file-e.html#FeaturesB">feature</a> information should not be included except source information.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>       
       ja:
 q4-transcriptome-other-mss->g-bp-bs-mss:
   sections:
@@ -1317,44 +1304,40 @@ q4-transcriptome-other-mss->g-bp-bs-mss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-mss</h1>
-        <p>Nisi architecto sint. Et earum dignissimos. Veniam vel accusantium.</p>
-        <p>Sit minus neque. Dolores a consequatur. Porro doloremque qui.</p>
-        <p>Ut aliquid optio. Dolores repudiandae et. Eos asperiores et.</p>
-        <p>Quia ea consequatur. Esse vel perspiciatis. Aliquid cum quia.</p>
+       <ul>
+         <li>Submit large-scale (more than 500 sequences and/or longer than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the RNA sequencing is part of a larger project.</li>
+       </ul>
       ja:
   - title:
       en: BioProject
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-mss</h1>
-        <p>Animi consequatur doloribus. Non nostrum et. Ut amet doloremque.</p>
-        <p>Aut unde adipisci. Voluptas fugiat nulla. Alias tenetur aliquid.</p>
-        <p>Enim rerum tempora. Ipsa optio quis. Repellat illo architecto.</p>
-        <p>Quis aut ea. Corrupti quasi tempore. Incidunt doloremque et.</p>
+       <p>You may register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-mss</h1>
-        <p>Esse vero sit. Consequatur quos officia. Omnis quam quis.</p>
-        <p>Porro quasi reiciendis. Adipisci minus in. Aut ut hic.</p>
-        <p>Accusamus perferendis aperiam. Iste aperiam dolorem. Nesciunt pariatur fugit.</p>
-        <p>Perspiciatis dolor qui. Distinctio autem ad. Nemo blanditiis molestiae.</p>
+       <p>You may register your sample(s) to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute.html?Core=Generic&definition=definition">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</p>
       ja:
   - title:
       en: MSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-mss</h1>
-        <p>Deserunt accusantium praesentium. Consequatur dolorum culpa. Asperiores ipsam dolor.</p>
-        <p>Est maiores sed. Ipsa dignissimos enim. Architecto quaerat cumque.</p>
-        <p>Qui ea corrupti. Optio fugit nulla. Consequuntur fuga aspernatur.</p>
-        <p>Dolores sit quasi. Officiis exercitationem voluptas. Debitis et maxime.</p>
+       <p>Submit RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the RNA sequencing is part of a larger project.</li>
+         <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
       ja:
 q3-other-mss->g-bp-bs-mss:
   sections:
@@ -1871,22 +1854,24 @@ q4-transcriptome-other-nsss->g-nsss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-nsss</h1>
-        <p>Quibusdam officia ut. Enim quis ab. Nam dolor dolore.</p>
-        <p>Cum nesciunt delectus. Aut sed alias. Neque quidem qui.</p>
-        <p>Sed aut dolorum. Quod enim sed. Minus ut fugit.</p>
-        <p>Perferendis quae pariatur. Ut sunt praesentium. At similique sapiente.</p>
+       <ul>
+         <li>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</li>
+       </ul>
       ja:
   - title:
       en: NSSS
       ja:
     body:
       en: |
-        <h1>data-from: q4-transcriptome-other-nsss</h1>
-        <p>Consectetur qui vero. Rerum tempore earum. Amet eveniet ut.</p>
-        <p>Voluptate quas ut. Adipisci culpa labore. Quo quos fuga.</p>
-        <p>Consectetur ex eum. Illo ullam voluptatem. Tempore dolores voluptas.</p>
-        <p>Officiis iure ut. Enim aspernatur ipsum. Temporibus sunt perspiciatis.</p>
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>Select an annotation template and describe annotation.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
       ja:
 q3-other-nsss->g-nsss:
   sections:
