@@ -966,7 +966,7 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
          <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
        </ul>
        </p>
-       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., <a href=""ZZZZ01000001) will be assigned to the WGS sequences.</p>
       ja:
 q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
   sections:
@@ -1334,144 +1334,6 @@ q3-other-nsss->g-nsss:
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the other DNA/RNA sequences.</p>
       ja:
-q3-tpa-wgs-assembly->g-bp-bs-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-tpa-wgs-assembly</h1>
-        <p>Expedita error est. Quam repudiandae dolorem. Ad recusandae reprehenderit.</p>
-        <p>Non et esse. Nostrum neque ipsum. Delectus voluptates odit.</p>
-        <p>Sint cum recusandae. Autem neque praesentium. Reiciendis a repellat.</p>
-        <p>Ad corporis soluta. Assumenda error eum. Magnam vel ut.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-wgs-assembly</h1>
-        <p>Sed harum quas. Sed quia aut. Minus nemo voluptatum.</p>
-        <p>Sequi earum nesciunt. Laudantium consequatur sunt. Voluptas quia non.</p>
-        <p>Consequatur quod ut. Dicta deserunt harum. Minima sit illo.</p>
-        <p>Ut libero dolores. Dolor ullam sit. Quasi sint facilis.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-wgs-assembly</h1>
-        <p>Omnis quae et. Sed voluptate illo. Nemo asperiores odit.</p>
-        <p>Sit iure nulla. Quasi nemo provident. Perferendis dicta placeat.</p>
-        <p>Dolorem architecto non. Et inventore earum. Iste doloribus officia.</p>
-        <p>At et sunt. Totam quibusdam voluptatem. Enim rem incidunt.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-wgs-assembly</h1>
-        <p>Ea modi et. Aliquid nam voluptatum. Deserunt perferendis aut.</p>
-        <p>Nisi hic dolor. Distinctio odit incidunt. Quibusdam ut laudantium.</p>
-        <p>Quas saepe dolore. Ipsum nobis libero. Doloribus voluptate voluptas.</p>
-        <p>Laboriosam inventore placeat. Totam quia quo. Dolor neque nisi.</p>
-      ja:
-q3-tpa-tsa-assembly->g-bp-bs-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tsa-assembly</h1>
-        <p>Illo ex non. Cum facilis tempore. Laboriosam architecto recusandae.</p>
-        <p>Voluptatem dolores ea. Eum ratione sed. Deleniti est cum.</p>
-        <p>Voluptas aut molestias. Illo quis neque. Omnis temporibus vero.</p>
-        <p>Facilis mollitia laboriosam. Aut quae et. Impedit minima et.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tsa-assembly</h1>
-        <p>Voluptas incidunt et. Natus corporis aut. Quo a quos.</p>
-        <p>Ratione animi et. Quis earum corporis. Nulla molestias ratione.</p>
-        <p>Omnis voluptatem incidunt. Quas reiciendis est. Voluptas aut libero.</p>
-        <p>Quia eum aut. Molestias rerum impedit. Dolore asperiores quia.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tsa-assembly</h1>
-        <p>A quisquam sapiente. Sint voluptate consequatur. Autem aut ex.</p>
-        <p>Exercitationem aliquid quia. Officiis rerum et. A natus esse.</p>
-        <p>Dolorem nisi molestias. Laudantium possimus aliquid. Quia et rem.</p>
-        <p>Enim fugiat suscipit. Est iure laborum. Error cupiditate praesentium.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tsa-assembly</h1>
-        <p>Officia quo sit. Sapiente molestias ut. Enim a fugit.</p>
-        <p>Dolores ut consequuntur. Tenetur a quia. Doloribus aliquid animi.</p>
-        <p>Nobis sit ratione. Ad quasi reprehenderit. Minus dignissimos nihil.</p>
-        <p>Iusto at eveniet. Voluptas dolores ipsam. Sed praesentium minima.</p>
-      ja:
-q3-tpa-tls-assembly->g-bp-bs-mss:
-  sections:
-  - title:
-      en: Overview
-      ja: 概要
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tls-assembly</h1>
-        <p>Laboriosam ad et. Iusto quis quod. Voluptate consectetur et.</p>
-        <p>Natus et fugit. Modi reiciendis accusamus. Blanditiis saepe in.</p>
-        <p>Aut voluptates ut. Sit placeat tempore. Incidunt ullam atque.</p>
-        <p>Id rerum nulla. Temporibus soluta aut. Est dolores qui.</p>
-      ja:
-  - title:
-      en: BioProject
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tls-assembly</h1>
-        <p>Itaque maxime quis. Aut error aliquid. Non eligendi perspiciatis.</p>
-        <p>A autem quam. Laborum unde impedit. Reiciendis numquam odio.</p>
-        <p>Cum molestiae quaerat. Sapiente placeat dolorum. Eos ipsum qui.</p>
-        <p>Eius eos laborum. Ut eum reprehenderit. Quam placeat consequatur.</p>
-      ja:
-  - title:
-      en: BioSample
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tls-assembly</h1>
-        <p>Quis qui et. Possimus quo sequi. Ad quia maiores.</p>
-        <p>Fugiat enim in. Autem explicabo voluptatem. Nihil numquam in.</p>
-        <p>Et optio ullam. Quo et voluptas. Quia voluptatem velit.</p>
-        <p>Consequatur excepturi vel. Et aut recusandae. Natus aut facilis.</p>
-      ja:
-  - title:
-      en: MSS
-      ja:
-    body:
-      en: |
-        <h1>data-from: q3-tpa-tls-assembly</h1>
-        <p>Ipsa et quibusdam. Laudantium voluptate ullam. Sint laboriosam sed.</p>
-        <p>Repudiandae molestias maxime. Eum earum quibusdam. Quia ullam adipisci.</p>
-        <p>Totam omnis nihil. Sit et ipsam. Sit enim nemo.</p>
-        <p>Et aut a. Iste sit alias. Quisquam exercitationem ad.</p>
-      ja:
 q3-variation-nonhumsv->g-dgva:
   sections:
   - title:
@@ -1785,7 +1647,7 @@ q3-tpa-experimental->g-nsss:
       en: |
        <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
        <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:experimental</a> describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.</p>
-       <p>The following data are NOT acceptable in TPA:
+       <p>The following data are NOT acceptable as TPA:
        <ul>
          <li>Microsatellites and related types of repeat regions.</li>
          <li>Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan, or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.</li>
@@ -1797,11 +1659,15 @@ q3-tpa-experimental->g-nsss:
       ja:
     body:
       en: |
-        <h1>data-from: q3-tpa-experimental</h1>
-        <p>Rerum est non. Suscipit mollitia nulla. Consectetur assumenda itaque.</p>
-        <p>Labore nulla a. Alias porro nisi. Ut voluptas minima.</p>
-        <p>Aut ut eius. Iusto ducimus dolor. Et aut iure.</p>
-        <p>Error minima cumque. Voluptas quidem deserunt. Ipsum velit eligendi.</p>
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>In the Sequence tab, <a href="/ddbj/web-submission-help-e.html#flow-5">select "No" to the question "Did you determine the nucleotide sequence by yourself?"</a>.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/tpa-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the TPA sequences.</p>
       ja:
 q3-tpa-inferential->g-nsss:
   sections:
@@ -1810,20 +1676,173 @@ q3-tpa-inferential->g-nsss:
       ja: 概要
     body:
       en: |
-        <h1>data-from: q3-tpa-inferential</h1>
-        <p>Quae dolor sed. Eos harum culpa. Voluptates et cumque.</p>
-        <p>Nihil quia repellat. Error possimus illo. Voluptas quis magnam.</p>
-        <p>Voluptas dolores iste. Nobis adipisci debitis. Ex vel inventore.</p>
-        <p>Nam doloribus ad. Placeat unde sint. Cupiditate quia ea.</p>
+       <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
+       <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:inferential</a> describes records that include functional annotation derived from peer-reviewed bioinformatic investigation.</p>
+       <p>The following data are NOT acceptable as TPA:
+       <ul>
+         <li>Microsatellites and related types of repeat regions.</li>
+         <li>Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan, or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.</li>
+         <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
+       </ul></p>
       ja:
   - title:
       en: NSSS
       ja:
     body:
       en: |
-        <h1>data-from: q3-tpa-inferential</h1>
-        <p>Quod atque saepe. Rerum in rerum. Commodi nostrum aut.</p>
-        <p>Excepturi voluptas officiis. Ut esse ex. Architecto voluptatem recusandae.</p>
-        <p>Suscipit aliquid dolorem. Repellat aut modi. Dolorem quidem quis.</p>
-        <p>Eaque et occaecati. Nemo quisquam qui. Asperiores veritatis iure.</p>
+       <p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+       <p>In the NSSS submission, you will need to:
+       <ul>
+         <li>In the Sequence tab, <a href="/ddbj/web-submission-help-e.html#flow-5">select "No" to the question "Did you determine the nucleotide sequence by yourself?"</a>.</li>
+         <li>Input sequences in the fasta format.</li>
+         <li>Check the submission files and submit annotation and sequences.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/tpa-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the TPA sequences.</p>
       ja:
+q3-tpa-wgs-assembly->g-bp-bs-mss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
+       <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:assembly</a> describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class.</p>
+       <ul>
+         <li>Register a project to BioProject and a sample to BioSample before the TPA WGS (Whole Genome Shotgun) submission.</li>
+         <li>Submit the TPA WGS sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register a TPA sample to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Genomic_Sequences_Sample">MIGS: genome package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Relate the TPA sample and the original sample of sequences which had been used for the TPA assembly.</p>
+      ja:
+  - title:
+      en: MSS
+      ja:
+    body:
+      en: |
+       <p>Submit the TPA <a href="/ddbj/wgs-e.html">WGS</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the TPA assembly WGS submission. A TPA WGS assembly must be linked to a BioProject and a BioSample.</li>
+         <li>Annotation is optional. If you submit a WGS assembly with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA WGS sequences.</p>
+      ja:
+q3-tpa-tsa-assembly->g-bp-bs-mss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
+       <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:assembly</a> describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class.</p>
+       <p>The following data are NOT acceptable as TPA:
+       <ul>
+         <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
+       </ul></p>
+       <ul>
+         <li>Register a project to BioProject and sample(s) to BioSample before the TPA TSA (Transcriptome Shotgun Assembly) submission.</li>
+         <li>Submit the TPA TSA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register TPA sample(s) to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=Generic&definition=definition">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Relate the TPA sample and the original sample of sequences which had been used for the TPA assembly.</p>
+      ja:
+  - title:
+      en: MSS
+      ja:
+    body:
+      en: |
+       <p>Submit the TPA <a href="/ddbj/tsa-e.html">TSA</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and BioSample(s) that have been registered for the TPA TSA submission. A TPA TSA must be linked to a BioProject, BioSample(s) and original SRA Run(s).</li>
+         <li>Annotation is optional. If you submit TSA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the transcriptome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TSA sequences.</p>
+      ja:
+q3-tpa-tls-assembly->g-bp-bs-mss:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+       <p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
+       <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:assembly</a> describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class.</p>
+       <p>The following data are NOT acceptable as TPA:
+       <ul>
+         <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
+       </ul></p>
+       <ul>
+         <li>Register a project to BioProject and a sample to BioSample before the TPA TLS (Targeted Locus Study) submission.</li>
+         <li>Submit the TPA TLS sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+       </ul>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register a TPA sample to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Relate the TPA sample and the original sample of sequences which had been used for the TPA assembly.</p>
+      ja:
+  - title:
+      en: MSS
+      ja:
+    body:
+      en: |
+       <p>Submit the TPA <a href="/ddbj/tls-e.html">TLS</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+       <p>In the MSS submission, you will need to:
+       <ul>
+         <li>Provide a BioProject and a BioSample that have been registered for the TPA TSA submission. A TPA TSA must be linked to a BioProject and a BioSample.</li>
+         <li>Annotation is optional. If you submit TLS sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+         <li>Provide <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+       </ul>
+       </p>
+       <p><a href="/ddbj/tls-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TLS sequences.</p>
+ja:
