@@ -4,13 +4,15 @@ q1:
     en: Are you submitting data from human research subjects and do the data require controlled access?
     ja:
   options:
-  - label:
+  - id: q1-yes
+    label:
       en: 'Yes'
       ja: はい
     next:
       type: goal
       id: q1-yes->g-jga
-  - label:
+  - id: q1-no
+    label:
       en: 'No'
       ja: いいえ
     next:
@@ -21,55 +23,64 @@ q2:
     en: What type of data do you have?
     ja:
   options:
-  - label:
+  - id: q2-genome
+    label:
       en: Whole-genome scale genomic sequences
       ja:
     next:
       type: question
       id: q3-genome/q3-tpa
-  - label:
+  - id: q2-metagenome
+    label:
       en: Metagenomic sequences
       ja:
     next:
       type: question
       id: q3-metagenome/q3-tpa
-  - label:
+  - id: q2-transcriptome
+    label:
       en: Transcriptome sequences
       ja:
     next:
       type: question
       id: q3-transcriptome/q3-tpa
-  - label:
+  - id: q2-other
+    label:
       en: Other DNA/RNA sequences
       ja:
     next:
       type: question
       id: q3-other/q3-tpa
-  - label:
+  - id: q2-fgngs
+    label:
       en: Functional genomics data (gene expression, gene regulation or epigenetics) by NGS
       ja:
     next:
       type: goal
       id: q2-fgngs->g-bp-bs-dra-gea
-  - label:
+  - id: q2-fgarray
+    label:
       en: Functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray
       ja:
     next:
       type: goal
       id: q2-fgarray->g-bp-bs-gea
-  - label:
+  - id: q2-metabolomics
+    label:
       en: Metabolomics data
       ja:
     next:
       type: goal
       id: q2-metabolomics->g-mb
-  - label:
+  - id: q2-proteomics
+    label:
       en: Proteomics data
       ja:
     next:
       type: goal
       id: q2-proteomics->g-jpost
-  - label:
+  - id: q2-variation
+    label:
       en: Genetic variations
       ja:
     next:
@@ -148,31 +159,36 @@ q3-genome:
     en: Where does the genome sequence come from?
     ja:
   options:
-  - label:
+  - id: q3-genome-eukaryote
+    label:
       en: Eukaryote
       ja:
     next:
       type: question
       id: q4-genome-eukaryote
-  - label:
+  - id: q3-genome-prokaryote
+    label:
       en: Prokaryote
       ja:
     next:
       type: question
       id: q4-genome-prokaryote
-  - label:
+  - id: q3-genome-plasmid
+    label:
       en: Plasmid only
       ja:
     next:
       type: question
       id: q4-genome-plasmid
-  - label:
+  - id: q3-genome-organelle
+    label:
       en: Organelle only
       ja:
     next:
       type: question
       id: q4-genome-organelle
-  - label:
+  - id: q3-genome-virus
+    label:
       en: Virus/Phage/Viroid
       ja:
     next:
@@ -183,13 +199,15 @@ q4-genome-eukaryote:
     en: What type of genomic sequences do you have (or will you have)?
     ja:
   options:
-  - label:
+  - id: q4-genome-eukaryote-complete
+    label:
       en: Finished level genome sequences
       ja:
     next:
       type: question
       id: q5-genome-eukaryote-complete
-  - label:
+  - id: q4-genome-eukaryote-draft
+    label:
       en: Draft genome sequences (contigs)
       ja:
     next:
@@ -200,19 +218,22 @@ q5-genome-eukaryote-complete:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q5-genome-eukaryote-complete-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q5-genome-eukaryote-complete-mss
+    label:
       en: Assembled sequences only
       ja:
     next:
       type: goal
       id: q5-genome-eukaryote-complete-mss->g-bp-bs-mss
-  - label:
+  - id: q5-genome-eukaryote-complete-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -223,19 +244,22 @@ q5-genome-eukaryote-draft:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q5-genome-eukaryote-draft-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q5-genome-eukaryote-draft-mss
+    label:
       en: Assembled sequences only
       ja:
     next:
       type: goal
       id: q5-genome-eukaryote-draft-mss->g-bp-bs-mss
-  - label:
+  - id: q5-genome-eukaryote-draft-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -246,13 +270,15 @@ q4-genome-prokaryote:
     en: What type of genomic sequences do you have (or will you have)?
     ja:
   options:
-  - label:
+  - id: q4-genome-prokaryote-complete
+    label:
       en: Complete genomes
       ja:
     next:
       type: question
       id: q5-genome-prokaryote-complete
-  - label:
+  - id: q4-genome-prokaryote-draft
+    label:
       en: Draft genome sequences (contigs)
       ja:
     next:
@@ -263,19 +289,22 @@ q5-genome-prokaryote-complete:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q5-genome-prokaryote-complete-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q5-genome-prokaryote-complete-mss
+    label:
       en: Assembled sequences only
       ja:
     next:
       type: goal
       id: q5-genome-prokaryote-complete-mss->g-bp-bs-mss
-  - label:
+  - id: q5-genome-prokaryote-complete-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -286,19 +315,22 @@ q5-genome-prokaryote-draft:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q5-genome-prokaryote-draft-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q5-genome-prokaryote-draft-mss
+    label:
       en: Assembled sequences only
       ja:
     next:
       type: goal
       id: q5-genome-prokaryote-draft-mss->g-bp-bs-mss
-  - label:
+  - id: q5-genome-prokaryote-draft-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -309,13 +341,15 @@ q4-genome-plasmid:
     en: How many/large is your sequence submission?
     ja:
   options:
-  - label:
+  - id: q4-genome-plasmid-nsss
+    label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
     next:
       type: goal
       id: q4-genome-plasmid-nsss->g-nsss
-  - label:
+  - id: q4-genome-plasmid-mss
+    label:
       en: More than 500 sequences and/or longer than 500kb
       ja:
     next:
@@ -326,13 +360,15 @@ q4-genome-organelle:
     en: How many/large is your sequence submission?
     ja:
   options:
-  - label:
+  - id: q4-genome-organelle-nsss
+    label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
     next:
       type: goal
       id: q4-genome-organelle-nsss->g-nsss
-  - label:
+  - id: q4-genome-organelle-mss
+    label:
       en: More than 500 sequences and/or longer than 500kb
       ja:
     next:
@@ -343,13 +379,15 @@ q4-genome-virus:
     en: How many/large is your sequence submission?
     ja:
   options:
-  - label:
+  - id: q4-genome-virus-nsss
+    label:
       en: Less than 500 sequences and shorter than 500kb
       ja:
     next:
       type: goal
       id: q4-genome-virus-nsss->g-nsss
-  - label:
+  - id: q4-genome-virus-mss
+    label:
       en: More than 500 sequences and/or longer than 500kb
       ja:
     next:
@@ -360,25 +398,29 @@ q3-metagenome:
     en: What type of metagenomic sequence do you have?
     ja:
   options:
-  - label:
+  - id: q3-metagenome-mag
+    label:
       en: Highest-quality, representative metagenome-assembled genome (MAG)
       ja:
     next:
       type: question
       id: q4-metagenome-mag
-  - label:
+  - id: q3-metagenome-binned
+    label:
       en: Binned metagenome
       ja:
     next:
       type: question
       id: q4-metagenome-binned
-  - label:
+  - id: q3-metagenome-tls
+    label:
       en: Large-scale targeted sequences for a single gene locus (e.g. rRNA)
       ja:
     next:
       type: question
       id: q4-metagenome-tls
-  - label:
+  - id: q3-metagenome-other
+    label:
       en: Other metagenomic sequences
       ja:
     next:
@@ -389,13 +431,15 @@ q4-metagenome-mag:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q4-metagenome-mag-dramss
+    label:
       en: Raw reads from NGS and metagenome-assembled genome (MAG)
       ja:
     next:
       type: goal
       id: q4-metagenome-mag-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q4-metagenome-mag-mss
+    label:
       en: MAG only
       ja:
     next:
@@ -406,7 +450,8 @@ q4-metagenome-binned:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q4-metagenome-binned-dra
+    label:
       en: Raw reads from NGS and binned metagenome
       ja:
     next:
@@ -417,13 +462,15 @@ q4-metagenome-tls:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q4-metagenome-tls-dramss
+    label:
       en: Raw reads from NGS and targeted sequences
       ja:
     next:
       type: goal
       id: q4-metagenome-tls-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q4-metagenome-tls-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -434,19 +481,22 @@ q4-metagenome-other:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q4-metagenome-other-dramss
+    label:
       en: Raw reads from NGS and metagenomes
       ja:
     next:
       type: goal
       id: q4-metagenome-other-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q4-metagenome-other-mss
+    label:
       en: Metagenoms only
       ja:
     next:
       type: goal
       id: q4-metagenome-other-mss->g-bp-bs-mss
-  - label:
+  - id: q4-metagenome-other-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -457,25 +507,29 @@ q3-transcriptome:
     en: What type of transcriptome sequence do you have?
     ja:
   options:
-  - label:
+  - id: q3-transcriptome-tsa
+    label:
       en: Large-scale transcriptome assemblies
       ja:
     next:
       type: goal
       id: q3-transcriptome-tsa->g-bp-bs-dra-mss
-  - label:
+  - id: q3-transcriptome-expression
+    label:
       en: Gene expression data (NGS, RNA-seq)
       ja:
     next:
       type: goal
       id: q3-transcriptome-expression->g-bp-bs-dra-gea
-  - label:
+  - id: q3-transcriptome-est
+    label:
       en: Single-pass sequence reads from cDNA clones
       ja:
     next:
       type: goal
       id: q3-transcriptome-est->g-bp-bs-mss
-  - label:
+  - id: q3-transcriptome-other
+    label:
       en: Other RNA sequences (e.g. cDNA sequences of genes)
       ja:
     next:
@@ -486,25 +540,29 @@ q4-transcriptome-other:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q4-transcriptome-other-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q4-transcriptome-other-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q4-transcriptome-other-mss
+    label:
       en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
       ja:
     next:
       type: goal
       id: q4-transcriptome-other-mss->g-bp-bs-mss
-  - label:
+  - id: q4-transcriptome-other-nsss
+    label:
       en: Assembled sequences only (less than 500 sequences and/or shorter than 500kb)
       ja:
     next:
       type: goal
       id: q4-transcriptome-other-nsss->g-nsss
-  - label:
+  - id: q4-transcriptome-other-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
@@ -515,25 +573,29 @@ q3-other:
     en: What type of data do you submit?
     ja:
   options:
-  - label:
+  - id: q3-other-dra
+    label:
       en: Raw reads from NGS only
       ja:
     next:
       type: goal
       id: q3-other-dra->g-bp-bs-dra
-  - label:
+  - id: q3-other-dramss
+    label:
       en: Raw reads from NGS and assembled sequences
       ja:
     next:
       type: goal
       id: q3-other-dramss->g-bp-bs-dra-mss
-  - label:
+  - id: q3-other-mss
+    label:
       en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
       ja:
     next:
       type: goal
       id: q3-other-mss->g-bp-bs-mss
-  - label:
+  - id: q3-other-nsss
+    label:
       en: Assembled/Targeted sequences only (less than 500 sequences and shorter than 500kb)
       ja:
     next:
@@ -544,25 +606,29 @@ q3-variation:
     en: What type of genetic variation do you have?
     ja:
   options:
-  - label:
+  - id: q3-variation-humsnp
+    label:
       en: Human short variations (=<50bp)
       ja:
     next:
       type: goal
       id: q3-variation-humsnp->g-jvarsnp
-  - label:
+  - id: q3-variation-humsv
+    label:
       en: Human structural variations (>50bp)
       ja:
     next:
       type: goal
       id: q3-variation-humsv->g-jvarsv
-  - label:
+  - id: q3-variation-nonhumsnp
+    label:
       en: Non-human short variations
       ja:
     next:
       type: goal
       id: q3-variation-nonhumsnp->g-eva
-  - label:
+  - id: q3-variation-nonhumsv
+    label:
       en: Non-human structural variations
       ja:
     next:
@@ -573,31 +639,36 @@ q3-tpa:
     en: How are the annotation or assembly obtained?
     ja:
   options:
-  - label:
+  - id: q3-tpa-experimental
+    label:
       en: Annotation of sequence data is supported by peer-reviewed wet-lab experimental evidence
       ja:
     next:
       type: goal
       id: q3-tpa-experimental->g-nsss
-  - label:
+  - id: q3-tpa-inferential
+    label:
       en: Annotation of sequence data by inference (where the source molecule or its product(s) have not been the subject of direct experimentation)
       ja:
     next:
       type: goal
       id: q3-tpa-inferential->g-nsss
-  - label:
+  - id: q3-tpa-wgs-assembly
+    label:
       en: Assembly or reassembly of draft genome sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
       ja:
     next:
       type: goal
       id: q3-tpa-wgs-assembly->g-bp-bs-mss
-  - label:
+  - id: q3-tpa-tsa-assembly
+    label:
       en: Assembly or reassembly of transcriptome assembled sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
       ja:
     next:
       type: goal
       id: q3-tpa-tsa-assembly->g-bp-bs-mss
-  - label:
+  - id: q3-tpa-tls-assembly
+    label:
       en: Assembly or reassembly of targeted sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
       ja:
     next:

@@ -49,6 +49,8 @@ def transform_option(option, split_goals)
   next_id = [non_tpa_id, tpa_id].compact.join('/')
 
   {
+    id: option['id'],
+
     label: {
       en: label,
       ja: {'Yes' => 'はい', 'No' => 'いいえ'}[label]
