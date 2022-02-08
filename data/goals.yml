@@ -6,10 +6,10 @@ q1-yes->g-jga:
       ja: 概要
     body:
       en: |
-         <p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to apply a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
+         <p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to submit a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
          <ol>
-           <li>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
-           <li>After the data submission application is approved by NBDC, upload metadata and data files to JGA.</li>
+           <li>Submit a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
+           <li>Upload metadata and data files to JGA.</li>
          </ol>
       ja:
   - title:
@@ -17,10 +17,10 @@ q1-yes->g-jga:
       ja:
     body:
       en: |
-         <p>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>. A D-way account is necessary for the data submission application. If you do not have an account, <a href="/account-e.html">create a D-way account</a> before the application.</p> See the <a href="/jga/submission-step-e.html">JGA submission steps</a> and the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC Data Submission</a> web pages.</p>
+         <p>A D-way account is necessary for the application to NBDC. If you do not have an account, <a href="/account-e.html">create a D-way account</a> before the application.</p> See the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC Data Submission</a> web pages.</p>
          <ol>
-           <li>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
-           <li>After the data submission application is approved by NBDC, a JGA submission ID will be created. Upload metadata and data files to the submission directory of the JGA server.</li>
+           <li>Submit a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a> after logging in with your D-way account.</li>
+           <li>After the data submission application is approved by NBDC, a JGA submission ID will be created.</li>
          </ol>
       ja:
   - title:
@@ -28,13 +28,13 @@ q1-yes->g-jga:
       ja:
     body:
       en: |
-         <p>After the data submission application is approved by NBDC, prepare metadata and data files and upload them to JGA by sftp. The sftp data transfer is authenticated by a key pair, generate a public and private key pair and <a href="/account-e.html#enable-dra-submission-in-account">register the public key to your D-way account</a> for data transfer.</p>
+         <p>Prepare metadata and data files and upload them to JGA by sftp. The sftp data transfer is authenticated by a key pair, generate a public and private key pair and <a href="/account-e.html#enable-dra-submission-in-account">register the public key to your D-way account</a> for data transfer. See the <a href="/jga/submission-step-e.html">JGA submission steps</a>.</p>
          <ul>
            <li>Enter metadata in the <a href="/jga/submission-step-e.html#create-metadata-using-excel">JGA metadata excel file</a>.</li>
            <li>Prepare <a href="/jga/submission-e.html">data files</a>.</li>
-           <li>Upload the metadata and data files to the submission directory of the JGA server by sftp (<a href="/jga/submission-e.html">instructions</a>).</li>
+           <li>Upload the metadata and data files to the submission directory of the JGA server by sftp (<a href="/jga/submission-step-e.html">instructions</a>).</li>
          </ul>
-         <p>If the submission is successfully registered, <a href="/jga/submission-e.html#submission">JGA accessions</a> will be issued.</p>
+         <p>If the submission is successfully registered, <a href="/jga/submission-e.html">JGA accessions</a> will be issued.</p>
       ja:
 q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
   sections:
@@ -839,7 +839,7 @@ q4-metagenome-binned-dra->g-bp-bs-dra:
     body:
       en: |
          <p>Binned metagenome assemblies asserted to known taxonomies (Binned metagenome) should be submitted to <a href="/dra/submission-e.html#Analysis">DRA Analysis.</a>. The raw sequence reads from which the binned metagenomes are derived should be submitted to <a href="/dra/submission-e.html">DRA Run.</a></p>
-         <p>Register a project to BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for binned metagenoms are necessary.</p>
+         <p>Register a project to BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for binned metagenomes are necessary.</p>
          <p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
       ja:
   - title:
@@ -864,6 +864,40 @@ q4-metagenome-binned-dra->g-bp-bs-dra:
     body:
       en: |
        <p>Submit binned metagenome assemblies derived from the raw sequence data in fasta/bam files to the DRA Analysis (Analysis type = "De Novo Assembly"). Include information of analysis software used and organism bin in the description. Submit the Analysis along with the Run which had been registered for the raw reads. Please note that Analysis data are not shared with NCBI/ENA.</p>
+      ja:
+q4-metagenome-primary-dra->g-bp-bs-dra:
+  sections:
+  - title:
+      en: Overview
+      ja: 概要
+    body:
+      en: |
+         <p>Assembled contigs of unknown taxa (primary metagenome) should be submitted to <a href="/dra/submission-e.html#Analysis">DRA Analysis.</a>. The raw sequence reads from which the primary metagenomes are derived should be submitted to <a href="/dra/submission-e.html">DRA Run.</a></p>
+         <p>Register a project to BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for primary metagenomes are necessary.</p>
+         <p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
+      ja:
+  - title:
+      en: BioProject
+      ja:
+    body:
+      en: |
+       <p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes metagenomic assemblies. The BioProject submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: BioSample
+      ja:
+    body:
+      en: |
+       <p>Register two samples for unassembled raw reads and primary metagenomes.</p>
+       <p>1. Register a sample for unassembled DRA raw reads to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+       <p>2. Register virtual samples for primary metagenomes to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the primary metagenome submission to DRA Analysis. The primary metagenome sample is derived from the metagenomic sample (1) and <a href="/ddbj/metagenome-assembly-e.html#binned-metagenome-biosample">several attributes need to be provided</a>.Choose the most appropriate "xyz metagenome" (e.g., soil metagenome) from <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/">metagenome organism names</a> in the taxonomy database.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Submit primary metagenome assemblies derived from the raw sequence data in fasta/bam files to the DRA Analysis (Analysis type = "De Novo Assembly"). Include information of analysis software used in the description. Submit the Analysis along with the Run which had been registered for the raw reads. Please note that Analysis data are not shared with NCBI/ENA.</p>
       ja:
 q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
   sections:
@@ -892,6 +926,18 @@ q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
     body:
       en: |
        <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the TLS submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>.</p>
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol>
       ja:
   - title:
       en: MSS
@@ -935,6 +981,18 @@ q4-metagenome-tls-dra->g-bp-bs-dra:
     body:
       en: |
        <p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+      ja:
+  - title:
+      en: DRA
+      ja:
+    body:
+      en: |
+       <p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>.</p>
+       <ol>
+         <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+         <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+         <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+       </ol>
       ja:
 q4-metagenome-other-dramss->g-bp-bs-dra-mss:
   sections:
@@ -985,13 +1043,13 @@ q4-metagenome-other-dramss->g-bp-bs-dra-mss:
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the DRA submission.</li>
-            <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+            <li>Annotation is optional. If you submit metagenomic sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
             <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
             <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
             <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
           </ul>
           </p>
-       <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
+       <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the ENV sequences.</p>
       ja:
 q4-metagenome-other-mss->g-bp-bs-mss:
   sections:
@@ -1640,7 +1698,7 @@ q2-metabolomics->g-mb:
       ja:
     body:
       en: |
-        <p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>. You need to register your project to <a href="/bioproject/submission-e.html">BioProject</a> and your samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Please contact the <a href="/contact-ddbj-e.html">MetaboBank team</a> before submission.</p>
+        <p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>. You need to register your project to <a href="/bioproject/submission-e.html">BioProject</a> and your samples to <a href="/biosample/submission-e.html">BioSample</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Please contact the <a href="/contact-ddbj-e.html">MetaboBank team</a> before submission.</p>
       ja:
 q2-proteomics->g-jpost:
   sections:
@@ -1649,7 +1707,7 @@ q2-proteomics->g-jpost:
       ja: 概要
     body:
       en: |
-        <p>Submit proteomics data to the <a href="https://repository.jpostdb.org/">Japan Proteome Standard Repository (jPOSTrepo)</a>. jPOSTrepo is a public repository for datasets obtained from proteomics experiments and a member of <a href="http://www.proteomexchange.org/">ProteomeXchange Consortium</a>. jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> and not by Bioinformation and DDBJ Center.</p>
+        <p>Submit proteomics data to the <a href="https://repository.jpostdb.org/">Japan Proteome Standard Repository (jPOSTrepo)</a>. jPOSTrepo is a public repository for datasets obtained from proteomics experiments and a member of <a href="http://www.proteomexchange.org/">ProteomeXchange Consortium</a>. Please note that jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> and NOT by Bioinformation and DDBJ Center.</p>
       ja:
   - title:
       en: jPOST
@@ -1701,7 +1759,8 @@ q3-variation-nonhumsnp->g-eva:
       ja: 概要
     body:
       en: |
-        <p>Submit non-human short genetic variations (&le;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> no longer accepts submissions of non-human organisms variations.</p>      ja:
+        <p>Submit non-human short genetic variations (&le;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> no longer accepts submissions of non-human organisms variations. Please note that EVA is provided by EBI and not by Bioinformation and DDBJ Center.</p>      
+        ja:
   - title:
       en: EVA
       ja:
@@ -1716,7 +1775,7 @@ q3-variation-nonhumsv->g-dgva:
       ja: 概要
     body:
       en: |
-       <p>Submit non-human structural variations (&gt;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar">dbVar</a> no longer accepts submissions of non-human organisms variations.</p>
+       <p>Submit non-human structural variations (&gt;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar">dbVar</a> no longer accepts submissions of non-human organisms variations. Please note that EVA is provided by EBI and not by Bioinformation and DDBJ Center.</p>
       ja:
   - title:
       en: DGVa

@@ -412,6 +412,13 @@ q3-metagenome:
     next:
       type: question
       id: q4-metagenome-binned
+  - id: q3-metagenome-primary
+    label:
+      en: Primary metagenome
+      ja:
+    next:
+      type: question
+      id: q4-metagenome-primary
   - id: q3-metagenome-tls
     label:
       en: Large-scale targeted sequences for a single gene locus (e.g. rRNA)
@@ -457,6 +464,18 @@ q4-metagenome-binned:
     next:
       type: goal
       id: q4-metagenome-binned-dra->g-bp-bs-dra
+q4-metagenome-primary:
+  text:
+    en: What type of data do you submit?
+    ja:
+  options:
+  - id: q4-metagenome-primary-dra
+    label:
+      en: Raw reads from NGS and primary metagenome
+      ja:
+    next:
+      type: goal
+      id: q4-metagenome-primary-dra->g-bp-bs-dra
 q4-metagenome-tls:
   text:
     en: What type of data do you submit?
