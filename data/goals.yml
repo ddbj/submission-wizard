@@ -314,7 +314,7 @@ q5-genome-eukaryote-draft-dra->g-bp-bs-dra:
          <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
        </ol></p>
       ja:
-q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss:
+q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss:
   sections:
   - title:
       en: Overview
