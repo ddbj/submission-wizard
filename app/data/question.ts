@@ -4,6 +4,7 @@ import _questions from '../../data/questions.yml';
 import { GoalId } from './goal';
 
 type QuestionId = string;
+type OptionId   = string;
 
 export type Question = {
   text:    LocalizedString;
@@ -11,6 +12,7 @@ export type Question = {
 }
 
 export type Option = {
+  id:    OptionId;
   label: LocalizedString;
 
   next: {

@@ -5,18 +5,20 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "lit-localize build && web-dev-server --watch",
-    "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js",
+    "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js && rm dist/permalink.js",
     "test": "lit-localize build && web-test-runner",
     "lint": "lit-localize build && tsc --noEmit && eslint ."
   },
   "dependencies": {
     "@lit/localize": "^0.11.1",
-    "lit": "^2.0.2"
+    "lit": "^2.0.2",
+    "micro-base": "^0.10.2"
   },
   "devDependencies": {
     "@koa/cors": "^3.1.0",
     "@lit/localize-tools": "^0.5.0",
     "@open-wc/testing": "^3.0.3",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-yaml": "^3.1.0",
     "@typescript-eslint/eslint-plugin": "^5.5.0",

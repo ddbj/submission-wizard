@@ -10,3 +10,19 @@ a.option:hover {
 .divide > * + * {
   border-top: solid thin #eee;
 }
+
+.permalink {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.permalink a {
+  border: solid thin var(--border-color);
+  padding: 0.25em 0.75em;
+  text-decoration: none;
+}
+
+.permalink a:hover {
+  border-color: var(--link-hover-color);
+}

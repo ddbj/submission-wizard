@@ -91,13 +91,15 @@ q3-genome/q3-tpa:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
   options:
-  - label:
+  - id: q3-genome/q3-tpa-yes
+    label:
       en: 'Yes'
       ja: はい
     next:
       type: question
       id: q3-tpa
-  - label:
+  - id: q3-genome/q3-tpa-no
+    label:
       en: 'No'
       ja: いいえ
     next:
@@ -108,13 +110,15 @@ q3-metagenome/q3-tpa:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
   options:
-  - label:
+  - id: q3-metagenome/q3-tpa-yes
+    label:
       en: 'Yes'
       ja: はい
     next:
       type: question
       id: q3-tpa
-  - label:
+  - id: q3-metagenome/q3-tpa-no
+    label:
       en: 'No'
       ja: いいえ
     next:
@@ -125,13 +129,15 @@ q3-transcriptome/q3-tpa:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
   options:
-  - label:
+  - id: q3-transcriptome/q3-tpa-yes
+    label:
       en: 'Yes'
       ja: はい
     next:
       type: question
       id: q3-tpa
-  - label:
+  - id: q3-transcriptome/q3-tpa-no
+    label:
       en: 'No'
       ja: いいえ
     next:
@@ -142,13 +148,15 @@ q3-other/q3-tpa:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
     ja:
   options:
-  - label:
+  - id: q3-other/q3-tpa-yes
+    label:
       en: 'Yes'
       ja: はい
     next:
       type: question
       id: q3-tpa
-  - label:
+  - id: q3-other/q3-tpa-no
+    label:
       en: 'No'
       ja: いいえ
     next:

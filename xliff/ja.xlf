@@ -18,6 +18,14 @@
   <source>Change</source>
   <target>変更</target>
 </trans-unit>
+<trans-unit id="sf4de3bfbfaca12e5">
+  <source>Copied</source>
+  <target>コピーしました</target>
+</trans-unit>
+<trans-unit id="sd1c649c648e39ac5">
+  <source>Copy permalink</source>
+  <target>固定リンクのコピー</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

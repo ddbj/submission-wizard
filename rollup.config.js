@@ -1,3 +1,4 @@
+import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
 import html from '@web/rollup-plugin-html';
 import litcss from 'rollup-plugin-lit-css';
@@ -22,9 +23,10 @@ export default defineConfig({
       minify: true
     }),
 
+    resolve(),
+    commonjs(),
     litcss(),
     yaml(),
-    resolve(),
     minifyHTML(),
 
     copy({

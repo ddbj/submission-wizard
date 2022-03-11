@@ -19,12 +19,12 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-.stack > * {
+.vstack > * {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.stack > * + * {
+.vstack > * + * {
   margin-top: 1em;
 }
 

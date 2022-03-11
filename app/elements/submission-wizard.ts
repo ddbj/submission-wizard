@@ -3,7 +3,8 @@ import { customElement, state } from 'lit/decorators.js';
 import { localized, msg } from '@lit/localize';
 
 import { LocalizationMixin } from '../localization';
-import { Question, Option, findQuestion, initialQuestion } from '../data/question';
+import { Option, Question, findQuestion, initialQuestion } from '../data/question';
+import { findState, calculateHash } from '../state';
 
 import baseStyle from './base.css';
 import style from './submission-wizard.css';
@@ -19,6 +20,9 @@ type Step = {
 @customElement('submission-wizard')
 export class SubmissionWizard extends LocalizationMixin(LitElement) {
   static styles = [baseStyle, style];
+
+  @state()
+  stateHash?: string;
 
   @state()
   answers: Option[] = [];
@@ -41,15 +45,38 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     });
   }
 
+  @state()
+  copied = false;
+
+  constructor() {
+    super();
+
+    this.restoreState();
+  }
+
+  async restoreState() {
+    const url  = new URL(location.href);
+    const hash = url.searchParams.get('state');
+
+    if (!hash) { return; }
+
+    url.searchParams.delete('state');
+    history.replaceState(null, '', url);
+
+    this.answers = await findState(hash) || [];
+  }
+
   render() {
     return html`
-      <div class="stack">
+      <div class="vstack">
         ${this.steps.map((step, i) => {
           return this.stepTemplate(step, i + 1);
         })}
 
         ${this.goalTemplate()}
       </div>
+
+      ${this.permalinkTemplate()}
     `;
   }
 
@@ -102,6 +129,33 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     `;
   }
 
+  permalinkTemplate() {
+    const url = new URL(location.href);
+
+    if (this.stateHash) {
+      url.searchParams.set('state', this.stateHash);
+    }
+
+    const onClick = (e: Event) => {
+      e.preventDefault();
+      navigator.clipboard.writeText(url.toString());
+
+      this.copied = true;
+
+      setTimeout(() => {
+        this.copied = false;
+      }, 1000);
+    };
+
+    return html`
+      <div class="permalink">
+        <a href @click=${onClick}>
+          ${this.copied ? msg('Copied') : msg('Copy permalink')}
+        </a>
+      </div>
+    `;
+  }
+
   choose(option: Option) {
     return (e: Event) => {
       e.preventDefault();
@@ -110,6 +164,8 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
         ...this.answers,
         option
       ];
+
+      this.updateStateHash();
     }
   }
 
@@ -120,6 +176,18 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
       const i = this.answers.indexOf(option);
 
       this.answers = this.answers.slice(0, i);
+
+      this.updateStateHash();
+    }
+  }
+
+  async updateStateHash() {
+    if (this.answers.length) {
+      const path = this.answers.map(({id}) => id);
+
+      this.stateHash = await calculateHash(path);
+    } else {
+      this.stateHash = undefined;
     }
   }
 }
