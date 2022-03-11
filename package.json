@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "start": "lit-localize build && web-dev-server --watch",
-    "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js && rm dist/permalink.js",
+    "build": "lit-localize build && rm -rf dist && rollup --config rollup.config.js",
     "test": "lit-localize build && web-test-runner",
     "lint": "lit-localize build && tsc --noEmit && eslint ."
   },
