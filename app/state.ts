@@ -7,8 +7,6 @@ export async function findState(targetHash: string, question: Question = initial
     const newPath = [...path, option];
     const hash    = await calculateHash(newPath.map(({id}) => id));
 
-    console.log(hash, newPath);
-
     if (hash === targetHash) { return newPath; }
 
     const {type, id} = option.next;
