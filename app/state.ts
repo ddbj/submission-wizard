@@ -1,4 +1,4 @@
-import microBase from 'micro-base';
+import base from '@scure/base';
 
 import { Option, Question, findQuestion, initialQuestion } from './data/question';
 
@@ -25,5 +25,5 @@ export async function calculateHash<T>(obj: T): Promise<string> {
   const json   = JSON.stringify(obj);
   const digest = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(json));
 
-  return microBase.base58.encode(new Uint8Array(digest));
+  return base.base58.encode(new Uint8Array(digest));
 }

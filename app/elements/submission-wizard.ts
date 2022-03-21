@@ -149,7 +149,7 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
 
     return html`
       <div class="permalink">
-        <a href @click=${onClick}>
+        <a href=${url} @click=${onClick}>
           ${this.copied ? msg('Copied') : msg('Copy permalink')}
         </a>
       </div>
