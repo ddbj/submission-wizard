@@ -1,13 +1,17 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
+require 'bundler/inline'
 
-require 'active_support/all'
-require 'erb'
-require 'faker'
-require 'nokogiri'
-require 'optparse'
-require 'yaml'
+gemfile do
+  source 'https://rubygems.org'
+
+  gem 'activesupport', require: 'active_support/all'
+  gem 'erb'
+  gem 'faker'
+  gem 'nokogiri'
+  gem 'optparse'
+  gem 'yaml'
+end
 
 SECTION_BODY = ERB.new(<<~ERB, trim_mode: '-')
   <%- if heading -%>

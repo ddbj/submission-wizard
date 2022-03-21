@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
+require 'bundler/inline'
 
-require 'active_support/all'
-require 'nokogiri'
-require 'optparse'
-require 'yaml'
+gemfile do
+  source 'https://rubygems.org'
+
+  gem 'activesupport', require: 'active_support/all'
+  gem 'nokogiri'
+  gem 'optparse'
+  gem 'yaml'
+end
 
 def transform_question(question, split_goals:)
   label   = question.at_css(:p).text.sub(/\AQ\d+\.\s*/, '')

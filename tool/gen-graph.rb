@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
+require 'bundler/inline'
 
-require 'active_support/all'
-require 'gviz'
-require 'optparse'
-require 'yaml'
+gemfile do
+  source 'https://rubygems.org'
+
+  gem 'activesupport', require: 'active_support/all'
+  gem 'gviz'
+  gem 'optparse'
+  gem 'yaml'
+end
 
 def id(str)
   str.to_s.gsub('->', '-to-').gsub('/', '-or-').underscore.camelize.to_sym
@@ -25,13 +29,12 @@ opts = {
   k.to_s.underscore.to_sym
 }
 
-questions_yml = ARGV.shift
-goals_yml     = ARGV.shift
+questions, goals = ARGV.first(2).map {|path|
+  YAML.load_file(path).deep_symbolize_keys
+}
 
 Graph do
-  File.open(goals_yml) {|f| YAML.load(f) }.each do |(_id, goal)|
-    goal = goal.deep_symbolize_keys
-
+  goals.each do |(_id, goal)|
     label = goal[:sections].map {|dest|
       dest.dig(:title, :en)
     }.join(', ')
@@ -39,9 +42,7 @@ Graph do
     node id(_id), label: label.truncate(opts.fetch(:label_length))
   end
 
-  File.open(questions_yml) {|f| YAML.load(f) }.each do |(_id, q)|
-    q = q.deep_symbolize_keys
-
+  questions.each do |(_id, q)|
     node id(_id), label: q.dig(:text, :en).truncate(opts.fetch(:label_length)), shape: 'rect'
 
     q[:options].each do |option|
