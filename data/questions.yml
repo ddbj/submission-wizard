@@ -2,7 +2,7 @@
 q1:
   text:
     en: Are you submitting data from human research subjects and do the data require controlled access?
-    ja:
+    ja: ヒトを対象とした研究データであり、アクセス制限が必要でしょうか？
   options:
   - id: q1-yes
     label:
@@ -21,75 +21,75 @@ q1:
 q2:
   text:
     en: What type of data do you have?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q2-genome
     label:
       en: Whole-genome scale genomic sequences
-      ja:
+      ja: 全長規模のゲノム配列
     next:
       type: question
       id: q3-genome/q3-tpa
   - id: q2-metagenome
     label:
       en: Metagenomic sequences
-      ja:
+      ja: メタゲノム配列
     next:
       type: question
       id: q3-metagenome/q3-tpa
   - id: q2-transcriptome
     label:
       en: Transcriptome sequences
-      ja:
+      ja: 転写産物配列
     next:
       type: question
       id: q3-transcriptome/q3-tpa
   - id: q2-other
     label:
       en: Other DNA/RNA sequences
-      ja:
+      ja: その他の DNA/RNA 配列
     next:
       type: question
       id: q3-other/q3-tpa
   - id: q2-fgngs
     label:
       en: Functional genomics data (gene expression, gene regulation or epigenetics) by NGS
-      ja:
+      ja: NGS による機能ゲノミクスデータ (遺伝子発現, 遺伝子制御, エピジェネティクス)
     next:
       type: goal
       id: q2-fgngs->g-bp-bs-dra-gea
   - id: q2-fgarray
     label:
       en: Functional genomics data (gene expression, gene regulation, epigenetics or genotyping) by microarray
-      ja:
+      ja: マイクロアレイによる機能ゲノミクスデータ (遺伝子発現, 遺伝子制御, エピジェネティクス)
     next:
       type: goal
       id: q2-fgarray->g-bp-bs-gea
   - id: q2-metabolomics
     label:
       en: Metabolomics data
-      ja:
+      ja: メタボロミクスデータ
     next:
       type: goal
       id: q2-metabolomics->g-mb
   - id: q2-proteomics
     label:
       en: Proteomics data
-      ja:
+      ja: プロテオミクスデータ
     next:
       type: goal
       id: q2-proteomics->g-jpost
   - id: q2-variation
     label:
       en: Genetic variations
-      ja:
+      ja: 遺伝学的なバリアントデータ
     next:
       type: question
       id: q3-variation
 q3-genome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja:
+    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-genome/q3-tpa-yes
     label:
@@ -108,7 +108,7 @@ q3-genome/q3-tpa:
 q3-metagenome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja:
+    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-metagenome/q3-tpa-yes
     label:
@@ -127,7 +127,7 @@ q3-metagenome/q3-tpa:
 q3-transcriptome/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja:
+    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-transcriptome/q3-tpa-yes
     label:
@@ -146,7 +146,7 @@ q3-transcriptome/q3-tpa:
 q3-other/q3-tpa:
   text:
     en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja:
+    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-other/q3-tpa-yes
     label:
@@ -165,539 +165,539 @@ q3-other/q3-tpa:
 q3-genome:
   text:
     en: Where does the genome sequence come from?
-    ja:
+    ja: ゲノム配列の由来はどこでしょうか？
   options:
   - id: q3-genome-eukaryote
     label:
       en: Eukaryote
-      ja:
+      ja: 真核生物
     next:
       type: question
       id: q4-genome-eukaryote
   - id: q3-genome-prokaryote
     label:
       en: Prokaryote
-      ja:
+      ja: 原核生物
     next:
       type: question
       id: q4-genome-prokaryote
   - id: q3-genome-plasmid
     label:
       en: Plasmid only
-      ja:
+      ja: プラスミドのみ
     next:
       type: question
       id: q4-genome-plasmid
   - id: q3-genome-organelle
     label:
       en: Organelle only
-      ja:
+      ja: オルガネラのみ
     next:
       type: question
       id: q4-genome-organelle
   - id: q3-genome-virus
     label:
       en: Virus/Phage/Viroid
-      ja:
+      ja: ウイルス/ファージ/ウイロイド
     next:
       type: question
       id: q4-genome-virus
 q4-genome-eukaryote:
   text:
-    en: What type of genomic sequences do you have (or will you have)?
-    ja:
+    en: What type of genomic sequences do you have?
+    ja: どのような種類のゲノム配列でしょうか？
   options:
   - id: q4-genome-eukaryote-complete
     label:
       en: Finished level genome sequences
-      ja:
+      ja: finished level のゲノム配列
     next:
       type: question
       id: q5-genome-eukaryote-complete
   - id: q4-genome-eukaryote-draft
     label:
       en: Draft genome sequences (contigs)
-      ja:
+      ja: ドラフトゲノム配列 (コンティグ)
     next:
       type: question
       id: q5-genome-eukaryote-draft
 q5-genome-eukaryote-complete:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q5-genome-eukaryote-complete-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss
   - id: q5-genome-eukaryote-complete-mss
     label:
       en: Assembled sequences only
-      ja:
+      ja: アセンブル配列のみ
     next:
       type: goal
       id: q5-genome-eukaryote-complete-mss->g-bp-bs-mss
   - id: q5-genome-eukaryote-complete-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q5-genome-eukaryote-complete-dra->g-bp-bs-dra
 q5-genome-eukaryote-draft:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q5-genome-eukaryote-draft-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss
   - id: q5-genome-eukaryote-draft-mss
     label:
       en: Assembled sequences only
-      ja:
+      ja: アセンブル配列のみ
     next:
       type: goal
       id: q5-genome-eukaryote-draft-mss->g-bp-bs-mss
   - id: q5-genome-eukaryote-draft-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q5-genome-eukaryote-draft-dra->g-bp-bs-dra
 q4-genome-prokaryote:
   text:
-    en: What type of genomic sequences do you have (or will you have)?
-    ja:
+    en: What type of genomic sequences do you have?
+    ja: どのような種類のゲノム配列でしょうか？
   options:
   - id: q4-genome-prokaryote-complete
     label:
       en: Complete genomes
-      ja:
+      ja: 完全長ゲノム
     next:
       type: question
       id: q5-genome-prokaryote-complete
   - id: q4-genome-prokaryote-draft
     label:
       en: Draft genome sequences (contigs)
-      ja:
+      ja: ドラフトゲノム配列 (コンティグ)
     next:
       type: question
       id: q5-genome-prokaryote-draft
 q5-genome-prokaryote-complete:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q5-genome-prokaryote-complete-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss
   - id: q5-genome-prokaryote-complete-mss
     label:
       en: Assembled sequences only
-      ja:
+      ja: アセンブル配列のみ
     next:
       type: goal
       id: q5-genome-prokaryote-complete-mss->g-bp-bs-mss
   - id: q5-genome-prokaryote-complete-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q5-genome-prokaryote-complete-dra->g-bp-bs-dra
 q5-genome-prokaryote-draft:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q5-genome-prokaryote-draft-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss
   - id: q5-genome-prokaryote-draft-mss
     label:
       en: Assembled sequences only
-      ja:
+      ja: アセンブル配列のみ
     next:
       type: goal
       id: q5-genome-prokaryote-draft-mss->g-bp-bs-mss
   - id: q5-genome-prokaryote-draft-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q5-genome-prokaryote-draft-dra->g-bp-bs-dra
 q4-genome-plasmid:
   text:
     en: How many/large is your sequence submission?
-    ja:
+    ja: 登録する配列の数とサイズはどのくらいでしょうか？
   options:
   - id: q4-genome-plasmid-nsss
     label:
       en: Less than 500 sequences and shorter than 500kb
-      ja:
+      ja: 配列数は500以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-plasmid-nsss->g-nsss
   - id: q4-genome-plasmid-mss
     label:
       en: More than 500 sequences and/or longer than 500kb
-      ja:
+      ja: 配列数が500以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-plasmid-mss->g-mss
 q4-genome-organelle:
   text:
     en: How many/large is your sequence submission?
-    ja:
+    ja: 登録する配列の数とサイズはどのくらいでしょうか？
   options:
   - id: q4-genome-organelle-nsss
     label:
       en: Less than 500 sequences and shorter than 500kb
-      ja:
+      ja: 配列数は500以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-organelle-nsss->g-nsss
   - id: q4-genome-organelle-mss
     label:
       en: More than 500 sequences and/or longer than 500kb
-      ja:
+      ja: 配列数が500以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-organelle-mss->g-mss
 q4-genome-virus:
   text:
     en: How many/large is your sequence submission?
-    ja:
+    ja: 登録する配列の数とサイズはどのくらいでしょうか？
   options:
   - id: q4-genome-virus-nsss
     label:
       en: Less than 500 sequences and shorter than 500kb
-      ja:
+      ja: 配列数は500以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-virus-nsss->g-nsss
   - id: q4-genome-virus-mss
     label:
       en: More than 500 sequences and/or longer than 500kb
-      ja:
+      ja: 配列数が500以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-virus-mss->g-mss
 q3-metagenome:
   text:
     en: What type of metagenomic sequence do you have?
-    ja:
+    ja: どのような種類のメタゲノム配列でしょうか？
   options:
   - id: q3-metagenome-mag
     label:
       en: Highest-quality, representative metagenome-assembled genome (MAG)
-      ja:
+      ja: 分類群を代表する、最も高品質なメタゲノムアセンブリ配列 (MAG)
     next:
       type: question
       id: q4-metagenome-mag
   - id: q3-metagenome-binned
     label:
       en: Binned metagenome
-      ja:
+      ja: binned メタゲノム
     next:
       type: question
       id: q4-metagenome-binned
   - id: q3-metagenome-primary
     label:
       en: Primary metagenome
-      ja:
+      ja: プライマリーメタゲノム
     next:
       type: question
       id: q4-metagenome-primary
   - id: q3-metagenome-tls
     label:
       en: Large-scale targeted sequences for a single gene locus (e.g. rRNA)
-      ja:
+      ja: 単一の遺伝子 (rRNA 等) の大規模ターゲット配列
     next:
       type: question
       id: q4-metagenome-tls
   - id: q3-metagenome-other
     label:
       en: Other metagenomic sequences
-      ja:
+      ja: その他のメタゲノム配列
     next:
       type: question
       id: q4-metagenome-other
 q4-metagenome-mag:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-metagenome-mag-dramss
     label:
       en: Raw reads from NGS and metagenome-assembled genome (MAG)
-      ja:
+      ja: NGS 生リードとメタゲノムアセンブリ配列 (MAG)
     next:
       type: goal
       id: q4-metagenome-mag-dramss->g-bp-bs-dra-mss
   - id: q4-metagenome-mag-mss
     label:
       en: MAG only
-      ja:
+      ja: MAG のみ
     next:
       type: goal
       id: q4-metagenome-mag-mss->g-bp-bs-mss
 q4-metagenome-binned:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-metagenome-binned-dra
     label:
       en: Raw reads from NGS and binned metagenome
-      ja:
+      ja: NGS 生リードと binned メタゲノム
     next:
       type: goal
       id: q4-metagenome-binned-dra->g-bp-bs-dra
 q4-metagenome-primary:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-metagenome-primary-dra
     label:
       en: Raw reads from NGS and primary metagenome
-      ja:
+      ja: NGS 生リードとプライマリーメタゲノム
     next:
       type: goal
       id: q4-metagenome-primary-dra->g-bp-bs-dra
 q4-metagenome-tls:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-metagenome-tls-dramss
     label:
       en: Raw reads from NGS and targeted sequences
-      ja:
+      ja: NGS 生リードとターゲット配列
     next:
       type: goal
       id: q4-metagenome-tls-dramss->g-bp-bs-dra-mss
   - id: q4-metagenome-tls-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q4-metagenome-tls-dra->g-bp-bs-dra
 q4-metagenome-other:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-metagenome-other-dramss
     label:
       en: Raw reads from NGS and metagenomes
-      ja:
+      ja: NGS 生リードとメタゲノム配列
     next:
       type: goal
       id: q4-metagenome-other-dramss->g-bp-bs-dra-mss
   - id: q4-metagenome-other-mss
     label:
       en: Metagenoms only
-      ja:
+      ja: メタゲノム配列のみ
     next:
       type: goal
       id: q4-metagenome-other-mss->g-bp-bs-mss
   - id: q4-metagenome-other-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q4-metagenome-other-dra->g-bp-bs-dra
 q3-transcriptome:
   text:
     en: What type of transcriptome sequence do you have?
-    ja:
+    ja: どのような種類の転写産物配列データでしょうか？
   options:
   - id: q3-transcriptome-tsa
     label:
       en: Large-scale transcriptome assemblies
-      ja:
+      ja: 大規模な転写産物アセンブリ配列
     next:
       type: goal
       id: q3-transcriptome-tsa->g-bp-bs-dra-mss
   - id: q3-transcriptome-expression
     label:
       en: Gene expression data (NGS, RNA-seq)
-      ja:
+      ja: 遺伝子発現データ (NGS, RNA-seq)
     next:
       type: goal
       id: q3-transcriptome-expression->g-bp-bs-dra-gea
   - id: q3-transcriptome-est
     label:
       en: Single-pass sequence reads from cDNA clones
-      ja:
+      ja: cDNA クローンのシングルパスリード
     next:
       type: goal
       id: q3-transcriptome-est->g-bp-bs-mss
   - id: q3-transcriptome-other
     label:
       en: Other RNA sequences (e.g. cDNA sequences of genes)
-      ja:
+      ja: その他の RNA 配列 (遺伝子の cDNA 配列等)
     next:
       type: question
       id: q4-transcriptome-other
 q4-transcriptome-other:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q4-transcriptome-other-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q4-transcriptome-other-dramss->g-bp-bs-dra-mss
   - id: q4-transcriptome-other-mss
     label:
       en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
-      ja:
+      ja: アセンブリ配列のみ (配列数が500以上、もしくは、配列長が500kb以上)
     next:
       type: goal
       id: q4-transcriptome-other-mss->g-bp-bs-mss
   - id: q4-transcriptome-other-nsss
     label:
-      en: Assembled sequences only (less than 500 sequences and/or shorter than 500kb)
-      ja:
+      en: Assembled sequences only (less than 500 sequences and shorter than 500kb)
+      ja: アセンブリ配列のみ (配列数は500以下であり、配列長は500kb以下)
     next:
       type: goal
       id: q4-transcriptome-other-nsss->g-nsss
   - id: q4-transcriptome-other-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q4-transcriptome-other-dra->g-bp-bs-dra
 q3-other:
   text:
     en: What type of data do you submit?
-    ja:
+    ja: どのような種類のデータでしょうか？
   options:
   - id: q3-other-dra
     label:
       en: Raw reads from NGS only
-      ja:
+      ja: NGS 生リードのみ
     next:
       type: goal
       id: q3-other-dra->g-bp-bs-dra
   - id: q3-other-dramss
     label:
       en: Raw reads from NGS and assembled sequences
-      ja:
+      ja: NGS 生リードとアセンブル配列
     next:
       type: goal
       id: q3-other-dramss->g-bp-bs-dra-mss
   - id: q3-other-mss
     label:
       en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
-      ja:
+      ja: アセンブリ配列のみ (配列数が500以上、もしくは、配列長が500kb以上)
     next:
       type: goal
       id: q3-other-mss->g-bp-bs-mss
   - id: q3-other-nsss
     label:
       en: Assembled/Targeted sequences only (less than 500 sequences and shorter than 500kb)
-      ja:
+      ja: アセンブリ配列のみ (配列数は500以下であり、配列長は500kb以下)
     next:
       type: goal
       id: q3-other-nsss->g-nsss
 q3-variation:
   text:
     en: What type of genetic variation do you have?
-    ja:
+    ja: どのような種類のバリアントでしょうか？
   options:
   - id: q3-variation-humsnp
     label:
       en: Human short variations (=<50bp)
-      ja:
+      ja: ヒトの短いバリアント (=<50bp)
     next:
       type: goal
       id: q3-variation-humsnp->g-jvarsnp
   - id: q3-variation-humsv
     label:
       en: Human structural variations (>50bp)
-      ja:
+      ja: ヒトの構造バリアント (>50bp)
     next:
       type: goal
       id: q3-variation-humsv->g-jvarsv
   - id: q3-variation-nonhumsnp
     label:
-      en: Non-human short variations
-      ja:
+      en: Non-human short variations (=<50bp)
+      ja: ヒト以外の短いバリアント (=<50bp)
     next:
       type: goal
       id: q3-variation-nonhumsnp->g-eva
   - id: q3-variation-nonhumsv
     label:
-      en: Non-human structural variations
-      ja:
+      en: Non-human structural variations　(>50bp)
+      ja: ヒト以外の構造バリアント (>50bp)
     next:
       type: goal
       id: q3-variation-nonhumsv->g-dgva
 q3-tpa:
   text:
     en: How are the annotation or assembly obtained?
-    ja:
+    ja: アノテーションやアセンブリはどのようにして得たのでしょうか？
   options:
   - id: q3-tpa-experimental
     label:
       en: Annotation of sequence data is supported by peer-reviewed wet-lab experimental evidence
-      ja:
+      ja: 配列アノテーションは査読論文で公表した根拠に基づいている
     next:
       type: goal
       id: q3-tpa-experimental->g-nsss
   - id: q3-tpa-inferential
     label:
       en: Annotation of sequence data by inference (where the source molecule or its product(s) have not been the subject of direct experimentation)
-      ja:
+      ja: 配列アノテーションは推測に依る (配列や産物が直接の実験対象になっていない場合)
     next:
       type: goal
       id: q3-tpa-inferential->g-nsss
   - id: q3-tpa-wgs-assembly
     label:
       en: Assembly or reassembly of draft genome sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
-      ja:
+      ja: ドラフトゲノム配列からのアセンブリ生成について査読を受けている (計算機あるいは実験的な解析かを問わない)
     next:
       type: goal
       id: q3-tpa-wgs-assembly->g-bp-bs-mss
   - id: q3-tpa-tsa-assembly
     label:
       en: Assembly or reassembly of transcriptome assembled sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
-      ja:
+      ja: 転写産物配列からのアセンブリ生成について査読を受けている (計算機あるいは実験的な解析かを問わない) 
     next:
       type: goal
       id: q3-tpa-tsa-assembly->g-bp-bs-mss
   - id: q3-tpa-tls-assembly
     label:
       en: Assembly or reassembly of targeted sequences for which the generation has been subject to peer review (whether it is purely computational or informed by experimentation)
-      ja:
+      ja: ターゲット配列からのアセンブリ生成について査読を受けている (計算機あるいは実験的な解析かを問わない) 
     next:
       type: goal
       id: q3-tpa-tls-assembly->g-bp-bs-mss
