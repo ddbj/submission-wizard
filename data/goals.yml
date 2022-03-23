@@ -14,7 +14,7 @@ q1-yes->g-jga:
       ja: |
          <p>アクセス制限が必要なヒトの遺伝型と表現型データは <a href="/jga/submission-step.html">Japanese Genotype-phenotype Archive (JGA)</a> に登録します。
          JGA に登録する前に <a href="https://humandbs.biosciencedbc.jp/data-submission">NBDC</a> にデータ提供申請を提出し、承認される必要があります。
-         ヒトデータの登録と共有については「<a href="/policies.html#submission-of-human-data">ヒトを対象とした研究データの登録について</a>」をご覧ください。</p>
+         ヒトデータの共有については「<a href="/policies.html#submission-of-human-data">ヒトを対象とした研究データの登録について</a>」をご覧ください。</p>
          <ol>
            <li><a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC 申請システム</a>で提供を申請。</li>
            <li>JGA にデータファイルとメタデータをアップロード。</li>
@@ -30,7 +30,7 @@ q1-yes->g-jga:
            <li>After the data submission application is approved by NBDC, a JGA submission ID will be created.</li>
          </ol>
       ja: |
-         <p>NBDC への申請のためには D-way アカウントが必要です。アカウントが無い場合、申請前に <a href="/account.html">D-way アカウントを作成</a>します。</p>詳しくは<a href="https://humandbs.biosciencedbc.jp/data-submission">NBDC データの提供</a>をご覧ください。</p>
+         <p>NBDC への申請のためには D-way アカウントが必要です。アカウントが無い場合、申請前に <a href="/account.html">D-way アカウントを作成</a>します。</p>詳しくは <a href="https://humandbs.biosciencedbc.jp/data-submission">NBDC データの提供ページ</a>をご覧ください。</p>
          <ol>
            <li><a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC 申請システム</a>に D-way アカウントでログインし、提供申請を提出。</li>
            <li>NBDC によって申請が承認された後、JGA submission ID が作成されます。</li>
@@ -48,11 +48,11 @@ q1-yes->g-jga:
          </ul>
          <p>If the submission is successfully registered, <a href="/jga/submission-e.html">JGA accessions</a> will be issued.</p>
       ja: |
-         <p>メタデータとデータファイルを準備し、JGA に sftp でアップロードします。sftp データ転送は鍵認証を使っています。公開・秘密鍵ペアを生成し、<a href="/account.html#enable-dra-submission-in-account">公開鍵を D-way アカウントに登録</a>します。詳しくは<a href="/jga/submission-step.html">JGA 登録手順</a>をご覧ください。</p>
+         <p>メタデータとデータファイルを準備し、JGA に sftp でアップロードします。sftp データ転送は鍵認証を使っています。公開・秘密鍵ペアを生成し、<a href="/account.html#enable-dra-submission-in-account">公開鍵を D-way アカウントに登録</a>しておきます。詳しくは <a href="/jga/submission-step.html">JGA 登録手順ページ</a>をご覧ください。</p>
          <ul>
            <li><a href="/jga/submission-step.html#create-metadata-using-excel">JGA メタデータエクセル</a>にメタデータを記入。</li>
-           <li><a href="/jga/submission.html">データファイル</a>を揃えます。</li>
-           <li>JGA サーバの submission ディレクトリにメタデータとデータファイルを sftp でアップロードします (<a href="/jga/submission-step.html">手順</a>)。</li>
+           <li><a href="/jga/submission.html">データファイル</a>を準備。</li>
+           <li>JGA サーバの submission ディレクトリにメタデータとデータファイルを sftp でアップロード (<a href="/jga/submission-step.html">手順</a>)。</li>
          </ul>
          <p>登録が完了すると <a href="/jga/submission.html">JGA アクセッション番号</a>が発行されます。</p>
 q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
@@ -79,15 +79,15 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
     body:
       en: |
        <p><a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> でプロジェクトを <a href="/bioproject/submission-e.html">BioProject</a> に登録。
-       BioProject は研究のゴールを説明し、関連する DRA とゲノムデータをまとめます。DRA の登録途中で BioProject を登録することができます。</p>
+       BioProject は研究のゴールを説明し、関連する DRA とゲノムデータをまとめます。DRA の登録途中で BioProject を作成できます。</p>
       ja:
   - title:
       en: BioSample
       ja:
     body:
       en: |
-       <p><a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> で <a href="/biosample/attribute.html">MIGS eukaryote package</a> を使ってサンプルを <a href="/biosample/submission.html">BioSample</a> に登録します。
-       BioSample はシークエンスしたサンプルの情報を記載します。DRA の登録途中で BioSample を登録することができます。</p>
+       <p><a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> で <a href="/biosample/attribute.html">MIGS eukaryote package</a> を使ってサンプルを <a href="/biosample/submission.html">BioSample</a> に登録。
+       BioSample はシークエンスしたサンプル情報を記載します。DRA の登録途中で BioSample を作成できます。</p>
       ja:
   - title:
       en: DRA
@@ -97,8 +97,8 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
        <p>生リードを <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> に登録。</p>
        <ol>
          <li>D-way submission portal で <a href="/dra/submission.html#create-new-submission">DRA 新規登録を作成</a>。</li>
-         <li>生データファイルを <a href="/dra/submission.html#upload-sequence-data">DRA submission directory に scp/sftp でアップロード</a>。</li>
-         <li>D-way submission portal で DRA 登録のために作成した BioProject と BioSample を選択。D-way の<a href="/dra/submission.html#submit-metadata">ウェブ画面</a>でメタデータを登録、もしくは、Run の数が100を超えるような場合は<a href="/dra/submission.html#metadata-excel">エクセル/XML ファイル</a>で登録します。</li>
+         <li>生データファイルを <a href="/dra/submission.html#upload-sequence-data">DRA submission ディレクトリに scp/sftp でアップロード</a>。</li>
+         <li>D-way submission portal で DRA 登録のために作成した BioProject と BioSample を選択。D-way の<a href="/dra/submission.html#submit-metadata">ウェブ画面</a>でメタデータを登録、もしくは、Run 数が100を超えるような場合は<a href="/dra/submission.html#metadata-excel">エクセル/XML ファイル</a>で登録。</li>
        </ol></p>
       ja:
   - title:
@@ -106,18 +106,18 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
       ja:
     body:
       en: |
-       <p>真核生物の finished level ゲノム配列 (WGS 以外) は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> で <a href="/ddbj/index.html">DDBJ</a> に登録します。ゲノム配列にオルガネラ配列を含めます。</p>
+       <p>真核生物の finished level ゲノム配列 (WGS 以外) は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> で <a href="/ddbj/index.html">DDBJ</a> に登録します。オルガネラ配列はゲノム登録に含めます。</p>
        <p>MSS 登録システムで:
        <ul>
-         <li>ゲノム配列のために登録した BioProject 一つと BioSample 一つを指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
-         <li>アノテーションは任意ですが、未報告の生物種では必須です。アノテーション付きゲノムを登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。BioSample 登録時に <a href="/ddbj/locus_tag.html">locus tag prefix</a> を取得します。</li>
+         <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
+         <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付きゲノムを登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a> として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS checking tool</a> で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a> します。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
        </ul>
        </p>
-       <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と6桁の数字から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
+       <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁のアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
       ja:
 q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
   sections:

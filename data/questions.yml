@@ -2,7 +2,7 @@
 q1:
   text:
     en: Are you submitting data from human research subjects and do the data require controlled access?
-    ja: ヒトを対象とした研究データであり、アクセス制限が必要でしょうか？
+    ja: ヒトを対象とした研究データでアクセス制限が必要でしょうか？
   options:
   - id: q1-yes
     label:
