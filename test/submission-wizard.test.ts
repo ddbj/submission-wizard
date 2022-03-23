@@ -25,11 +25,11 @@ it('simple (ja)', async () => {
 
   if (!shadowRoot) { throw new Error('must not happen'); }
 
-  expect(shadowRoot.textContent).to.include('Q1. Are you submitting data from human research subjects and do the data require controlled access?');
+  expect(shadowRoot.textContent).to.include('Q1. ヒトを対象とした研究データでアクセス制限が必要でしょうか？');
   await clickLink(el, 'いいえ');
 
-  expect(shadowRoot.textContent).to.include('Q2. What type of data do you have?');
-  await clickLink(el, 'Proteomics data');
+  expect(shadowRoot.textContent).to.include('Q2. どのような種類のデータでしょうか？');
+  await clickLink(el, 'プロテオミクスデータ');
 
   const goalEl = shadowRoot.querySelector('submission-wizard-goal');
 
