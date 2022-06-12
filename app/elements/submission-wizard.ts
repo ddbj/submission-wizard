@@ -64,6 +64,8 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
     history.replaceState(null, '', url);
 
     this.answers = await findState(hash) || [];
+
+    this.updateStateHash();
   }
 
   render() {
