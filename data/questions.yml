@@ -88,8 +88,8 @@ q2:
       id: q3-variation
 q3-genome/q3-tpa:
   text:
-    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
+    en: Is the sequence assembly and/or annotation of existing third-party's INSDC reads and sequences?
+    ja: INSDC で公開されている第三者の配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-genome/q3-tpa-yes
     label:
@@ -107,8 +107,8 @@ q3-genome/q3-tpa:
       id: q3-genome
 q3-metagenome/q3-tpa:
   text:
-    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
+    en: Is the sequence assembly and/or annotation of existing third-party's INSDC reads and sequences?
+    ja: INSDC で公開されている第三者の配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-metagenome/q3-tpa-yes
     label:
@@ -126,8 +126,8 @@ q3-metagenome/q3-tpa:
       id: q3-metagenome
 q3-transcriptome/q3-tpa:
   text:
-    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
+    en: Is the sequence assembly and/or annotation of existing third-party's INSDC reads and sequences?
+    ja: INSDC で公開されている第三者の配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-transcriptome/q3-tpa-yes
     label:
@@ -145,8 +145,8 @@ q3-transcriptome/q3-tpa:
       id: q3-transcriptome
 q3-other/q3-tpa:
   text:
-    en: Is the sequence assembly and/or annotation of existing INSDC reads and sequences?
-    ja: INSDC で公開されている配列をアセンブリもしくはアノテーションしたものでしょうか？
+    en: Is the sequence assembly and/or annotation of existing third-party's INSDC reads and sequences?
+    ja: INSDC で公開されている第三者の配列をアセンブリもしくはアノテーションしたものでしょうか？
   options:
   - id: q3-other/q3-tpa-yes
     label:
@@ -351,15 +351,15 @@ q4-genome-plasmid:
   options:
   - id: q4-genome-plasmid-nsss
     label:
-      en: Less than 500 sequences and shorter than 500kb
-      ja: 配列数は500以下であり、配列長は500kb以下
+      en: Less than 100 sequences and shorter than 500kb
+      ja: 配列数は100以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-plasmid-nsss->g-nsss
   - id: q4-genome-plasmid-mss
     label:
-      en: More than 500 sequences and/or longer than 500kb
-      ja: 配列数が500以上、もしくは、配列長が500kb以上
+      en: More than 100 sequences and/or longer than 500kb
+      ja: 配列数が100以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-plasmid-mss->g-mss
@@ -370,15 +370,15 @@ q4-genome-organelle:
   options:
   - id: q4-genome-organelle-nsss
     label:
-      en: Less than 500 sequences and shorter than 500kb
-      ja: 配列数は500以下であり、配列長は500kb以下
+      en: Less than 100 sequences and shorter than 500kb
+      ja: 配列数は100以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-organelle-nsss->g-nsss
   - id: q4-genome-organelle-mss
     label:
-      en: More than 500 sequences and/or longer than 500kb
-      ja: 配列数が500以上、もしくは、配列長が500kb以上
+      en: More than 100 sequences and/or longer than 500kb
+      ja: 配列数が100以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-organelle-mss->g-mss
@@ -389,15 +389,15 @@ q4-genome-virus:
   options:
   - id: q4-genome-virus-nsss
     label:
-      en: Less than 500 sequences and shorter than 500kb
-      ja: 配列数は500以下であり、配列長は500kb以下
+      en: Less than 100 sequences and shorter than 500kb
+      ja: 配列数は100以下であり、配列長は500kb以下
     next:
       type: goal
       id: q4-genome-virus-nsss->g-nsss
   - id: q4-genome-virus-mss
     label:
-      en: More than 500 sequences and/or longer than 500kb
-      ja: 配列数が500以上、もしくは、配列長が500kb以上
+      en: More than 100 sequences and/or longer than 500kb
+      ja: 配列数が100以上、もしくは、配列長が500kb以上
     next:
       type: goal
       id: q4-genome-virus-mss->g-mss
@@ -576,15 +576,15 @@ q4-transcriptome-other:
       id: q4-transcriptome-other-dramss->g-bp-bs-dra-mss
   - id: q4-transcriptome-other-mss
     label:
-      en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
-      ja: アセンブリ配列のみ (配列数が500以上、もしくは、配列長が500kb以上)
+      en: Assembled sequences only (more than 100 sequences and/or longer than 500kb)
+      ja: アセンブリ配列のみ (配列数が100以上、もしくは、配列長が500kb以上)
     next:
       type: goal
       id: q4-transcriptome-other-mss->g-bp-bs-mss
   - id: q4-transcriptome-other-nsss
     label:
-      en: Assembled sequences only (less than 500 sequences and shorter than 500kb)
-      ja: アセンブリ配列のみ (配列数は500以下であり、配列長は500kb以下)
+      en: Assembled sequences only (less than 100 sequences and shorter than 500kb)
+      ja: アセンブリ配列のみ (配列数は100以下であり、配列長は500kb以下)
     next:
       type: goal
       id: q4-transcriptome-other-nsss->g-nsss
@@ -616,15 +616,15 @@ q3-other:
       id: q3-other-dramss->g-bp-bs-dra-mss
   - id: q3-other-mss
     label:
-      en: Assembled sequences only (more than 500 sequences and/or longer than 500kb)
-      ja: アセンブリ配列のみ (配列数が500以上、もしくは、配列長が500kb以上)
+      en: Assembled sequences only (more than 100 sequences and/or longer than 500kb)
+      ja: アセンブリ配列のみ (配列数が100以上、もしくは、配列長が500kb以上)
     next:
       type: goal
       id: q3-other-mss->g-bp-bs-mss
   - id: q3-other-nsss
     label:
-      en: Assembled/Targeted sequences only (less than 500 sequences and shorter than 500kb)
-      ja: アセンブリ配列のみ (配列数は500以下であり、配列長は500kb以下)
+      en: Assembled/Targeted sequences only (less than 100 sequences and shorter than 500kb)
+      ja: アセンブリ配列のみ (配列数は100以下であり、配列長は500kb以下)
     next:
       type: goal
       id: q3-other-nsss->g-nsss
@@ -669,7 +669,7 @@ q3-tpa:
   - id: q3-tpa-experimental
     label:
       en: Annotation of sequence data is supported by peer-reviewed wet-lab experimental evidence
-      ja: 配列アノテーションは査読論文で公表した根拠に基づいている
+      ja: 配列アノテーションは査読論文で公表した実験で得られた根拠に基づいている
     next:
       type: goal
       id: q3-tpa-experimental->g-nsss
