@@ -120,9 +120,9 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level genome sequences.</p>     
@@ -133,9 +133,9 @@ q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss:
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付きゲノムを登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -184,9 +184,9 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>
@@ -197,9 +197,9 @@ q5-genome-eukaryote-complete-mss->g-bp-bs-mss:
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付きゲノムを登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -320,9 +320,9 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
@@ -333,9 +333,9 @@ q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss:
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/wgs.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 ZZZZ01000001) が WGS 配列に発行されます。</p>
@@ -385,9 +385,9 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., <a href=""ZZZZ01000001) will be assigned to the WGS sequences.</p>
@@ -398,9 +398,9 @@ q5-genome-eukaryote-draft-mss->g-bp-bs-mss:
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/wgs.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 ZZZZ01000001) が WGS 配列に発行されます。</p>      
@@ -517,23 +517,23 @@ q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss:
     body:
       en: |
        <p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
-       <p>In the MSS submission, you will need to:
+       <p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
          <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">A sample annotation file</a>.</li>
-         <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
       ja: |
        <p>原核生物の完全長ゲノム配列 (WGS 以外) として <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> 経由で <a href="/ddbj/index.html">DDBJ</a> に登録します。プラスミド配列はゲノム登録に含めます。</p>
-       <p>MSS 登録システムで:
+       <p><a href="/ddbj/mss.html#mssdfast">MSS 登録システムにて</a>:
        <ul>
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。
          <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> は locus tag prefix が割り当てられた登録用ファイルを出力します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">サンプルアノテーションファイル</a></li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>DFAST job ID を MSS チームに知らせる、もしくは、<a href="/ddbj/mss.html#File_transfer">登録用ファイルを電子メールか scp/sftp で送付</a>。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -578,23 +578,23 @@ q5-genome-prokaryote-complete-mss->g-bp-bs-mss:
     body:
       en: |
        <p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
-       <p>In the MSS submission, you will need to:
+       <p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
          <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">A sample annotation file</a>.</li>
-         <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
       ja: |
        <p>原核生物の完全長ゲノム配列 (WGS 以外) として <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> 経由で <a href="/ddbj/index.html">DDBJ</a> に登録します。プラスミド配列はゲノム登録に含めます。</p>
-       <p>MSS 登録システムで:
+       <p><a href="/ddbj/mss.html#mssdfast">MSS 登録システムにて</a>:
        <ul>
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。
          <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> は locus tag prefix が割り当てられた登録用ファイルを出力します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">サンプルアノテーションファイル</a></li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>DFAST job ID を MSS チームに知らせる、もしくは、<a href="/ddbj/mss.html#File_transfer">登録用ファイルを電子メールか scp/sftp で送付</a>。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -711,23 +711,23 @@ q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss:
     body:
       en: |
        <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
-       <p>In the MSS submission, you will need to:
+       <p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">A sample annotation file</a>.</li>
-        <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+        <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
       ja: |
        <p>原核生物のドラフトゲノム配列 <a href="/ddbj/wgs.html">WGS (Whole Genome Shotgun)</a> として <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> 経由で <a href="/ddbj/index.html">DDBJ</a> に登録します。プラスミド配列はゲノム登録に含めます。</p>
-       <p>MSS 登録システムで:
+       <p><a href="/ddbj/mss.html#mssdfast">MSS 登録システムにて</a>:
        <ul>
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。
          <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> は locus tag prefix が割り当てられた登録用ファイルを出力します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>DFAST job ID を MSS チームに知らせる、もしくは、<a href="/ddbj/mss.html#File_transfer">登録用ファイルを電子メールか scp/sftp で送付</a>。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/wgs.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 ZZZZ01000001) が WGS 配列に発行されます。</p>
@@ -774,23 +774,23 @@ q5-genome-prokaryote-draft-mss->g-bp-bs-mss:
     body:
       en: |
        <p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
-       <p>In the MSS submission, you will need to:
+       <p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
        <ul>
          <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a sample to BioSample.</li>
          <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">A sample annotation file</a>.</li>
-        <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+        <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
       ja: |
        <p>原核生物のドラフトゲノム配列 <a href="/ddbj/wgs.html">WGS (Whole Genome Shotgun)</a> として <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> 経由で <a href="/ddbj/index.html">DDBJ</a> に登録します。プラスミド配列はゲノム登録に含めます。</p>
-       <p>MSS 登録システムで:
+       <p><a href="/ddbj/mss.html#mssdfast">MSS 登録システムにて</a>:
        <ul>
          <li>ゲノム配列のために登録した BioProject と BioSample を指定します。ゲノム配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。
          <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> は locus tag prefix が割り当てられた登録用ファイルを出力します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">サンプルアノテーションファイル</a></li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>DFAST job ID を MSS チームに知らせる、もしくは、<a href="/ddbj/mss.html#File_transfer">登録用ファイルを電子メールか scp/sftp で送付</a>。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/wgs.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 ZZZZ01000001) が WGS 配列に発行されます。</p>
@@ -898,9 +898,9 @@ q4-genome-plasmid-mss->g-mss:
        <p>Submit large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
        <p>In the MSS submission, you will need to:
        <ul>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
@@ -908,9 +908,9 @@ q4-genome-plasmid-mss->g-mss:
        <p>大規模な (配列数が100以上、もしくは、配列長が500kb以上) プラスミド配列は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> を経由して <a href="/ddbj/index.html">DDBJ</a> に登録します。</p>
        <p>MSS 登録システムで:
        <ul>
-         <li>登録用ファイルとして <a href="/ddbj/mss.html#flow-2">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして <a href="/ddbj/mss.html#prep">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -966,9 +966,9 @@ q4-genome-organelle-mss->g-mss:
        <p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
        <p>In the MSS submission, you will need to:
        <ul>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=545461927">A sample annotation file</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=545461927">A sample annotation file</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
@@ -976,9 +976,9 @@ q4-genome-organelle-mss->g-mss:
        <p>大規模な (配列数が100以上、もしくは、配列長が500kb以上) オルガネラ配列は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> を経由して <a href="/ddbj/index.html">DDBJ</a> に登録します。</p>
        <p>MSS 登録システムで:
        <ul>
-         <li>登録用ファイルとして <a href="/ddbj/mss.html#flow-2">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして <a href="/ddbj/mss.html#prep">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -1034,9 +1034,9 @@ q4-genome-virus-mss->g-mss:
        <p>Submit large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
        <p>In the MSS submission, you will need to:
        <ul>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
@@ -1044,9 +1044,9 @@ q4-genome-virus-mss->g-mss:
        <p>大規模な (配列数が100以上、もしくは、配列長が500kb以上) ウイルス配列は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> を経由して <a href="/ddbj/index.html">DDBJ</a> に登録します。</p>
        <p>MSS 登録システムで:
        <ul>
-         <li>登録用ファイルとして <a href="/ddbj/mss.html#flow-2">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして <a href="/ddbj/mss.html#prep">fasta ファイルとメタデータを記載したアノテーションファイル</a>を準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が finished level ゲノム配列に発行されます。</p>
@@ -1121,9 +1121,9 @@ q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
             <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
             <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
             <li>Provide metadata on the <a href="/ddbj/metagenome-assembly-e.html#mag-ddbj">sequencing and assembly of the genome</a>.</li>
-            <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
-            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-            <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+            <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
+            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+            <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
           </ul>
           </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
@@ -1134,9 +1134,9 @@ q4-metagenome-mag-dramss->g-bp-bs-dra-mss:
          <li>MAG のために登録した BioProject と仮想的な MIMAG BioSample を指定します。MAG は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が MAG 配列に発行されます。</p>
@@ -1187,9 +1187,9 @@ q4-metagenome-mag-mss->g-bp-bs-mss:
             <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
             <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
             <li>Provide metadata on the <a href="/ddbj/metagenome-assembly-e.html#mag-ddbj">sequencing and assembly of the genome</a>.</li>
-            <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
-            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-            <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+            <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
+            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+            <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
           </ul>
           </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
@@ -1200,9 +1200,9 @@ q4-metagenome-mag-mss->g-bp-bs-mss:
          <li>MAG のために登録した BioProject と仮想的な MIMAG BioSample を指定します。MAG は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が MAG 配列に発行されます。</p>
@@ -1357,9 +1357,9 @@ q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
        <p>In the MSS submission, you will need to:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the TLS submission.</li>           
-            <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">A sample annotation file</a>.</li>
-            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-            <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+            <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">A sample annotation file</a>.</li>
+            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+            <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
           </ul>
           </p>
        <p><a href="/ddbj/tls-e.html">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TLS sequences.</p>
@@ -1368,9 +1368,9 @@ q4-metagenome-tls-dramss->g-bp-bs-dra-mss:
        <p>MSS 登録システムで:
        <ul>
          <li>TLS 配列のために登録した BioProject と BioSample を指定します。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/tls.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 TZZZ01000001) が TLS 配列に発行されます。</p>
@@ -1494,9 +1494,9 @@ q4-metagenome-other-dramss->g-bp-bs-dra-mss:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the DRA submission.</li>
             <li>Annotation is optional. If you submit metagenomic sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-            <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-            <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+            <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+            <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
           </ul>
           </p>
        <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the ENV sequences.</p>
@@ -1506,9 +1506,9 @@ q4-metagenome-other-dramss->g-bp-bs-dra-mss:
        <ul>
          <li>DRA データのために登録した BioProject と BioSample を指定します。</li>
          <li>アノテーションは任意です。アノテーション付き配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が ENV 配列に発行されます。</p>
@@ -1557,9 +1557,9 @@ q4-metagenome-other-mss->g-bp-bs-mss:
           <ul>
             <li>Provide a BioProject and a BioSample that have been registered for the metagenome sequences submission.</li>
             <li>Annotation is optional. If you submit metagenome sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-            <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-            <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+            <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+            <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+            <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
           </ul>
           </p>
        <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the ENV sequences.</p>
@@ -1569,9 +1569,9 @@ q4-metagenome-other-mss->g-bp-bs-mss:
        <ul>
          <li>環境サンプル由来配列のために登録した BioProject と BioSample を指定します。</li>
          <li>アノテーションは任意です。アノテーション付き配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が ENV 配列に発行されます。</p>
@@ -1694,9 +1694,9 @@ q3-transcriptome-tsa->g-bp-bs-dra-mss:
          <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
          <li>Annotation is optional. If you submit TSA with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of TSA sequences assembled from NGS reads <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">with annotation</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">without annotation</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of TSA sequences assembled from NGS reads <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">with annotation</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">without annotation</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TSA sequences.</p>
@@ -1707,9 +1707,9 @@ q3-transcriptome-tsa->g-bp-bs-dra-mss:
          <li>BioProject、BioSample(s) と DRA Run(s) を指定します。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き TSA を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">シークエンスとアセンブリに関する情報</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。NGS リードをアセンブルした TSA 配列のサンプルアノテーションファイル、「<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">アノテーションあり</a>」と「<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">アノテーション無し</a>」</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。NGS リードをアセンブルした TSA 配列のサンプルアノテーションファイル、「<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">アノテーションあり</a>」と「<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">アノテーション無し</a>」</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/tsa.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 IZZY01000001) が TSA 配列に発行されます。</p>
@@ -1829,9 +1829,9 @@ q3-transcriptome-est->g-bp-bs-mss:
        <ul>
          <li>You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</li>
          <li>No <a href="/ddbj/flat-file-e.html#FeaturesB">feature</a> annotation should not be included except source.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">A sample annotation file</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">A sample annotation file</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>       
@@ -1841,9 +1841,9 @@ q3-transcriptome-est->g-bp-bs-mss:
        <ul>
          <li>EST が大規模プロジェクトの一環である場合、BioProject と BioSample を含めることができます（必須ではありません）。</li>
          <li>source 以外の <a href="/ddbj/flat-file.html#FeaturesB">feature</a> アノテーションを含めることはできません。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">サンプルアノテーション</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">サンプルアノテーション</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が EST 配列に発行されます。</p>
@@ -1910,9 +1910,9 @@ q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
        <ul>
          <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
          <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1922,9 +1922,9 @@ q4-transcriptome-other-dramss->g-bp-bs-dra-mss:
        <ul>
          <li>DRA データのために登録した BioProject、BioSample と DRA Run を指定します。</li>
          <li>アノテーションは任意です。アノテーション付き配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が RNA 配列に発行されます。</p>
@@ -1966,9 +1966,9 @@ q4-transcriptome-other-mss->g-bp-bs-mss:
        <ul>
          <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the RNA sequencing is part of a larger project.</li>
          <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1978,9 +1978,9 @@ q4-transcriptome-other-mss->g-bp-bs-mss:
        <ul>
          <li>RNA 配列が大規模プロジェクトの一環である場合、BioProject と BioSample を含めることができます（必須ではありません）。</li>
          <li>アノテーションは任意です。アノテーション付き配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">サンプルアノテーション</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">サンプルアノテーション</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が RNA 配列に発行されます。</p>
@@ -2185,9 +2185,9 @@ q3-other-dramss->g-bp-bs-dra-mss:
        <ul>
          <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
          <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -2197,9 +2197,9 @@ q3-other-dramss->g-bp-bs-dra-mss:
        <ul>
          <li>DRA submission のために登録した BioProject、BioSample と DRA Run を指定します。</li>
          <li>アノテーションは任意です。アノテーション付き RNA 配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が MAG 配列に発行されます。</p>
@@ -2240,9 +2240,9 @@ q3-other-mss->g-bp-bs-mss:
        <ul>
          <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the other DNA/RNA sequencing is part of a larger project.</li>
          <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -2252,8 +2252,8 @@ q3-other-mss->g-bp-bs-mss:
        <ul>
          <li>大規模プロジェクトの一環である場合、BioProject と BioSample を含めることができます（必須ではありません）。</li>
          <li>アノテーションは任意です。アノテーション付き配列を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>
        <p><a href="/ddbj/flat-file.html#ACCESSION">プレフィックス2文字と数字6桁から成るアクセッション番号</a>が DNA/RNA 配列に発行されます。</p>
@@ -2688,9 +2688,9 @@ q3-tpa-wgs-assembly->g-bp-bs-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the TPA assembly WGS submission. A TPA WGS assembly must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional. If you submit a WGS assembly with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">A sample annotation file of TPA assembly WGS sequences</a>.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">A sample annotation file of TPA assembly WGS sequences</a>.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA WGS sequences.</p>
@@ -2701,9 +2701,9 @@ q3-tpa-wgs-assembly->g-bp-bs-mss:
          <li>TPA WGS アセンブリのために登録した BioProject と BioSample を指定します。TPA WGS アセンブリ配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>と <a href="/ddbj/tpa-table-e.html#subcategories">TPA キーワード</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">サンプルアノテーションファイル</a></li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">サンプルアノテーションファイル</a></li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/wgs.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 ZZZZ01000001) が TPA WGS 配列に発行されます。</p>
@@ -2763,9 +2763,9 @@ q3-tpa-tsa-assembly->g-bp-bs-mss:
          <li>Provide a BioProject and BioSample(s) that have been registered for the TPA TSA submission. A TPA TSA must be linked to a BioProject, BioSample(s) and original SRA Run(s).</li>
          <li>Annotation is optional. If you submit TSA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the transcriptome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TSA sequences.</p>
@@ -2776,9 +2776,9 @@ q3-tpa-tsa-assembly->g-bp-bs-mss:
          <li>TPA TSA アセンブリのために登録した BioProject と BioSample (複数可) を指定します。TPA TSA は BioProject、BioSample と SRA Run にリンクされている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き WGS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/file-format.html#describing_st_comment">ゲノムシークエンスとアセンブリに関する情報</a>と <a href="/ddbj/tpa-table-e.html#subcategories">TPA キーワード</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/tsa.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 IZZY01000001) が TPA TSA 配列に発行されます。</p>
@@ -2838,22 +2838,22 @@ q3-tpa-tls-assembly->g-bp-bs-mss:
          <li>Provide a BioProject and a BioSample that have been registered for the TPA TLS submission. A TPA TLS must be linked to a BioProject and a BioSample.</li>
          <li>Annotation is optional. If you submit TLS sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
          <li>Provide <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-         <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-         <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+         <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+         <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+         <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
        </ul>
        </p>
        <p><a href="/ddbj/tls-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TLS sequences.</p>
-    ja: |
+      ja: |
        <p>TPA <a href="/ddbj/tls.html">TLS</a> 配列は <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> 経由で <a href="/ddbj/index.html">DDBJ</a> に登録します。</p>
        <p>MSS 登録システムで:
        <ul>
          <li>TPA TLS のために登録した BioProject と BioSample を指定します。TPA TLS 配列は一つの BioProject と一つの BioSample にリンクしている必要があります。</li>
          <li>アノテーションは任意ですが、新規生物種では必須です。アノテーション付き TLS を登録する場合、遺伝子が一意に特定できるように locus tag prefix を割り当てます。<a href="/ddbj/locus_tag.html">locus tag prefix</a> は BioSample 登録時に取得します。</li>
          <li><a href="/ddbj/tpa-table-e.html#subcategories">TPA キーワード</a>を記載。</li>
-         <li>登録用ファイルとして、<a href="/ddbj/mss.html#flow-2">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
-         <li><a href="/ddbj/mss.html#Check_submission_files">MSS チェックツール</a>で登録用ファイルをチェック。</li>
-         <li>登録用ファイルを電子メール添付、もしくは、<a href="/ddbj/mss.html#File_transfer">scp/sftp で転送</a>。</li>
+         <li>登録用ファイルとして、<a href="/ddbj/mss.html#prep">塩基配列を fasta ファイル、メタデータを annotation ファイル</a>、として準備します。</li>
+         <li><a href="/ddbj/mss.html#prep-4">MSS チェックツール</a>で登録用ファイルをチェック。</li>
+         <li>登録用ファイルを <a href="/ddbj/mss.html#sendfiles">MSS form にてアップロード、もしくは、SFTP転送</a>。</li>
        </ul>
        </p>       
        <p><a href="/ddbj/tls.html#flat-file">プレフィックス4文字と8桁の数字から成るアクセッション番号</a> (例 TZZZ01000001) が TPA TLS 配列に発行されます。</p>
