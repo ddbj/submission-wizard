@@ -1,13 +1,16 @@
+import _minifyHTML from 'rollup-plugin-minify-html-literals';
+import _summary from 'rollup-plugin-summary';
 import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
-import html from '@web/rollup-plugin-html';
 import litcss from 'rollup-plugin-lit-css';
-import minifyHTML from 'rollup-plugin-minify-html-literals';
 import resolve from '@rollup/plugin-node-resolve';
-import summary from 'rollup-plugin-summary';
 import yaml from '@rollup/plugin-yaml';
 import { copy } from '@web/rollup-plugin-copy';
 import { defineConfig } from 'rollup';
+import { rollupPluginHTML as html } from '@web/rollup-plugin-html';
+
+const minifyHTML = _minifyHTML.default;
+const summary    = _summary.default;
 
 export default defineConfig({
   output: {

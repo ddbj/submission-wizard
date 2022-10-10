@@ -22,10 +22,10 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   static styles = [baseStyle, style];
 
   @state()
-  stateHash?: string;
+  declare stateHash?: string;
 
   @state()
-  answers: Option[] = [];
+  declare answers: Option[];
 
   @state()
   get questions(): Question[] {
@@ -46,10 +46,13 @@ export class SubmissionWizard extends LocalizationMixin(LitElement) {
   }
 
   @state()
-  copied = false;
+  declare copied: boolean;
 
   constructor() {
     super();
+
+    this.answers = [];
+    this.copied  = false;
 
     this.restoreState();
   }

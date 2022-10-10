@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Node.js 16.x
+- Node.js 18.x
 
 ## Setup
 
@@ -14,8 +14,6 @@ $ yarn install
 ## Starting the development server
 
 ```
-$ yarn start
-or
 $ yarn start --open
 ```
 
@@ -23,8 +21,6 @@ $ yarn start --open
 
 ```
 $ yarn test
-or
-$ yarn test --watch
 ```
 
 ## Linting
