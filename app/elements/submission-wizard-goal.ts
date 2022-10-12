@@ -16,7 +16,7 @@ export class SubmissionWizardGoal extends LocalizationMixin(LitElement) {
   static styles = [baseStyle, style];
 
   @property({converter: findGoalIf})
-  goal?: Goal;
+  declare goal?: Goal;
 
   #section?: Section;
 
